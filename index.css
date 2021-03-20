@@ -1,0 +1,97 @@
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  margin: 0; }
+
+.landing {
+  position: relative;
+  min-height: 100vh;
+  z-index: -1; }
+  .landing .background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10; }
+  .landing .text {
+    color: white;
+    font-family: 'garamond-premier-pro; serif';
+    font-size: 25;
+    text-align: center;
+    padding-top: 25vh; }
+  .landing #logo {
+    width: 60%; }
+
+.fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+.about-margin {
+  padding-top: 200px !important; }
+
+.tool-bar {
+  color: white;
+  position: relative;
+  background-color: #3B454E;
+  height: 50px;
+  display: flex;
+  padding: 50px;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .tool-bar .logo {
+    width: 20%; }
+  .tool-bar .buttons {
+    width: 60%;
+    display: flex;
+    justify-content: space-between; }
+
+#about {
+  background-color: #3B454E;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 10%; }
+  #about .left {
+    width: 45%; }
+  #about .right {
+    width: 45%; }
+    #about .right div {
+      padding: 20px 0; }
+  #about .fred {
+    width: 100%; }
+
+.parallax-picture {
+  height: 100vh; }
+  .parallax-picture .background-image {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -10; }
+
+#sculpture {
+  background-color: #3B454E;
+  height: 100vh;
+  z-index: 1;
+  color: white;
+  padding: 50px 10%; }
+  #sculpture .image-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 50px 0; }
+    #sculpture .image-container .thumbnail {
+      margin: 20px 0;
+      width: 30%; }
+
+#commissions {
+  background-color: #3B454E;
+  height: 100vh;
+  color: white; }
+
+/*# sourceMappingURL=index.css.map */
