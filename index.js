@@ -1,6 +1,7 @@
 console.log('send it', $(window).height());
 
-var fixTop;
+var kuduTop;
+var rhinoTop;
 
 $(document).ready(function(){
     $(this).scrollTop(0);
@@ -43,6 +44,10 @@ function moveThatLayer(element, scrollPos) {
    });
 }
 
+function parallax() {
+
+}
+
 $(window).scroll(function(){
   var scrollPos = $(window).scrollTop();
   var vh = $(window).height();
@@ -62,12 +67,24 @@ $(window).scroll(function(){
   if (isScrolledIntoView('#sculpture')) {
     var docViewTop = $(window).scrollTop();
 
-    if (fixTop == null) {
-      fixTop = docViewTop;
+    if (kuduTop == null) {
+      kuduTop = docViewTop;
     }
 
-    var layerOffset = scrollPos - fixTop - $('.kudu-layer').height()
+    var layerOffset = scrollPos - kuduTop - $('.kudu-layer').height()
 
     moveThatLayer('.kudu-layer', layerOffset)
+  }
+
+  if (isScrolledIntoView('#commissions')) {
+    var docViewTop = $(window).scrollTop();
+
+    if (rhinoTop == null) {
+      rhinoTop = docViewTop;
+    }
+
+    var layerOffset = scrollPos - rhinoTop - $('.rhino-layer').height()
+
+    moveThatLayer('.rhino-layer', layerOffset)
   }
 });
