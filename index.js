@@ -1,36 +1,27 @@
 console.log('send it', $(window).height());
 
+var fixTop;
+
 $(document).ready(function(){
     $(this).scrollTop(0);
 });
 
-function isScrolledIntoView(elem)
-{
+function isScrolledIntoView(elem) {
     var docViewTop = $(window).scrollTop();
     var docViewBottom = docViewTop + $(window).height();
 
     var elemTop = $(elem).offset().top;
-    var elemBottom = elemTop + $(elem).height();
+    // var elemBottom = elemTop + $(elem).height();
 
-    return (elemTop <= docViewBottom);
+    // var elemHeight = elemBottom - elemTop
+
+    // console.log(elemTop, elemBottom)
+
+    return (elemTop - $(elem).height() <= docViewBottom);
 }
 
-$(window).scroll(function(){
-  var scrollPos = $(window).scrollTop();
-  var vh = $(window).height();
-  console.log(scrollPos, vh);
-
-  if (scrollPos > vh) {
-    $('#tool-bar').addClass("fixed");
-    $('#about').addClass("about-margin");
-  }
-
-  if (scrollPos <= vh) {
-    $('#tool-bar').removeClass("fixed");
-    $('#about').removeClass("about-margin");
-  }
-
-  $('.layer').each(function () {
+function moveThatLayer(element, scrollPos) {
+  $(element).each(function () {
 
      var layer = $(this);
 
@@ -50,6 +41,33 @@ $(window).scroll(function(){
 
      layer.css('transform', translate);
    });
+}
 
-   // console.log(isScrolledIntoView('#image-box'));
+$(window).scroll(function(){
+  var scrollPos = $(window).scrollTop();
+  var vh = $(window).height();
+
+  if (scrollPos > vh) {
+    $('#tool-bar').addClass("fixed");
+    $('#about').addClass("about-margin");
+  }
+
+  if (scrollPos <= vh) {
+    $('#tool-bar').removeClass("fixed");
+    $('#about').removeClass("about-margin");
+  }
+
+  moveThatLayer('.layer', scrollPos);
+
+  if (isScrolledIntoView('#sculpture')) {
+    var docViewTop = $(window).scrollTop();
+
+    if (fixTop == null) {
+      fixTop = docViewTop;
+    }
+
+    var layerOffset = scrollPos - fixTop - $('.kudu-layer').height()
+
+    moveThatLayer('.kudu-layer', layerOffset)
+  }
 });
