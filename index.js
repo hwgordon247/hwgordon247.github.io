@@ -2,6 +2,8 @@ console.log('send it', $(window).height());
 
 var kuduTop;
 var rhinoTop;
+var giraffeTop;
+var squirrelsTop;
 
 $(document).ready(function(){
     $(this).scrollTop(0);
@@ -44,10 +46,6 @@ function moveThatLayer(element, scrollPos) {
    });
 }
 
-function parallax() {
-
-}
-
 $(window).scroll(function(){
   var scrollPos = $(window).scrollTop();
   var vh = $(window).height();
@@ -74,6 +72,7 @@ $(window).scroll(function(){
     var layerOffset = scrollPos - kuduTop - $('.kudu-layer').height()
 
     moveThatLayer('.kudu-layer', layerOffset)
+    console.log('kudu')
   }
 
   if (isScrolledIntoView('#commissions')) {
@@ -86,5 +85,32 @@ $(window).scroll(function(){
     var layerOffset = scrollPos - rhinoTop - $('.rhino-layer').height()
 
     moveThatLayer('.rhino-layer', layerOffset)
+    console.log('rhino')
+  }
+
+  if (isScrolledIntoView('#events')) {
+    var docViewTop = $(window).scrollTop();
+
+    if (giraffeTop == null) {
+      giraffeTop = docViewTop;
+    }
+
+    var layerOffset = scrollPos - giraffeTop - $('.giraffe-layer').height()
+
+    moveThatLayer('.giraffe-layer', layerOffset)
+    console.log('giraffe')
+  }
+
+  if (isScrolledIntoView('#contact')) {
+    var docViewTop = $(window).scrollTop();
+
+    if (squirrelsTop == null) {
+      squirrelsTop = docViewTop;
+    }
+
+    var layerOffset = scrollPos - squirrelsTop - $('.squirrels-layer').height()
+
+    moveThatLayer('.squirrels-layer', layerOffset)
+    console.log('squirrels')
   }
 });

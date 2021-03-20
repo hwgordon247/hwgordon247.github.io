@@ -4,6 +4,7 @@ html,
 body {
 	-webkit-font-smoothing: antialiased;
   margin: 0;
+	scroll-behavior: smooth;
 }
 
 .landing {
@@ -133,4 +134,29 @@ body {
 	background-color: #3B454E;
 	height: 100vh;
 	color: $font-color;
+	padding: 50px 10%;
+
+	div {
+		margin: 20px 0;
+	}
+
+	.thumbnail {
+		width: 30%;
+	}
+}
+
+#events {
+	background-color: #3B454E;
+	height: 100vh;
+	z-index: 1;
+	color: $font-color;
+	padding: 50px 10%;
+}
+
+#contact {
+	background-color: #3B454E;
+	height: 100vh;
+	z-index: 1;
+	color: $font-color;
+	padding: 50px 10%;
 }
