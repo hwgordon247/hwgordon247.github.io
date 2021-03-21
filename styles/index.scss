@@ -27,7 +27,7 @@ body {
 
 .landing {
   min-height: 100vh;
-	transform: translateZ(-1px) scale(1.125);
+	transform: translateZ(-3px) scale(1.375);
 	position: relative;
 	z-index: -1px;
 
@@ -115,7 +115,7 @@ body {
 
 .parallax-picture {
   height: 100vh;
-	transform: translateZ(-1px) scale(1.125);
+	transform: translateZ(-3px) scale(1.375);
 
 	.background-image {
 		width: 100%;
