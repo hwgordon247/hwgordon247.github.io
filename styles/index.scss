@@ -1,5 +1,11 @@
 $font-color: white;
 
+$parallax-perspective: 8;
+
+@function parallax-scale-factor($z-distance) {
+  @return ($parallax-perspective -  $z-distance) / $parallax-perspective;
+}
+
 html,
 body {
 	-webkit-font-smoothing: antialiased;
@@ -7,21 +13,28 @@ body {
 	// scroll-behavior: smooth;
 }
 
+.wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 8px;
+  // perspective-origin: 0%;
+}
+
 .landing {
-  position: relative;
   min-height: 100vh;
-  z-index: -1;
+	transform: translateZ(-1px) scale(1.125);
+	position: relative;
+	z-index: -1px;
 
   .background-image {
     width: 100%;
     height: 100%;
-    // background-position: center bottom;
-    // background-repeat: no-repeat;
     position: absolute;
-    // top: 0;
-    // bottom: 0;
-    // left: 0;
-    // right: 0;
     z-index: -10;
   }
 
@@ -46,7 +59,7 @@ body {
 }
 
 .about-margin {
-  padding-top: 200px !important;
+  // padding-top: 200px !important;
 }
 
 .tool-bar {
@@ -75,12 +88,13 @@ body {
 #about {
   background-color: #3B454E;
   height: 100vh;
-  position: relative;
-  z-index: 1;
 	color: $font-color;
 	display: flex;
 	justify-content: space-between;
 	padding: 50px 10%;
+	position: relative;
+	z-index: 1;
+	// transform: translateZ(1px) perspective(1px);
 
 	.left {
 		width: 45%;
@@ -101,6 +115,7 @@ body {
 
 .parallax-picture {
   height: 100vh;
+	transform: translateZ(-1px) scale(1.125);
 
 	.background-image {
 		width: 100%;
@@ -113,6 +128,7 @@ body {
 #sculpture {
 	background-color: #3B454E;
 	height: 100vh;
+	position: relative;
 	z-index: 1;
 	color: $font-color;
 	padding: 50px 10%;
@@ -135,6 +151,8 @@ body {
 	height: 100vh;
 	color: $font-color;
 	padding: 50px 10%;
+	position: relative;
+	z-index: 1;
 
 	div {
 		margin: 20px 0;
@@ -148,6 +166,7 @@ body {
 #events {
 	background-color: #3B454E;
 	height: 100vh;
+	position: relative;
 	z-index: 1;
 	color: $font-color;
 	padding: 50px 10%;
@@ -156,6 +175,7 @@ body {
 #contact {
 	background-color: #3B454E;
 	height: 100vh;
+	position: relative;
 	z-index: 1;
 	color: $font-color;
 	padding: 50px 10%;

@@ -60,57 +60,57 @@ $(window).scroll(function(){
     $('#about').removeClass("about-margin");
   }
 
-  moveThatLayer('.layer', scrollPos);
-
-  if (isScrolledIntoView('#sculpture')) {
-    var docViewTop = $(window).scrollTop();
-
-    if (kuduTop == null) {
-      kuduTop = docViewTop;
-    }
-
-    var layerOffset = scrollPos - kuduTop - $('.kudu-layer').height()
-
-    moveThatLayer('.kudu-layer', layerOffset)
-    console.log('kudu')
-  }
-
-  if (isScrolledIntoView('#commissions')) {
-    var docViewTop = $(window).scrollTop();
-
-    if (rhinoTop == null) {
-      rhinoTop = docViewTop;
-    }
-
-    var layerOffset = scrollPos - rhinoTop - $('.rhino-layer').height()
-
-    moveThatLayer('.rhino-layer', layerOffset)
-    console.log('rhino')
-  }
-
-  if (isScrolledIntoView('#events')) {
-    var docViewTop = $(window).scrollTop();
-
-    if (giraffeTop == null) {
-      giraffeTop = docViewTop;
-    }
-
-    var layerOffset = scrollPos - giraffeTop - $('.giraffe-layer').height()
-
-    moveThatLayer('.giraffe-layer', layerOffset)
-    console.log('giraffe')
-  }
-
-  if (isScrolledIntoView('#contact')) {
-    var docViewTop = $(window).scrollTop();
-
-    if (squirrelsTop == null) {
-      squirrelsTop = docViewTop;
-    }
-
-    var layerOffset = scrollPos - squirrelsTop - $('.squirrels-layer').height()
-
-    moveThatLayer('.squirrels-layer', layerOffset)
-    console.log('squirrels')
-  }
+  // moveThatLayer('.layer', scrollPos);
+  //
+  // if (isScrolledIntoView('#sculpture')) {
+  //   var docViewTop = $(window).scrollTop();
+  //
+  //   if (kuduTop == null) {
+  //     kuduTop = docViewTop;
+  //   }
+  //
+  //   var layerOffset = scrollPos - kuduTop - $('.kudu-layer').height()
+  //
+  //   moveThatLayer('.kudu-layer', layerOffset)
+  //   console.log('kudu')
+  // }
+  //
+  // if (isScrolledIntoView('#commissions')) {
+  //   var docViewTop = $(window).scrollTop();
+  //
+  //   if (rhinoTop == null) {
+  //     rhinoTop = docViewTop;
+  //   }
+  //
+  //   var layerOffset = scrollPos - rhinoTop - $('.rhino-layer').height()
+  //
+  //   moveThatLayer('.rhino-layer', layerOffset)
+  //   console.log('rhino')
+  // }
+  //
+  // if (isScrolledIntoView('#events')) {
+  //   var docViewTop = $(window).scrollTop();
+  //
+  //   if (giraffeTop == null) {
+  //     giraffeTop = docViewTop;
+  //   }
+  //
+  //   var layerOffset = scrollPos - giraffeTop - $('.giraffe-layer').height()
+  //
+  //   moveThatLayer('.giraffe-layer', layerOffset)
+  //   console.log('giraffe')
+  // }
+  //
+  // if (isScrolledIntoView('#contact')) {
+  //   var docViewTop = $(window).scrollTop();
+  //
+  //   if (squirrelsTop == null) {
+  //     squirrelsTop = docViewTop;
+  //   }
+  //
+  //   var layerOffset = scrollPos - squirrelsTop - $('.squirrels-layer').height()
+  //
+  //   moveThatLayer('.squirrels-layer', layerOffset)
+  //   console.log('squirrels')
+  // }
 });
