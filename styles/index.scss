@@ -91,6 +91,10 @@ body {
 		width: 60%;
 		display: flex;
 		justify-content: space-between;
+
+		.button {
+			cursor: pointer;
+		}
 	}
 }
 

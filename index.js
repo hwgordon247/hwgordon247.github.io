@@ -1,3 +1,5 @@
+var toolbarOffset = 149;
+
 console.log('send it', $(window).height());
 
 $(document).ready(function(){
@@ -13,8 +15,7 @@ function isScrolledIntoView(elem) {
     return (elemTop - $(elem).height() <= docViewBottom);
 }
 
-$('#wrapper').on("mousewheel", function(){
-  console.log('scroll')
+$('#wrapper').on("mousewheel", function() {
   var scrollPos = $('#wrapper').scrollTop();
   var vh = $('#wrapper').height();
 
@@ -27,4 +28,34 @@ $('#wrapper').on("mousewheel", function(){
     $('#tool-bar').removeClass("fixed");
     $('#about').removeClass("about-margin");
   }
+});
+
+function scrollToThing(thing) {
+  var scrollPosition = $('#wrapper').scrollTop() + $(thing).offset().top - toolbarOffset;
+
+  $('#wrapper').animate({
+    scrollTop: scrollPosition
+  }, 500);
+
+  // $(thing).get(0).scrollIntoView({ behavior: 'smooth' });
+}
+
+$('#about-toolbar').on('click', function() {
+  scrollToThing('#about');
+});
+
+$('#sculpture-toolbar').on('click', function() {
+  scrollToThing('#sculpture');
+});
+
+$('#commissions-toolbar').on('click', function() {
+  scrollToThing('#commissions');
+});
+
+$('#events-toolbar').on('click', function() {
+  scrollToThing('#events');
+});
+
+$('#contact-toolbar').on('click', function() {
+  scrollToThing('#contact');
 });

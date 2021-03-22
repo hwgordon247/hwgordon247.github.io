@@ -67,6 +67,8 @@ body {
     width: 60%;
     display: flex;
     justify-content: space-between; }
+    .tool-bar .buttons .button {
+      cursor: pointer; }
 
 #about {
   background-color: #3B454E;
