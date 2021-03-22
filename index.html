@@ -5,12 +5,19 @@
     <title>Fred</title>
     <link rel="stylesheet" href="index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Edit 360spin.css to change dimensions of animation -->
+    <link href="css/360spin.css" rel="stylesheet" type="text/css" />
+
+
   </head>
   <body>
     <div id="sculpture-modal">
-      Place image
+      <div id="wrapper">
+          <div id="viewer"></div>
+      </div>
     </div>
-    <div id="wrapper">
+    <div id="scroll-wrapper">
       <div class="landing">
         <img class="background-image layer" src="img/lodge-small.jpg" alt="Lodge" data-parallax-speed="0.5"/>
         <div>
@@ -96,5 +103,8 @@
       </div>
     </div>
   </body>
+  <script src="js/proto.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/browsercheck.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/360.js" type="text/javascript" charset="utf-8"></script>
   <script src="index.js"> </script>
 </html>

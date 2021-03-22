@@ -1,77 +1,77 @@
 var toolbarOffset = 59;
 
-console.log('send it', $(window).height());
+console.log('send it', jQuery(window).height());
 
-$(document).ready(function(){
-    $(this).scrollTop(0);
+jQuery(document).ready(function(){
+    jQuery(this).scrollTop(0);
 });
 
 function isScrolledIntoView(elem) {
-    var docViewTop = $(window).scrollTop();
-    var docViewBottom = docViewTop + $(window).height();
+    var docViewTop = jQuery(window).scrollTop();
+    var docViewBottom = docViewTop + jQuery(window).height();
 
-    var elemTop = $(elem).offset().top;
+    var elemTop = jQuery(elem).offset().top;
 
-    return (elemTop - $(elem).height() <= docViewBottom);
+    return (elemTop - jQuery(elem).height() <= docViewBottom);
 }
 
-$('#wrapper').on("mousewheel", function() {
-  var scrollPos = $('#wrapper').scrollTop();
-  var vh = $('#wrapper').height();
+jQuery('#scroll-wrapper').on("mousewheel", function() {
+  var scrollPos = jQuery('#scroll-wrapper').scrollTop();
+  var vh = jQuery('#scroll-wrapper').height();
 
   if (scrollPos > vh) {
-    $('#tool-bar').addClass("fixed");
-    $('#about').addClass("about-margin");
+    jQuery('#tool-bar').addClass("fixed");
+    jQuery('#about').addClass("about-margin");
   }
 
   if (scrollPos <= vh) {
-    $('#tool-bar').removeClass("fixed");
-    $('#about').removeClass("about-margin");
+    jQuery('#tool-bar').removeClass("fixed");
+    jQuery('#about').removeClass("about-margin");
   }
 });
 
 function scrollToThing(thing) {
-  var scrollPosition = $('#wrapper').scrollTop() + $(thing).offset().top - toolbarOffset;
+  var scrollPosition = jQuery('#scroll-wrapper').scrollTop() + jQuery(thing).offset().top - toolbarOffset;
 
-  $('#wrapper').animate({
+  jQuery('#scroll-wrapper').animate({
     scrollTop: scrollPosition
   }, 500);
 
-  // $(thing).get(0).scrollIntoView({ behavior: 'smooth' });
+  // jQuery(thing).get(0).scrollIntoView({ behavior: 'smooth' });
 }
 
-$('#about-toolbar').on('click', function() {
+jQuery('#about-toolbar').on('click', function() {
   scrollToThing('#about');
 });
 
-$('#sculpture-toolbar').on('click', function() {
+jQuery('#sculpture-toolbar').on('click', function() {
   scrollToThing('#sculpture');
 });
 
-$('#commissions-toolbar').on('click', function() {
+jQuery('#commissions-toolbar').on('click', function() {
   scrollToThing('#commissions');
 });
 
-$('#events-toolbar').on('click', function() {
+jQuery('#events-toolbar').on('click', function() {
   scrollToThing('#events');
 });
 
-$('#contact-toolbar').on('click', function() {
+jQuery('#contact-toolbar').on('click', function() {
   scrollToThing('#contact');
 });
 
 function openModel() {
-  $('#sculpture-modal').addClass("show-modal");
+  jQuery('#sculpture-modal').addClass("show-modal");
 }
 
 function closeModel() {
-  $('#sculpture-modal').removeClass("show-modal");
+  jQuery('#sculpture-modal').removeClass("show-modal");
 }
 
-$('#giraffe-sculpture').on('click', function() {
+jQuery('#giraffe-sculpture').on('click', function() {
   openModel();
 });
 
-$('#sculpture-modal').on('click', function() {
+jQuery('#sculpture-modal').on('click', function() {
   closeModel();
 });
