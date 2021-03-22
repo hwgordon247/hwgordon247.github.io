@@ -1,4 +1,4 @@
-var toolbarOffset = 149;
+var toolbarOffset = 59;
 
 console.log('send it', $(window).height());
 
@@ -58,4 +58,20 @@ $('#events-toolbar').on('click', function() {
 
 $('#contact-toolbar').on('click', function() {
   scrollToThing('#contact');
+});
+
+function openModel() {
+  $('#sculpture-modal').addClass("show-modal");
+}
+
+function closeModel() {
+  $('#sculpture-modal').removeClass("show-modal");
+}
+
+$('#giraffe-sculpture').on('click', function() {
+  openModel();
+});
+
+$('#sculpture-modal').on('click', function() {
+  closeModel();
 });
