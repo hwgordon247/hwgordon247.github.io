@@ -4,7 +4,7 @@ body {
   margin: 0;
   background-color: #3B454E; }
 
-.wrapper {
+#wrapper {
   position: fixed;
   top: 0;
   left: 0;
@@ -44,7 +44,8 @@ body {
     width: 60%; }
 
 .fixed {
-  position: fixed !important;
+  position: sticky !important;
+  z-index: 2;
   top: 0;
   left: 0;
   right: 0; }
