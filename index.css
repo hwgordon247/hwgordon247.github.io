@@ -106,15 +106,37 @@ body {
       width: 30%; }
 
 #sculpture-modal {
-  background-color: black;
+  background: rgba(0, 0, 0, 0.4);
   position: fixed;
-  opacity: 0.8;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 20;
   display: none; }
+  #sculpture-modal .modal-container {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10vh 5%;
+    height: 80vh;
+    align-items: center; }
+    #sculpture-modal .modal-container #wrapper {
+      padding: 0;
+      height: auto;
+      width: auto;
+      margin: 0; }
+      #sculpture-modal .modal-container #wrapper #viewer {
+        height: auto;
+        width: auto; }
+        #sculpture-modal .modal-container #wrapper #viewer img {
+          width: 70vw;
+          max-width: 800px; }
+    #sculpture-modal .modal-container .info {
+      font-size: 18px;
+      margin: 0 auto; }
+      #sculpture-modal .modal-container .info .div {
+        margin: 10px 0; }
   #sculpture-modal.show-modal {
     display: block; }
 

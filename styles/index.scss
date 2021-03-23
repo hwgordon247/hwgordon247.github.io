@@ -149,15 +149,49 @@ body {
 }
 
 #sculpture-modal {
-	background-color: black;
+	background: rgba(0, 0, 0, 0.4);
 	position: fixed;
-	opacity: 0.8;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 	z-index: 20;
 	display: none;
+
+	.modal-container {
+		background-color: white;
+		display: flex;
+		justify-content: flex-start;
+		margin: 10vh 5%;
+		height: 80vh;
+		align-items: center;
+
+		#wrapper {
+			padding: 0;
+			height: auto;
+			width: auto;
+			margin: 0;
+
+			#viewer {
+				height: auto;
+				width: auto;
+
+				img {
+					width: 70vw;
+					max-width: 800px;
+				}
+			}
+		}
+
+		.info {
+			font-size: 18px;
+			margin: 0 auto;
+
+			.div {
+				margin: 10px 0;
+			}
+		}
+	}
 
 	&.show-modal {
 		display: block;
