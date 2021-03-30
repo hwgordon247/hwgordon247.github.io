@@ -40,23 +40,23 @@ function scrollToThing(thing) {
   // jQuery(thing).get(0).scrollIntoView({ behavior: 'smooth' });
 }
 
-jQuery('#about-toolbar').on('click', function() {
+jQuery('.about-button').on('click', function() {
   scrollToThing('#about');
 });
 
-jQuery('#sculpture-toolbar').on('click', function() {
+jQuery('.sculpture-button').on('click', function() {
   scrollToThing('#sculpture');
 });
 
-jQuery('#commissions-toolbar').on('click', function() {
+jQuery('.commissions-button').on('click', function() {
   scrollToThing('#commissions');
 });
 
-jQuery('#events-toolbar').on('click', function() {
+jQuery('.events-button').on('click', function() {
   scrollToThing('#events');
 });
 
-jQuery('#contact-toolbar').on('click', function() {
+jQuery('.contact-button').on('click', function() {
   scrollToThing('#contact');
 });
 
