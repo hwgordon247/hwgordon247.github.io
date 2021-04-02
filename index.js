@@ -15,18 +15,26 @@ function isScrolledIntoView(elem) {
     return (elemTop - jQuery(elem).height() <= docViewBottom);
 }
 
+function fixToolbar() {
+  jQuery('#tool-bar').addClass("fixed");
+  jQuery('#about').addClass("about-margin");
+}
+
+function detachToolbar() {
+  jQuery('#tool-bar').removeClass("fixed");
+  jQuery('#about').removeClass("about-margin");
+}
+
 jQuery('#scroll-wrapper').on("mousewheel", function() {
   var scrollPos = jQuery('#scroll-wrapper').scrollTop();
   var vh = jQuery('#scroll-wrapper').height();
 
   if (scrollPos > vh) {
-    jQuery('#tool-bar').addClass("fixed");
-    jQuery('#about').addClass("about-margin");
+    fixToolbar();
   }
 
   if (scrollPos <= vh) {
-    jQuery('#tool-bar').removeClass("fixed");
-    jQuery('#about').removeClass("about-margin");
+    detachToolbar();
   }
 });
 
@@ -37,8 +45,20 @@ function scrollToThing(thing) {
     scrollTop: scrollPosition
   }, 500);
 
+
+  if (thing == '#landing') {
+    detachToolbar();
+  } else {
+    fixToolbar();
+  }
+
   // jQuery(thing).get(0).scrollIntoView({ behavior: 'smooth' });
 }
+
+jQuery('.home-button').on('click', function() {
+  scrollToThing('#landing');
+});
+
 
 jQuery('.about-button').on('click', function() {
   scrollToThing('#about');
