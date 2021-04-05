@@ -1,13 +1,27 @@
 // JavaScript Document
-threeSixty={init:function(){this._vr=new AC.VR("viewer","images/image_##.jpg",36,{invert:true})
-},didShow:function(){this.init()},willHide:function(){recycleObjectValueForKey(this,"_vr")
-},shouldCache:function(){return false}};if(!window.isLoaded){window.addEventListener("load",function(){threeSixty.init()
-},false)};
+threeSixty={
+	init:function(filePath) {
+		console.log('loading ' + filePath);
+		this._vr = new AC.VR("viewer","img/" + filePath + "/image_##.jpg",36,{invert:true})
+	},
+	didShow:function() {
+		console.log('did show');
+		this.init()
+	},
+	willHide:function() {
+		recycleObjectValueForKey(this,"_vr")
+	},
+	shouldCache:function() {
+		return false
+	}
+};
 
-/**
- * AC.VR class
- * @author Brandon Kelly
- */
+// if (!window.isLoaded) {
+// 	window.addEventListener("load", function() {
+// 		console.log('load spin');
+// 		threeSixty.init()
+// 	},false)
+// };
 
 AC.VR = Class.create();
 
@@ -219,7 +233,7 @@ Object.extend(AC.VR.prototype, {
 
 		// load the images
 		this.loader = new AC.VR.LoaderController(this, queue);
-		
+
 		queue = null;
 		skipX = null;
 		planX = null;
@@ -280,24 +294,25 @@ Object.extend(AC.VR.prototype, {
 
 				// manually set height for IE
 				if (dir == 'Left' || dir == 'Right') {
-					spinner.style.height = this.container.getHeight()+'px';
+					// not setting spinner height
+					// spinner.style.height = this.container.getHeight()+'px';
 				}
-				
+
 				dir = null;
 				spinner = null;
 			}
-			
+
 			directions = null;
 		}
 	},
-	
+
 	unmakeInteractive: function(){
-		
+
 		if (this.mobile) {
 			this.vr.down().stopObserving('touchmove', this.bindGrabChange);
 			this.vr.down().stopObserving('touchend', this.bindGrabEnd);
 		}
-		
+
 		if (this.options.grabbable) {
 			// grab events
 			this.vr.stopObserving(this.getStr('mousedown'), this.bindGrabStart);
@@ -312,15 +327,15 @@ Object.extend(AC.VR.prototype, {
 		// if (this.options.spinnable) {
 		// 	//this.bindSpinChange = this.onSpinChange.bind(this);
 		// 	//this.bindSpinEnd = this.onSpinEnd.bind(this);
-		// 
+		//
 		// 	for (var i=0; i<directions.length; i++) {
 		// 		var dir = directions[i], spinner = $(document.createElement('div'));
 		// 		spinner.stopObserving('mousedown', this['onSpin'+dir+'Start'].bind(this));
-		// 
+		//
 		// 	}
 		// }
 	},
-	
+
 	recycle: function() {
 		this.unmakeInteractive();
 		delete this.frames;
@@ -618,7 +633,7 @@ Object.extend(AC.VR.prototype, {
 		pos[this.spinAxis] += this.spinDirection * this.spinPosDiff;
 		this.gotoPos(pos);
 		pos = null;
-		
+
 		if (this.updateSpinIntervalDuration) {
 			this.updateSpinIntervalDuration = false;
 			clearInterval(this.spinInterval);
@@ -768,7 +783,7 @@ AC.VR.Loader = Class.create({
 	onLoad: function(event){
 		this.controller.vr.frames[this.pos[0]][this.pos[1]] = event.target;
 		delete event.target.onload;
-		
+
 		// should we show this now?
 		if (this.controller.vr.atPosition(this.pos)) {
 			this.controller.vr.gotoPos(this.pos, true);
@@ -778,7 +793,7 @@ AC.VR.Loader = Class.create({
 		// (delay by 1ms to prevent IE's Stack Overflow error)
 		this.loadNext.defer(this);
 	}/*,
-	
+
 		load: function(pos) {
 			this.pos = pos;
 
@@ -798,7 +813,7 @@ AC.VR.Loader = Class.create({
 			request.setRequestHeader("Expires", "Fri, 30 Oct 1998 14:19:41 GMT");
 			request.setRequestHeader("Cache-Control", "no-cache, must-revalidate");
 			// request.overrideMimeType("image/"+this.controller.vr.imagePathParts[3].substr(1));
-			request.overrideMimeType('text/plain; charset=x-user-defined'); 
+			request.overrideMimeType('text/plain; charset=x-user-defined');
 			request.send(null);
 			this.controller.vr.frames[this.pos[0]][this.pos[1]] = true;
 			//this.img.src = this.controller.vr.getImageSource(this.pos);
@@ -806,7 +821,7 @@ AC.VR.Loader = Class.create({
 		},
 		makeBinaryContent: function (text) {
 		        var ff = [];
-		        var mx = text.length;  
+		        var mx = text.length;
 		        var scc= String.fromCharCode;
 		        for (var z = 0; z < mx; z++) {
 		            ff[z] = scc(text.charCodeAt(z) & 255);

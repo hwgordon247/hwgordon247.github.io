@@ -88,7 +88,8 @@ function closeModel() {
   jQuery('#sculpture-modal').removeClass("show-modal");
 }
 
-jQuery('#giraffe-sculpture').on('click', function() {
+jQuery('#tapir-sculpture').on('click', function() {
+  threeSixty.init("tapir/tapir-spin");
   openModel();
 });
 
