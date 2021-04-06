@@ -4,6 +4,10 @@ threeSixty={
 		console.log('loading ' + filePath);
 		this._vr = new AC.VR("viewer","img/" + filePath + "/image_##.jpg",36,{invert:true})
 	},
+	clear:function() {
+		this._vr.recycle();
+		this._vr = null;
+	},
 	didShow:function() {
 		console.log('did show');
 		this.init()
@@ -337,6 +341,7 @@ Object.extend(AC.VR.prototype, {
 	},
 
 	recycle: function() {
+		console.log('recycling');
 		this.unmakeInteractive();
 		delete this.frames;
 		delete this.introSequence;

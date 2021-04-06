@@ -95,4 +95,6 @@ jQuery('#tapir-sculpture').on('click', function() {
 
 jQuery('#sculpture-modal').on('click', function() {
   closeModel();
+  threeSixty.clear();
+  jQuery("#viewer").empty();
 });
