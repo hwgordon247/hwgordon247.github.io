@@ -1,9 +1,26 @@
+const tapirModalInfo = {
+  name: "Malayan Tapir",
+  description: "Bronze, signed and numbered limited edition of 12",
+  dimensions: "23cm high x 42 x 20",
+  date: "June 2020",
+  price: "£5,000"
+}
+
+const giraffeModalInfo = {
+  name: "Giraffe Bust",
+  description: "Bronze, signed and numbered limited edition of 12",
+  dimensions: "78cm high x 35 x 35",
+  date: "November 2019",
+  price: "£9,500"
+}
+
+
 var toolbarOffset = 59;
 
 console.log('send it', jQuery(window).height());
 
 jQuery(document).ready(function(){
-    jQuery(this).scrollTop(0);
+  jQuery(this).scrollTop(0);
 });
 
 function isScrolledIntoView(elem) {
@@ -55,6 +72,14 @@ function scrollToThing(thing) {
   // jQuery(thing).get(0).scrollIntoView({ behavior: 'smooth' });
 }
 
+function populateModal(modalInfo) {
+  jQuery('#modal-name').text(modalInfo.name);
+  jQuery('#modal-description').text(modalInfo.description);
+  jQuery('#modal-dimensions').text(modalInfo.dimensions);
+  jQuery('#modal-date').text(modalInfo.date);
+  jQuery('#modal-price').text(modalInfo.price);
+}
+
 jQuery('.home-button').on('click', function() {
   scrollToThing('#landing');
 });
@@ -89,21 +114,25 @@ function closeModel() {
 }
 
 jQuery('#tapir-sculpture').on('click', function() {
+  populateModal(tapirModalInfo);
   threeSixty.init("tapir/tapir-spin");
   openModel();
 });
 
 jQuery('#giraffe-sculpture').on('click', function() {
+  populateModal(giraffeModalInfo);
   threeSixty.init("giraffe/giraffe-spin");
   openModel();
 });
 
 jQuery('#barn-swallow-sculpture').on('click', function() {
+  populateModal(tapirModalInfo);
   threeSixty.init("barn-swallow/barn-swallow-spin");
   openModel();
 });
 
 jQuery('#guinea-fowl-sculpture').on('click', function() {
+  populateModal(tapirModalInfo);
   threeSixty.init("guinea-fowl/guinea-fowl-spin");
   openModel();
 });
