@@ -137,6 +137,36 @@ jQuery('#guinea-fowl-sculpture').on('click', function() {
   openModel();
 });
 
+jQuery('#fox-pair-sculpture').on('click', function() {
+  populateModal(tapirModalInfo);
+  threeSixty.init("fox-pair/fox-pair-spin");
+  openModel();
+});
+
+jQuery('#kudu-herd-sculpture').on('click', function() {
+  populateModal(tapirModalInfo);
+  threeSixty.init("kudu-herd/kudu-herd-spin");
+  openModel();
+});
+
+jQuery('#sea-lion-sculpture').on('click', function() {
+  populateModal(tapirModalInfo);
+  threeSixty.init("sea-lion/sea-lion-spin");
+  openModel();
+});
+
+jQuery('#toad-sculpture').on('click', function() {
+  populateModal(tapirModalInfo);
+  threeSixty.init("toad/toad-spin");
+  openModel();
+});
+
+jQuery('#walking-horse-sculpture').on('click', function() {
+  populateModal(tapirModalInfo);
+  threeSixty.init("walking-horse/walking-horse-spin");
+  openModel();
+});
+
 jQuery('#sculpture-modal').on('click', function() {
   closeModel();
   threeSixty.clear();
