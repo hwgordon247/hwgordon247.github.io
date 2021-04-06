@@ -103,6 +103,11 @@ jQuery('#barn-swallow-sculpture').on('click', function() {
   openModel();
 });
 
+jQuery('#guinea-fowl-sculpture').on('click', function() {
+  threeSixty.init("guinea-fowl/guinea-fowl-spin");
+  openModel();
+});
+
 jQuery('#sculpture-modal').on('click', function() {
   closeModel();
   threeSixty.clear();
