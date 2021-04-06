@@ -55,7 +55,6 @@ body {
     z-index: 2;
     height: 250px;
     background-size: 300px 100px;
-    object-fit: cover;
     margin-right: 50px; }
   #landing .landing-info .title {
     font-size: 45px;
@@ -133,7 +132,8 @@ body {
     #sculpture .image-container .thumbnail {
       cursor: pointer;
       margin: 20px 0;
-      width: 30%; }
+      width: 30%;
+      object-fit: cover; }
 
 #sculpture-modal {
   background: rgba(0, 0, 0, 0.4);

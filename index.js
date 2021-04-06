@@ -93,6 +93,16 @@ jQuery('#tapir-sculpture').on('click', function() {
   openModel();
 });
 
+jQuery('#giraffe-sculpture').on('click', function() {
+  threeSixty.init("giraffe/giraffe-spin");
+  openModel();
+});
+
+jQuery('#barn-swallow-sculpture').on('click', function() {
+  threeSixty.init("barn-swallow/barn-swallow-spin");
+  openModel();
+});
+
 jQuery('#sculpture-modal').on('click', function() {
   closeModel();
   threeSixty.clear();
