@@ -134,6 +134,8 @@ body {
       margin: 20px 0;
       width: 30%;
       object-fit: cover; }
+  #sculpture .arrow {
+    text-align: center; }
 
 #sculpture-modal {
   background: rgba(0, 0, 0, 0.4);

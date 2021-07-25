@@ -178,6 +178,8 @@ body {
 		justify-content: space-between;
 		flex-wrap: wrap;
 		padding: 50px 0;
+		// max-height: 200px;
+		// overflow: hidden;
 
 		.thumbnail {
 			cursor: pointer;
@@ -185,6 +187,18 @@ body {
 			width: 30%;
 			object-fit: cover;
 		}
+
+		.expanded {
+			// max-height: 0;
+		}
+	}
+
+	#expander {
+		// display: none;
+	}
+
+	.arrow {
+		text-align: center;
 	}
 }
 

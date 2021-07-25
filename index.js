@@ -21,6 +21,7 @@ console.log('send it', jQuery(window).height());
 
 jQuery(document).ready(function(){
   jQuery(this).scrollTop(0);
+  jQuery('#expander').toggle('collapsed');
 });
 
 function isScrolledIntoView(elem) {
@@ -172,3 +173,12 @@ jQuery('#sculpture-modal').on('click', function() {
   threeSixty.clear();
   jQuery("#viewer").empty();
 });
+
+jQuery('#sculpture-expand').on('click', function() {
+  jQuery('#expander').toggle('collapsed');
+});
+
+//
+// jQuery('#sculpture-expand').on('click', function() {
+//   jQuery('.image-container').css('max-height', 'none');
+// });
