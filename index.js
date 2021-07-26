@@ -112,6 +112,7 @@ function openModel() {
 function closeModel() {
   console.log('close')
   jQuery('#sculpture-modal').removeClass("show-modal");
+  goToRotate();
 }
 
 jQuery('#tapir-sculpture').on('click', function() {
@@ -183,8 +184,21 @@ jQuery('#sculpture-expand').on('click', function() {
 
 jQuery('#full-size-zoom').on('click', function() {
   jQuery("#wrapper").hide();
+  jQuery("#full-size-zoom").hide();
+  jQuery('#rotate-button').show();
   jQuery("#full-size-image").show();
 });
+
+jQuery('#rotate-button').on('click', function() {
+  goToRotate();
+});
+
+function goToRotate() {
+  jQuery("#wrapper").show();
+  jQuery("#full-size-zoom").show();
+  jQuery('#rotate-button').hide();
+  jQuery("#full-size-image").hide();
+}
 
 jQuery('#full-size-image').mouseenter(function() {
   console.log('leave');

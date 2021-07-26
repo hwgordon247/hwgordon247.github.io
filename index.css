@@ -199,6 +199,9 @@ body {
   width: 500px;
   height: 400px; }
 
+#rotate-button {
+  display: none; }
+
 #image-leave {
   background-color: red;
   position: absolute;
