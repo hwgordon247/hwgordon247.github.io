@@ -136,6 +136,34 @@ body {
 		font-weight: 500;
 		font-size: 20px;
 	}
+
+	#hamburger {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.tool-bar {
+		.buttons {
+			display: none;
+		}
+
+		#hamburger {
+			display: flex;
+		}
+	}
+}
+
+#side-bar {
+	display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	background-color: #3B454E;
+	z-index: 5;
+	transition: transform 0.2s ease;
 }
 
 #about {

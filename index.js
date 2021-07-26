@@ -181,6 +181,13 @@ jQuery('#sculpture-expand').on('click', function() {
   jQuery('#expander').slideToggle(500);
 });
 
+jQuery('#hamburger').on('click', function() {
+  jQuery('#side-bar').animate({width: 'toggle'});
+});
+
+jQuery('#side-bar-close').on('click', function() {
+  jQuery('#side-bar').animate({width: 'toggle'});
+});
 
 jQuery('#full-size-zoom').on('click', function() {
   jQuery("#wrapper").hide();
