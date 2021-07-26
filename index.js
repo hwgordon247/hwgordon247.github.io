@@ -175,7 +175,7 @@ jQuery('#sculpture-modal').on('click', function() {
 });
 
 jQuery('#sculpture-expand').on('click', function() {
-  jQuery('#expander').toggle('collapsed');
+  jQuery('#expander').slideToggle(500);
 });
 
 //

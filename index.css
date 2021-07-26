@@ -127,15 +127,19 @@ body {
   #sculpture .image-container {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 50px 0; }
+    flex-wrap: wrap; }
     #sculpture .image-container .thumbnail {
       cursor: pointer;
       margin: 20px 0;
       width: 30%;
       object-fit: cover; }
+  #sculpture .fixed-block {
+    padding: 50px 0 0 0; }
   #sculpture .arrow {
-    text-align: center; }
+    text-align: center;
+    opacity: 60%; }
+    #sculpture .arrow img {
+      cursor: pointer; }
 
 #sculpture-modal {
   background: rgba(0, 0, 0, 0.4);
