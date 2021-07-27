@@ -1,3 +1,8 @@
+// populateModal(tapirModalInfo);
+// threeSixty.init("tapir/tapir-spin");
+// openModel();
+// flipToFullSize();
+
 const tapirModalInfo = {
   name: "Malayan Tapir",
   description: "Bronze, signed and numbered limited edition of 12",
@@ -89,7 +94,6 @@ jQuery('.home-button').on('click', function() {
   scrollToThing('#landing');
 });
 
-
 jQuery('.about-button').on('click', function() {
   scrollToThing('#about');
 });
@@ -114,7 +118,6 @@ jQuery('.home-side-button').on('click', function() {
   scrollToThing('#landing');
   closeSideBar();
 });
-
 
 jQuery('.about-side-button').on('click', function() {
   scrollToThing('#about');
@@ -150,11 +153,6 @@ function closeModel() {
   jQuery('#sculpture-modal').removeClass("show-modal");
   goToRotate();
 }
-
-// populateModal(tapirModalInfo);
-// threeSixty.init("tapir/tapir-spin");
-// openModel();
-// flipToFullSize();
 
 jQuery('#tapir-sculpture').on('click', function() {
   populateModal(tapirModalInfo);
@@ -280,7 +278,11 @@ function magnify(imgID, zoom) {
   /* Set background properties for the magnifier glass: */
   glass.style.backgroundImage = "url('" + img.src + "')";
   glass.style.backgroundRepeat = "no-repeat";
-  glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+
+  // vary this for magnify coverage
+  scaleWidth = 1;
+
+  glass.style.backgroundSize = (img.width * zoom * scaleWidth) + "px " + (img.height * zoom) + "px";
   bw = 3;
   w = glass.offsetWidth / 2;
   h = glass.offsetHeight / 2;
