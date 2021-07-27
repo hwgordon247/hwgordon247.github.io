@@ -263,8 +263,8 @@ body {
 		color: black;
 		display: flex;
 		justify-content: flex-start;
-		margin: 10vh 5%;
-		height: 80vh;
+		margin: 5vh 3vw;
+		height: 90vh;
 		align-items: center;
 
 		#wrapper {
@@ -287,15 +287,21 @@ body {
 		#full-size-image {
 			display: none;
 			position: relative;
+			height: 100%;
+			width: 70vw;
+			overflow: hidden;
 
 			img {
-				width: 70vw;
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
 			}
 		}
 
 		.info {
 			font-size: 18px;
-			margin: 0 auto;
+			margin-left: auto;
+			width: 24vw;
 
 			.div {
 				margin: 10px 0;

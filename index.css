@@ -183,8 +183,8 @@ body {
     color: black;
     display: flex;
     justify-content: flex-start;
-    margin: 10vh 5%;
-    height: 80vh;
+    margin: 5vh 3vw;
+    height: 90vh;
     align-items: center; }
     #sculpture-modal .modal-container #wrapper {
       padding: 0;
@@ -199,12 +199,18 @@ body {
           max-width: 800px; }
     #sculpture-modal .modal-container #full-size-image {
       display: none;
-      position: relative; }
+      position: relative;
+      height: 100%;
+      width: 70vw;
+      overflow: hidden; }
       #sculpture-modal .modal-container #full-size-image img {
-        width: 70vw; }
+        object-fit: cover;
+        width: 100%;
+        height: 100%; }
     #sculpture-modal .modal-container .info {
       font-size: 18px;
-      margin: 0 auto; }
+      margin-left: auto;
+      width: 24vw; }
       #sculpture-modal .modal-container .info .div {
         margin: 10px 0; }
   #sculpture-modal.show-modal {

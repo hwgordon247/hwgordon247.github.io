@@ -3,7 +3,8 @@ const tapirModalInfo = {
   description: "Bronze, signed and numbered limited edition of 12",
   dimensions: "23cm high x 42 x 20",
   date: "June 2020",
-  price: "£5,000"
+  price: "£5,000",
+  images: ["img/rhino-compress.jpg"]
 }
 
 const giraffeModalInfo = {
@@ -11,7 +12,8 @@ const giraffeModalInfo = {
   description: "Bronze, signed and numbered limited edition of 12",
   dimensions: "78cm high x 35 x 35",
   date: "November 2019",
-  price: "£9,500"
+  price: "£9,500",
+  images: ["img/giraffe/giraffe-compress.jpg"]
 }
 
 var toolbarOffset = 59;
@@ -78,6 +80,7 @@ function populateModal(modalInfo) {
   jQuery('#modal-dimensions').text(modalInfo.dimensions);
   jQuery('#modal-date').text(modalInfo.date);
   jQuery('#modal-price').text(modalInfo.price);
+  jQuery('#magnify-image').attr("src", modalInfo.images[0]);
 }
 
 jQuery('.home-button').on('click', function() {
@@ -105,6 +108,37 @@ jQuery('.contact-button').on('click', function() {
   scrollToThing('#contact');
 });
 
+jQuery('.home-side-button').on('click', function() {
+  scrollToThing('#landing');
+  closeSideBar();
+});
+
+
+jQuery('.about-side-button').on('click', function() {
+  scrollToThing('#about');
+  closeSideBar();
+});
+
+jQuery('.sculpture-side-button').on('click', function() {
+  scrollToThing('#sculpture');
+  closeSideBar();
+});
+
+jQuery('.commissions-side-button').on('click', function() {
+  scrollToThing('#commissions');
+  closeSideBar();
+});
+
+jQuery('.events-side-button').on('click', function() {
+  scrollToThing('#events');
+  closeSideBar();
+});
+
+jQuery('.contact-side-button').on('click', function() {
+  scrollToThing('#contact');
+  closeSideBar();
+});
+
 function openModel() {
   jQuery('#sculpture-modal').addClass("show-modal");
 }
@@ -114,6 +148,11 @@ function closeModel() {
   jQuery('#sculpture-modal').removeClass("show-modal");
   goToRotate();
 }
+
+// populateModal(tapirModalInfo);
+// threeSixty.init("tapir/tapir-spin");
+// openModel();
+// flipToFullSize();
 
 jQuery('#tapir-sculpture').on('click', function() {
   populateModal(tapirModalInfo);
@@ -186,15 +225,23 @@ jQuery('#hamburger').on('click', function() {
 });
 
 jQuery('#side-bar-close').on('click', function() {
-  jQuery('#side-bar').animate({width: 'toggle'});
+  closeSideBar();
 });
 
+function closeSideBar() {
+  jQuery('#side-bar').animate({width: 'toggle'});
+}
+
 jQuery('#full-size-zoom').on('click', function() {
+  flipToFullSize();
+});
+
+function flipToFullSize() {
   jQuery("#wrapper").hide();
   jQuery("#full-size-zoom").hide();
   jQuery('#rotate-button').show();
   jQuery("#full-size-image").show();
-});
+}
 
 jQuery('#rotate-button').on('click', function() {
   goToRotate();
