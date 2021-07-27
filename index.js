@@ -16,6 +16,8 @@ const giraffeModalInfo = {
   images: ["img/giraffe/giraffe-compress.jpg"]
 }
 
+preloadImage("img/lodge-compress.jpg");
+
 var toolbarOffset = 59;
 
 console.log('send it', jQuery(window).height());
@@ -324,4 +326,10 @@ function magnify(imgID, zoom) {
     y = y - window.pageYOffset;
     return {x : x, y : y};
   }
+}
+
+function preloadImage(url) {
+  console.log('preload');
+  var img=new Image();
+  img.src=url;
 }
