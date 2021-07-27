@@ -195,13 +195,13 @@ body {
         height: auto;
         width: auto; }
         #sculpture-modal .modal-container #wrapper #viewer img {
-          width: 70vw;
+          width: 60vw;
           max-width: 800px; }
     #sculpture-modal .modal-container #full-size-image {
       display: none;
       position: relative;
       height: 100%;
-      width: 70vw;
+      width: 60vw;
       overflow: hidden; }
       #sculpture-modal .modal-container #full-size-image img {
         object-fit: cover;
@@ -210,9 +210,27 @@ body {
     #sculpture-modal .modal-container .info {
       font-size: 18px;
       margin-left: auto;
-      width: 24vw; }
-      #sculpture-modal .modal-container .info .div {
-        margin: 10px 0; }
+      width: 34vw; }
+      #sculpture-modal .modal-container .info .title {
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 500;
+        font-size: 32px;
+        margin: 0 10%;
+        margin-bottom: 50px; }
+      #sculpture-modal .modal-container .info .modal-text {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        margin: 0 10%;
+        margin-bottom: 20px;
+        font-size: 14px; }
+      #sculpture-modal .modal-container .info #enquire-button {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        border: 1px solid #404040;
+        display: inline-block;
+        padding: 10px 40px;
+        margin: 40px 10%; }
   #sculpture-modal.show-modal {
     display: block; }
 

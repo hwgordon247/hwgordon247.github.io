@@ -1,4 +1,6 @@
 $font-color: white;
+$border-color: #404040;
+
 $font-title: 'Cormorant Garamond', serif;
 $font-body: 'Montserrat', sans-serif;
 
@@ -278,7 +280,7 @@ body {
 				width: auto;
 
 				img {
-					width: 70vw;
+					width: 60vw;
 					max-width: 800px;
 				}
 			}
@@ -288,7 +290,7 @@ body {
 			display: none;
 			position: relative;
 			height: 100%;
-			width: 70vw;
+			width: 60vw;
 			overflow: hidden;
 
 			img {
@@ -301,10 +303,32 @@ body {
 		.info {
 			font-size: 18px;
 			margin-left: auto;
-			width: 24vw;
+			width: 34vw;
 
-			.div {
-				margin: 10px 0;
+			.title {
+				font-family: $font-title;
+				font-weight: 500;
+				font-size: 32px;
+				margin: 0 10%;
+				margin-bottom: 50px;
+			}
+
+			.modal-text {
+				font-family: $font-body;
+				font-weight: 200;
+				margin: 0 10%;
+				margin-bottom: 20px;
+				font-size: 14px;
+			}
+
+			#enquire-button {
+				font-family: $font-body;
+				font-weight: 200;
+				font-size: 14px;
+				border: 1px solid $border-color;
+				display: inline-block;
+				padding: 10px 40px;
+				margin: 40px 10%;
 			}
 		}
 	}
