@@ -60,6 +60,23 @@ h4 {
 	margin: 0;
 }
 
+h5 {
+	font-family: $font-title;
+	font-weight: 500;
+	font-size: 25px;
+	text-align: center;
+	margin: 0;
+}
+
+a {
+  color: $font-color;
+  text-decoration: none; /* no underline */
+}
+
+p {
+	margin: 0;
+}
+
 #scroll-wrapper {
 	position: fixed;
 	top: 0;

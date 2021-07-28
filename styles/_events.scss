@@ -3,5 +3,42 @@
 	position: relative;
 	z-index: 1;
 	color: $font-color;
-	padding: 50px 10%;
+
+  .event-content {
+    display: flex;
+    justify-content: space-between;
+
+    div {
+      text-align: center;
+    }
+
+    .left {
+      width: 45%;
+
+      .left-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+
+      .info {
+        margin-top: 15px;
+      }
+    }
+
+    .right {
+      width: 45%;
+
+      .right-container {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+      }
+
+      .address {
+        margin-top: 10px;
+        font-size: 14px;
+      }
+    }
+  }
 }
