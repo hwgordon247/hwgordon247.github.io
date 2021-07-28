@@ -209,6 +209,8 @@ h3 {
     #sculpture .image-container .thumbnail:hover img {
       transform: scale(1.05);
       filter: brightness(100%); }
+  #sculpture #sculpture-expand {
+    padding-top: 40px; }
   #sculpture .arrow {
     text-align: center;
     opacity: 60%; }
