@@ -31,6 +31,44 @@ body {
     position: absolute;
     z-index: -10; }
 
+.fixed {
+  position: sticky !important;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0; }
+
+#rotate-button {
+  display: none; }
+
+#commissions {
+  background-color: #3B454E;
+  height: 100vh;
+  color: white;
+  padding: 50px 10%;
+  position: relative;
+  z-index: 1; }
+  #commissions div {
+    margin: 20px 0; }
+  #commissions .thumbnail {
+    width: 30%; }
+
+#events {
+  background-color: #3B454E;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 50px 10%; }
+
+#contact {
+  background-color: #3B454E;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 50px 10%; }
+
 #landing .landing-parallax {
   height: 100vh;
   width: 100vw;
@@ -70,13 +108,6 @@ body {
     font-size: 20px; }
     #landing .landing-info .landing-buttons .button {
       margin: 0 10px; }
-
-.fixed {
-  position: sticky !important;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  right: 0; }
 
 .tool-bar {
   color: white;
@@ -241,45 +272,5 @@ body {
   width: 500px;
   height: 400px;
   object-fit: cover; }
-
-#rotate-button {
-  display: none; }
-
-#image-leave {
-  background-color: red;
-  position: absolute;
-  z-index: 10;
-  top: 20px;
-  bottom: 20px;
-  left: 20px;
-  right: 20px; }
-
-#commissions {
-  background-color: #3B454E;
-  height: 100vh;
-  color: white;
-  padding: 50px 10%;
-  position: relative;
-  z-index: 1; }
-  #commissions div {
-    margin: 20px 0; }
-  #commissions .thumbnail {
-    width: 30%; }
-
-#events {
-  background-color: #3B454E;
-  height: 100vh;
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 50px 10%; }
-
-#contact {
-  background-color: #3B454E;
-  height: 100vh;
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 50px 10%; }
 
 /*# sourceMappingURL=index.css.map */

@@ -20,6 +20,10 @@ body {
 	cursor: pointer;
 }
 
+h3 {
+
+}
+
 #scroll-wrapper {
 	position: fixed;
 	top: 0;
@@ -45,63 +49,6 @@ body {
 	}
 }
 
-#landing {
-	.landing-parallax {
-		height: 100vh;
-		width: 100vw;
-		// transform: translateZ(-15px) scale(1.15);
-		transform: translateZ(-25px) scale(1.25);
-		position: absolute;
-		z-index: -1;
-
-		.background-image {
-			height: 100%;
-			width: 100%;
-			object-fit: cover;
-			z-index: -10;
-		}
-	}
-
-	.landing-info {
-		height: 100vh;
-		width: 100vw;
-		position: relative;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		flex-direction: column;
-		z-index: 5;
-
-		.signature {
-			z-index: 2;
-			height: 250px;
-			background-size: 300px 100px;
-
-			margin-right: 50px;
-		}
-
-		.title {
-			font-size: 45px;
-			font-family: $font-title;
-			font-weight: 500;
-			margin-top: 50px;
-		}
-
-		.landing-buttons {
-			display: flex;
-			justify-content: space-between;
-			font-weight: 400;
-			margin-top: 50px;
-			margin-bottom: 30px;
-			font-size: 20px;
-
-			.button {
-				margin: 0 10px;
-			}
-		}
-	}
-}
-
 .fixed {
   position: sticky !important;
 	z-index: 2;
@@ -114,255 +61,8 @@ body {
   // padding-top: 200px !important;
 }
 
-.tool-bar {
-  color: white;
-  position: relative;
-  background-color: #3B454E;
-  height: 20px;
-  display: flex;
-  padding: 20px 5%;
-  z-index: 2;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-
-	.logo {
-		width: 20%;
-	}
-
-	.buttons {
-		width: 60%;
-		display: flex;
-		justify-content: space-between;
-		font-family: $font-title;
-		font-weight: 500;
-		font-size: 20px;
-	}
-
-	#hamburger {
-		display: none;
-	}
-}
-
-@media only screen and (max-width: 800px) {
-	.tool-bar {
-		.buttons {
-			display: none;
-		}
-
-		#hamburger {
-			display: flex;
-		}
-	}
-}
-
-#side-bar {
-	display: none;
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	width: 50%;
-	background-color: #3B454E;
-	z-index: 5;
-	transition: transform 0.2s ease;
-}
-
-#about {
-  background-color: #3B454E;
-  height: 100vh;
-	color: $font-color;
-	display: flex;
-	justify-content: space-between;
-	padding: 50px 10%;
-	position: relative;
-	z-index: 1;
-	// transform: translateZ(1px) perspective(1px);
-
-	.left {
-		width: 45%;
-	}
-
-	.right {
-		width: 45%;
-
-		div {
-			padding: 20px 0;
-		}
-	}
-
-	.fred {
-		width: 100%;
-	}
-}
-
-#sculpture {
-	background-color: #3B454E;
-	min-height: 100vh;
-	position: relative;
-	z-index: 1;
-	color: $font-color;
-	padding: 50px 10%;
-
-	.image-container {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-
-		.thumbnail {
-			cursor: pointer;
-			margin: 20px 0;
-			width: 30%;
-			overflow: hidden;
-
-			img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-				transition: transform 0.2s, filter 0.15s ease-in-out;
-  			transform-origin: center center;
-				filter: brightness(90%);
-				// backface-visibility: hidden;
-			}
-		}
-
-		.thumbnail:hover img {
-			transform: scale(1.05);
-			filter: brightness(100%);
-		}
-	}
-
-	.fixed-block {
-		padding: 50px 0 0 0;
-	}
-
-	#expander {
-		// display: none;
-	}
-
-	.arrow {
-		text-align: center;
-		opacity: 60%;
-
-		img {
-			cursor: pointer;
-		}
-	}
-}
-
-#sculpture-modal {
-	background: rgba(0, 0, 0, 0.4);
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 20;
-	display: none;
-
-	.modal-container {
-		background-color: white;
-		color: black;
-		display: flex;
-		justify-content: flex-start;
-		margin: 5vh 3vw;
-		height: 90vh;
-		align-items: center;
-
-		#wrapper {
-			padding: 0;
-			height: auto;
-			width: auto;
-			margin: 0;
-
-			#viewer {
-				height: auto;
-				width: auto;
-
-				img {
-					width: 60vw;
-					max-width: 800px;
-				}
-			}
-		}
-
-		#full-size-image {
-			display: none;
-			position: relative;
-			height: 100%;
-			width: 60vw;
-			overflow: hidden;
-
-			img {
-				object-fit: cover;
-				width: 100%;
-				height: 100%;
-			}
-		}
-
-		.info {
-			font-size: 18px;
-			margin-left: auto;
-			width: 34vw;
-
-			.title {
-				font-family: $font-title;
-				font-weight: 500;
-				font-size: 32px;
-				margin: 0 10%;
-				margin-bottom: 50px;
-			}
-
-			.modal-text {
-				font-family: $font-body;
-				font-weight: 200;
-				margin: 0 10%;
-				margin-bottom: 20px;
-				font-size: 14px;
-			}
-
-			#enquire-button {
-				font-family: $font-body;
-				font-weight: 200;
-				font-size: 14px;
-				border: 1px solid $border-color;
-				display: inline-block;
-				padding: 10px 40px;
-				margin: 40px 10%;
-			}
-		}
-	}
-
-	&.show-modal {
-		display: block;
-	}
-}
-
-.img-magnifier-glass {
-  position: absolute;
-  // border: 1px solid #000;
-  // border-radius: 50%;
-  cursor: none;
-  /*Set the size of the magnifier glass:*/
-  width: 500px;
-  height: 400px;
-	object-fit: cover;
-	// width: 100%;
-	// height: 100%;
-}
-
 #rotate-button {
 	display: none;
-}
-
-#image-leave {
-	background-color: red;
-	position: absolute;
-	z-index: 10;
-	top: 20px;
-	bottom: 20px;
-	left: 20px;
-	right: 20px;
 }
 
 #commissions {
@@ -399,3 +99,10 @@ body {
 	color: $font-color;
 	padding: 50px 10%;
 }
+
+@import 'landing';
+@import 'toolbar';
+@import 'sidebar';
+@import 'about';
+@import 'sculpture';
+@import 'sculpture-modal';

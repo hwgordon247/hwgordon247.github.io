@@ -1,0 +1,41 @@
+.tool-bar {
+  color: white;
+  position: relative;
+  background-color: #3B454E;
+  height: 20px;
+  display: flex;
+  padding: 20px 5%;
+  z-index: 2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	.logo {
+		width: 20%;
+	}
+
+	.buttons {
+		width: 60%;
+		display: flex;
+		justify-content: space-between;
+		font-family: $font-title;
+		font-weight: 500;
+		font-size: 20px;
+	}
+
+	#hamburger {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.tool-bar {
+		.buttons {
+			display: none;
+		}
+
+		#hamburger {
+			display: flex;
+		}
+	}
+}

@@ -1,0 +1,100 @@
+#sculpture-modal {
+	background: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+	display: none;
+
+	.modal-container {
+		background-color: white;
+		color: black;
+		display: flex;
+		justify-content: flex-start;
+		margin: 5vh 3vw;
+		height: 90vh;
+		align-items: center;
+
+		#wrapper {
+			padding: 0;
+			height: auto;
+			width: auto;
+			margin: 0;
+
+			#viewer {
+				height: auto;
+				width: auto;
+
+				img {
+					width: 60vw;
+					max-width: 800px;
+				}
+			}
+		}
+
+		#full-size-image {
+			display: none;
+			position: relative;
+			height: 100%;
+			width: 60vw;
+			overflow: hidden;
+
+			img {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		.info {
+			font-size: 18px;
+			margin-left: auto;
+			width: 34vw;
+
+			.title {
+				font-family: $font-title;
+				font-weight: 500;
+				font-size: 32px;
+				margin: 0 10%;
+				margin-bottom: 50px;
+			}
+
+			.modal-text {
+				font-family: $font-body;
+				font-weight: 200;
+				margin: 0 10%;
+				margin-bottom: 20px;
+				font-size: 14px;
+			}
+
+			#enquire-button {
+				font-family: $font-body;
+				font-weight: 200;
+				font-size: 14px;
+				border: 1px solid $border-color;
+				display: inline-block;
+				padding: 10px 40px;
+				margin: 40px 10%;
+			}
+		}
+	}
+
+	&.show-modal {
+		display: block;
+	}
+}
+
+.img-magnifier-glass {
+  position: absolute;
+  // border: 1px solid #000;
+  // border-radius: 50%;
+  cursor: none;
+  /*Set the size of the magnifier glass:*/
+  width: 500px;
+  height: 400px;
+	object-fit: cover;
+	// width: 100%;
+	// height: 100%;
+}
