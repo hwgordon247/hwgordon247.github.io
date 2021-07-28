@@ -285,24 +285,34 @@ function magnify(imgID, zoom) {
   glass.style.backgroundImage = "url('" + img.src + "')";
   glass.style.backgroundRepeat = "no-repeat";
 
-  console.log('width', img.width, parent.width);
-  console.log('height', img.height, parent.height);
-  console.log(parent);
-  console.log(img);
+  // console.log('width', img.width, parent.width);
+  // console.log('height', img.height, parent.height);
+  // console.log(parent);
+  // console.log(img);
+  //
+  // parentWidth = jQuery('#full-size-image').width();
+  // parentHeight = jQuery('#full-size-image').height();
+  //
+  // console.log(parentWidth, parentHeight);
+  //
+  // console.log(jQuery('#magnify-image'))
+  //
+  // console.log(jQuery('#magnify-image')[0].naturalWidth, jQuery('#magnify-image')[0].naturalHeight)
 
-  parentWidth = jQuery('#full-size-image').width();
-  parentHeight = jQuery('#full-size-image').height();
+  ratioHeight = ratioSize.height;
+  // ratioHeight = 739;
+  ratioWidth = ratioSize.width;
 
-  console.log(parentWidth, parentHeight);
+  glass.style.backgroundSize = (ratioWidth * zoom) + "px " + (ratioHeight * zoom) + "px";
+  // glass.style.backgroundSize = "100% 100%";
 
-  console.log(jQuery('#magnify-image'))
+  console.log("glass.style.backgroundSize", glass.style.backgroundSize)
+  // glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
 
-  console.log(jQuery('#magnify-image')[0].naturalWidth, jQuery('#magnify-image')[0].naturalHeight)
-
-  // glass.style.backgroundSize = (ratioSize.width * zoom) + "px " + (ratioSize.height * zoom) + "px";
-  glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+  console.log(glass.offsetWidth, glass.offsetHeight);
 
   bw = 3;
+  // from css
   w = glass.offsetWidth / 2;
   h = glass.offsetHeight / 2;
 
@@ -325,28 +335,28 @@ function magnify(imgID, zoom) {
     x = pos.x;
     y = pos.y;
     /* Prevent the magnifier glass from being positioned outside the image: */
-    if (x > img.width - (w / zoom)) {
-      x = img.width - (w / zoom);
+    if (x > ratioWidth - (w / zoom)) {
+      x = ratioWidth - (w / zoom);
     }
 
     if (x < w / zoom) {
       x = w / zoom;
     }
 
-    if (y > img.height - (h / zoom)) {
-      console.log('heeereree')
-      y = img.height - (h / zoom);
+    if (y > ratioHeight - (h / zoom)) {
+      y = ratioHeight - (h / zoom);
     }
 
     if (y < h / zoom) {
       y = h / zoom;
     }
 
-    /* Set the position of the magnifier glass: */
+    /* Set the position of the magnifier glass:- compared to box */
     glass.style.left = (x - w) + "px";
-    glass.style.top = (y - h) + "px";
+    glass.style.top = (y - h) + 0 + "px";
     /* Display what the magnifier glass "sees": */
-    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw) + "px";
+    glass.style.backgroundPosition = "-" + ((x * zoom) - w + bw) + "px -" + ((y * zoom) - h + bw - 0) + "px";
+    // console.log(glass.style.backgroundPosition)
   }
 
   function getCursorPos(e) {
@@ -354,6 +364,7 @@ function magnify(imgID, zoom) {
     e = e || window.event;
     /* Get the x and y positions of the image: */
     a = img.getBoundingClientRect();
+    // console.log(a);
     /* Calculate the cursor's x and y coordinates, relative to the image: */
     x = e.pageX - a.left;
     y = e.pageY - a.top;
@@ -377,13 +388,16 @@ function getRenderedSize(contains, cWidth, cHeight, width, height, pos){
     }
     this.left = (cWidth - this.width)*(pos/100);
     this.right = this.width + this.left;
+    this.top = (cHeight - this.height)*(pos/100);
+    this.bottom = this.height + this.top;
     return this;
   }.call({});
 }
 
 function getImgSizeInfo(img) {
   var pos = window.getComputedStyle(img).getPropertyValue('object-position').split(' ');
-  return getRenderedSize(true,
+  console.log("pos", pos)
+  return getRenderedSize(false,
                          img.width,
                          img.height,
                          img.naturalWidth,
