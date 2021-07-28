@@ -73,34 +73,6 @@ h4 {
 #rotate-button {
   display: none; }
 
-#commissions {
-  background-color: #3B454E;
-  color: white;
-  position: relative;
-  z-index: 1;
-  text-align: justify;
-  text-justify: inter-word; }
-  #commissions .commission-box {
-    margin: 0 15%; }
-  #commissions .commission-name {
-    text-align: center; }
-
-#events {
-  background-color: #3B454E;
-  height: 100vh;
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 50px 10%; }
-
-#contact {
-  background-color: #3B454E;
-  height: 100vh;
-  position: relative;
-  z-index: 1;
-  color: white;
-  padding: 50px 10%; }
-
 #landing .landing-parallax {
   height: 100vh;
   width: 100vw;
@@ -303,5 +275,33 @@ h4 {
   cursor: none;
   width: 500px;
   height: 400px; }
+
+#commissions {
+  background-color: #3B454E;
+  color: white;
+  position: relative;
+  z-index: 1;
+  text-align: justify;
+  text-justify: inter-word; }
+  #commissions .commission-box {
+    margin: 0 15%; }
+  #commissions .commission-name {
+    text-align: center; }
+
+#events {
+  background-color: #3B454E;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 50px 10%; }
+
+#contact {
+  background-color: #3B454E;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+  color: white;
+  padding: 50px 10%; }
 
 /*# sourceMappingURL=index.css.map */

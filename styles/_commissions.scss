@@ -1,0 +1,16 @@
+#commissions {
+	background-color: #3B454E;
+	color: $font-color;
+	position: relative;
+	z-index: 1;
+	text-align: justify;
+	text-justify: inter-word;
+
+	.commission-box {
+		margin: 0 15%;
+	}
+
+	.commission-name {
+		text-align: center;
+	}
+}
