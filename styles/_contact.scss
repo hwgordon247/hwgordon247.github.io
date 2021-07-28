@@ -4,4 +4,13 @@
 	z-index: 1;
 	color: $font-color;
 	padding: 50px 10%;
+  min-height: calc(100vh - 300px);
+
+  .contact-info {
+    text-align: center;
+
+    div {
+      margin-top: 150px;
+    }
+  }
 }

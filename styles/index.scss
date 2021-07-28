@@ -114,6 +114,12 @@ p {
 	display: none;
 }
 
+.footer {
+	display: flex;
+	justify-content: space-between;
+	font-size: 12px;
+}
+
 @import 'landing';
 @import 'toolbar';
 @import 'sidebar';
