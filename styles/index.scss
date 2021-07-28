@@ -36,6 +36,10 @@ body {
 	margin-top: 40px;
 }
 
+.mbxs {
+	margin-bottom: 20px;
+}
+
 .pm {
 	padding: 80px 10%;
 }
@@ -43,7 +47,15 @@ body {
 h3 {
 	font-family: $font-title;
 	font-weight: 500;
-	font-size: 45px;
+	font-size: 50px;
+	text-align: center;
+	margin: 0;
+}
+
+h4 {
+	font-family: $font-title;
+	font-weight: 500;
+	font-size: 35px;
 	text-align: center;
 	margin: 0;
 }
@@ -88,16 +100,17 @@ h3 {
 #commissions {
 	background-color: #3B454E;
 	color: $font-color;
-	padding: 50px 10%;
 	position: relative;
 	z-index: 1;
+	text-align: justify;
+	text-justify: inter-word;
 
-	div {
-		margin: 20px 0;
+	.commission-box {
+		margin: 0 15%;
 	}
 
-	.thumbnail {
-		width: 30%;
+	.commission-name {
+		text-align: center;
 	}
 }
 

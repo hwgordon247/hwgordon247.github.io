@@ -12,14 +12,17 @@
 
 	.left {
 		width: 45%;
+
+    .fred {
+      max-height: 500px;
+      object-fit: cover;
+    }
 	}
 
 	.right {
 		width: 45%;
-
-		div {
-			// padding: 20px 0;
-		}
+		text-align: justify;
+    text-justify: inter-word;
 	}
 
 	.fred {
