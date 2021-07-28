@@ -27,8 +27,11 @@ body {
   margin-bottom: 20px; }
 
 .pm {
-  padding: 80px 10%; }
+  padding: 80px 5%; }
 
+@media only screen and (min-width: 900px) {
+  .pm {
+    padding: 80px 10%; } }
 h3 {
   font-family: "Cormorant Garamond", serif;
   font-weight: 500;
@@ -147,20 +150,20 @@ p {
   .tool-bar .logo {
     width: 20%; }
   .tool-bar .buttons {
+    display: none;
     width: 60%;
-    display: flex;
     justify-content: space-between;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
     font-size: 16px; }
   .tool-bar #hamburger {
-    display: none; }
+    display: flex; }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: 900px) {
   .tool-bar .buttons {
-    display: none; }
+    display: flex; }
   .tool-bar #hamburger {
-    display: flex; } }
+    display: none; } }
 #side-bar {
   display: none;
   position: fixed;
@@ -179,20 +182,29 @@ p {
   z-index: 1; }
   #about .flex-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center; }
   #about .left {
-    width: 45%; }
+    width: 100%; }
     #about .left .fred {
       max-height: 500px;
       object-fit: cover; }
   #about .right {
-    width: 45%;
+    width: 100%;
     text-align: justify;
-    text-justify: inter-word; }
+    text-justify: inter-word;
+    margin-top: 40px; }
   #about .fred {
     width: 100%; }
 
+@media only screen and (min-width: 900px) {
+  #about .flex-container {
+    flex-direction: row; }
+  #about .left {
+    width: 45%; }
+  #about .right {
+    width: 45%; } }
 #sculpture {
   background-color: #3B454E;
   position: relative;

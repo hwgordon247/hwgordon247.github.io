@@ -6,12 +6,13 @@
 
   .flex-container {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
 
 	.left {
-		width: 45%;
+		width: 100%;
 
     .fred {
       max-height: 500px;
@@ -20,12 +21,29 @@
 	}
 
 	.right {
-		width: 45%;
+		width: 100%;
 		text-align: justify;
     text-justify: inter-word;
+    margin-top: $small-distance;
 	}
 
 	.fred {
 		width: 100%;
 	}
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+  #about {
+    .flex-container {
+      flex-direction: row;
+    }
+
+    .left {
+      width: 45%;
+    }
+
+    .right {
+      width: 45%;
+    }
+  }
 }

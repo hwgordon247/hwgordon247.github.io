@@ -15,8 +15,8 @@
 	}
 
 	.buttons {
+    display: none;
 		width: 60%;
-		display: flex;
 		justify-content: space-between;
 		font-family: $font-body;
 		font-weight: 300;
@@ -24,18 +24,18 @@
 	}
 
 	#hamburger {
-		display: none;
+		display: flex;
 	}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (min-width: $tablet-breakpoint) {
 	.tool-bar {
-		.buttons {
-			display: none;
-		}
+    .buttons {
+      display: flex;
+    }
 
 		#hamburger {
-			display: flex;
+			display: none;
 		}
 	}
 }

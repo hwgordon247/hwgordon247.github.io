@@ -4,6 +4,12 @@ $border-color: #404040;
 $font-title: 'Cormorant Garamond', serif;
 $font-body: 'Montserrat', sans-serif;
 
+$mobile-breakpoint: 400px;
+$tablet-breakpoint: 900px;
+$desktop-breakpoint: 1000px;
+
+$small-distance: 40px;
+
 html,
 body {
 	-webkit-font-smoothing: antialiased;
@@ -33,7 +39,7 @@ body {
 }
 
 .mts {
-	margin-top: 40px;
+	margin-top: $small-distance;
 }
 
 .mbxs {
@@ -41,7 +47,13 @@ body {
 }
 
 .pm {
-	padding: 80px 10%;
+	padding: 80px 5%;
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+	.pm {
+		padding: 80px 10%;
+	}
 }
 
 h3 {
