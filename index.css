@@ -130,9 +130,9 @@ h4 {
     width: 60%;
     display: flex;
     justify-content: space-between;
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 500;
-    font-size: 20px; }
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+    font-size: 16px; }
   .tool-bar #hamburger {
     display: none; }
 
@@ -290,7 +290,6 @@ h4 {
 
 #events {
   background-color: #3B454E;
-  height: 100vh;
   position: relative;
   z-index: 1;
   color: white;
@@ -298,7 +297,6 @@ h4 {
 
 #contact {
   background-color: #3B454E;
-  height: 100vh;
   position: relative;
   z-index: 1;
   color: white;
