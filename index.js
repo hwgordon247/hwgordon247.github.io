@@ -1,7 +1,3 @@
-// populateModal(tapirModalInfo);
-// threeSixty.init("tapir/tapir-spin");
-// openModel();
-// flipToFullSize();
 
 const tapirModalInfo = {
   name: "Malayan Tapir",
@@ -21,7 +17,12 @@ const giraffeModalInfo = {
   images: ["img/giraffe/giraffe-compress.jpg"]
 }
 
-preloadImage("img/lodge-compress.jpg");
+// populateModal(giraffeModalInfo);
+// threeSixty.init("tapir/tapir-spin");
+// openModel();
+// flipToFullSize();
+
+preloadImage(["img/lodge-compress.jpg"]);
 
 var toolbarOffset = 59;
 
@@ -265,24 +266,42 @@ jQuery('#full-size-image').mouseleave(function() {
 });
 
 function magnify(imgID, zoom) {
-  var img, glass, w, h, bw;
+  var img, glass, w, h, bw, parent;
   img = document.getElementById(imgID);
+
+  ratioSize = getImgSizeInfo(img);
+  console.log(ratioSize);
+  console.log(ratioSize.width, ratioSize.height);
 
   /* Create magnifier glass: */
   glass = document.createElement("DIV");
   glass.setAttribute("class", "img-magnifier-glass");
 
   /* Insert magnifier glass: */
-  img.parentElement.insertBefore(glass, img);
+  parent = img.parentElement
+  parent.insertBefore(glass, img);
 
   /* Set background properties for the magnifier glass: */
   glass.style.backgroundImage = "url('" + img.src + "')";
   glass.style.backgroundRepeat = "no-repeat";
 
-  // vary this for magnify coverage
-  scaleWidth = 1;
+  console.log('width', img.width, parent.width);
+  console.log('height', img.height, parent.height);
+  console.log(parent);
+  console.log(img);
 
-  glass.style.backgroundSize = (img.width * zoom * scaleWidth) + "px " + (img.height * zoom) + "px";
+  parentWidth = jQuery('#full-size-image').width();
+  parentHeight = jQuery('#full-size-image').height();
+
+  console.log(parentWidth, parentHeight);
+
+  console.log(jQuery('#magnify-image'))
+
+  console.log(jQuery('#magnify-image')[0].naturalWidth, jQuery('#magnify-image')[0].naturalHeight)
+
+  // glass.style.backgroundSize = (ratioSize.width * zoom) + "px " + (ratioSize.height * zoom) + "px";
+  glass.style.backgroundSize = (img.width * zoom) + "px " + (img.height * zoom) + "px";
+
   bw = 3;
   w = glass.offsetWidth / 2;
   h = glass.offsetHeight / 2;
@@ -290,10 +309,12 @@ function magnify(imgID, zoom) {
   /* Execute a function when someone moves the magnifier glass over the image: */
   glass.addEventListener("mousemove", moveMagnifier);
   img.addEventListener("mousemove", moveMagnifier);
+  // parent.addEventListener("mousemove", moveMagnifier);
 
   /*and also for touch screens:*/
   glass.addEventListener("touchmove", moveMagnifier);
   img.addEventListener("touchmove", moveMagnifier);
+  // parent.addEventListener("touchmove", moveMagnifier);
 
   function moveMagnifier(e) {
     var pos, x, y;
@@ -304,10 +325,23 @@ function magnify(imgID, zoom) {
     x = pos.x;
     y = pos.y;
     /* Prevent the magnifier glass from being positioned outside the image: */
-    if (x > img.width - (w / zoom)) {x = img.width - (w / zoom);}
-    if (x < w / zoom) {x = w / zoom;}
-    if (y > img.height - (h / zoom)) {y = img.height - (h / zoom);}
-    if (y < h / zoom) {y = h / zoom;}
+    if (x > img.width - (w / zoom)) {
+      x = img.width - (w / zoom);
+    }
+
+    if (x < w / zoom) {
+      x = w / zoom;
+    }
+
+    if (y > img.height - (h / zoom)) {
+      console.log('heeereree')
+      y = img.height - (h / zoom);
+    }
+
+    if (y < h / zoom) {
+      y = h / zoom;
+    }
+
     /* Set the position of the magnifier glass: */
     glass.style.left = (x - w) + "px";
     glass.style.top = (y - h) + "px";
@@ -330,8 +364,44 @@ function magnify(imgID, zoom) {
   }
 }
 
-function preloadImage(url) {
-  console.log('preload');
-  var img=new Image();
-  img.src=url;
+function getRenderedSize(contains, cWidth, cHeight, width, height, pos){
+  var oRatio = width / height,
+      cRatio = cWidth / cHeight;
+  return function() {
+    if (contains ? (oRatio > cRatio) : (oRatio < cRatio)) {
+      this.width = cWidth;
+      this.height = cWidth / oRatio;
+    } else {
+      this.width = cHeight * oRatio;
+      this.height = cHeight;
+    }
+    this.left = (cWidth - this.width)*(pos/100);
+    this.right = this.width + this.left;
+    return this;
+  }.call({});
+}
+
+function getImgSizeInfo(img) {
+  var pos = window.getComputedStyle(img).getPropertyValue('object-position').split(' ');
+  return getRenderedSize(true,
+                         img.width,
+                         img.height,
+                         img.naturalWidth,
+                         img.naturalHeight,
+                         parseInt(pos[0]));
+}
+
+// document.querySelector('#magnify-image').addEventListener('load', function(e) {
+//   console.log(getImgSizeInfo(e.target));
+// });
+
+// function preloadImage(url) {
+//   var img=new Image();
+//   img.src=url;
+// }
+
+function preloadImage(arrayOfImages) {
+  jQuery(arrayOfImages).each(function () {
+    jQuery('<img />').attr('src',this).appendTo('body').hide();
+  });
 }
