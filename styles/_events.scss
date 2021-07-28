@@ -7,13 +7,14 @@
   .event-content {
     display: flex;
     justify-content: space-between;
+		flex-direction: column;
 
     div {
       text-align: center;
     }
 
     .left {
-      width: 45%;
+      width: 100%;
 
       .left-container {
         display: flex;
@@ -27,7 +28,8 @@
     }
 
     .right {
-      width: 45%;
+      width: 100%;
+			margin-top: $medium-distance;
 
       .right-container {
         display: flex;
@@ -41,4 +43,22 @@
       }
     }
   }
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+	#events {
+		.event-content {
+			flex-direction: row;
+
+			.left {
+				width: 45%;
+			}
+
+			.right {
+				width: 45%;
+				margin-top: 0;
+			}
+		}
+
+	}
 }

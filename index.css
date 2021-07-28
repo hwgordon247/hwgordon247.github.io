@@ -217,7 +217,7 @@ p {
     #sculpture .image-container .thumbnail {
       cursor: pointer;
       margin: 20px 0;
-      width: 30%;
+      width: 100%;
       overflow: hidden; }
       #sculpture .image-container .thumbnail img {
         width: 100%;
@@ -237,6 +237,9 @@ p {
     #sculpture .arrow img {
       cursor: pointer; }
 
+@media only screen and (min-width: 900px) {
+  #sculpture .image-container .thumbnail {
+    width: 30%; } }
 #sculpture-modal {
   background: rgba(0, 0, 0, 0.4);
   position: fixed;
@@ -316,10 +319,13 @@ p {
   text-align: justify;
   text-justify: inter-word; }
   #commissions .commission-box {
-    margin: 0 15%; }
+    margin: 0; }
   #commissions .commission-name {
     text-align: center; }
 
+@media only screen and (min-width: 900px) {
+  #commissions .commission-box {
+    margin: 0 15%; } }
 #events {
   background-color: #3B454E;
   position: relative;
@@ -327,11 +333,12 @@ p {
   color: white; }
   #events .event-content {
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    flex-direction: column; }
     #events .event-content div {
       text-align: center; }
     #events .event-content .left {
-      width: 45%; }
+      width: 100%; }
       #events .event-content .left .left-container {
         display: flex;
         justify-content: space-between;
@@ -339,7 +346,8 @@ p {
       #events .event-content .left .info {
         margin-top: 15px; }
     #events .event-content .right {
-      width: 45%; }
+      width: 100%;
+      margin-top: 80px; }
       #events .event-content .right .right-container {
         display: flex;
         justify-content: space-between;
@@ -348,6 +356,14 @@ p {
         margin-top: 10px;
         font-size: 14px; }
 
+@media only screen and (min-width: 900px) {
+  #events .event-content {
+    flex-direction: row; }
+    #events .event-content .left {
+      width: 45%; }
+    #events .event-content .right {
+      width: 45%;
+      margin-top: 0; } }
 #contact {
   background-color: #3B454E;
   position: relative;

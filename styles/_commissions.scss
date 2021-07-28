@@ -7,10 +7,18 @@
 	text-justify: inter-word;
 
 	.commission-box {
-		margin: 0 15%;
+		margin: 0;
 	}
 
 	.commission-name {
 		text-align: center;
+	}
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+	#commissions {
+		.commission-box {
+			margin: 0 15%;
+		}
 	}
 }
