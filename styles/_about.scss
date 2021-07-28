@@ -1,13 +1,14 @@
 #about {
   background-color: #3B454E;
-  height: 100vh;
 	color: $font-color;
-	display: flex;
-	justify-content: space-between;
-	padding: 50px 10%;
 	position: relative;
 	z-index: 1;
-	// transform: translateZ(1px) perspective(1px);
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 	.left {
 		width: 45%;
@@ -17,7 +18,7 @@
 		width: 45%;
 
 		div {
-			padding: 20px 0;
+			// padding: 20px 0;
 		}
 	}
 
