@@ -276,22 +276,18 @@ p {
         height: auto;
         width: auto; }
         #sculpture-modal .modal-container #wrapper #viewer img {
-          width: 60vw;
           max-width: 800px; }
     #sculpture-modal .modal-container #full-size-image {
       display: none;
       position: relative;
       height: 100%;
-      width: 60vw;
       overflow: hidden; }
       #sculpture-modal .modal-container #full-size-image img {
         object-fit: cover;
         width: 100%;
         height: 100%; }
     #sculpture-modal .modal-container .info {
-      font-size: 18px;
-      margin-left: auto;
-      width: 34vw; }
+      font-size: 18px; }
       #sculpture-modal .modal-container .info .title {
         font-family: "Cormorant Garamond", serif;
         font-weight: 500;
@@ -321,6 +317,29 @@ p {
   width: 500px;
   height: 400px; }
 
+@media (orientation: landscape) {
+  #sculpture-modal .modal-container {
+    flex-direction: row; }
+    #sculpture-modal .modal-container #wrapper #viewer img {
+      width: 60vw; }
+    #sculpture-modal .modal-container .info {
+      margin-left: auto;
+      width: 34vw; }
+    #sculpture-modal .modal-container #full-size-image {
+      width: 60vw; } }
+@media (orientation: portrait) {
+  #sculpture-modal .modal-container {
+    flex-direction: column; }
+    #sculpture-modal .modal-container #wrapper #viewer img {
+      width: 80vh; }
+    #sculpture-modal .modal-container .info {
+      margin-left: 0;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      flex-wrap: wrap; }
+    #sculpture-modal .modal-container #full-size-image {
+      width: auto; } }
 #commissions {
   background-color: #3B454E;
   color: white;

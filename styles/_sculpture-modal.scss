@@ -28,7 +28,6 @@
 				width: auto;
 
 				img {
-					width: 60vw;
 					max-width: 800px;
 				}
 			}
@@ -38,7 +37,6 @@
 			display: none;
 			position: relative;
 			height: 100%;
-			width: 60vw;
 			overflow: hidden;
 
 			img {
@@ -50,8 +48,6 @@
 
 		.info {
 			font-size: 18px;
-			margin-left: auto;
-			width: 34vw;
 
 			.title {
 				font-family: $font-title;
@@ -91,4 +87,57 @@
   cursor: none;
   width: 500px;
   height: 400px;
+}
+
+@media (orientation: landscape) {
+	#sculpture-modal {
+		.modal-container {
+			flex-direction: row;
+
+			#wrapper {
+				#viewer {
+					img {
+						width: 60vw;
+					}
+				}
+			}
+
+			.info {
+				margin-left: auto;
+				width: 34vw;
+			}
+
+			#full-size-image {
+				width: 60vw;
+			}
+		}
+	}
+}
+
+@media (orientation: portrait) {
+	#sculpture-modal {
+		.modal-container {
+			flex-direction: column;
+
+			#wrapper {
+				#viewer {
+					img {
+						width: 80vh;
+					}
+				}
+			}
+
+			.info {
+				margin-left: 0;
+				display: flex;
+				justify-content: flex-end;
+				align-items: flex-end;
+				flex-wrap: wrap;
+			}
+
+			#full-size-image {
+				width: auto;
+			}
+		}
+	}
 }
