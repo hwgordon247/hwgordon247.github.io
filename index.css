@@ -118,16 +118,18 @@ p {
   z-index: 5; }
   #landing .landing-info .signature {
     z-index: 2;
-    height: 250px;
+    height: 25vw;
     background-size: 300px 100px;
     margin-right: 50px; }
   #landing .landing-info .title {
-    font-size: 45px;
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
-    margin-top: 50px; }
+    font-size: 35px;
+    margin-top: 50px;
+    margin: 100px 5% 0 5%;
+    text-align: center; }
   #landing .landing-info .landing-buttons {
-    display: flex;
+    display: none;
     justify-content: space-between;
     font-weight: 400;
     margin-top: 50px;
@@ -136,6 +138,14 @@ p {
     #landing .landing-info .landing-buttons .button {
       margin: 0 10px; }
 
+@media only screen and (min-width: 900px) {
+  #landing .landing-info .signature {
+    height: 250px; }
+  #landing .landing-info .title {
+    font-size: 45px;
+    margin: 50px 5% 0 5%; }
+  #landing .landing-info .landing-buttons {
+    display: flex; } }
 .tool-bar {
   color: white;
   position: relative;

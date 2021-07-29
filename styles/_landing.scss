@@ -27,21 +27,23 @@
 
 		.signature {
 			z-index: 2;
-			height: 250px;
+			height: 25vw;
 			background-size: 300px 100px;
 
 			margin-right: 50px;
 		}
 
 		.title {
-			font-size: 45px;
 			font-family: $font-title;
 			font-weight: 500;
+			font-size: 35px;
 			margin-top: 50px;
+			margin: 100px 5% 0 5%;
+			text-align: center;
 		}
 
 		.landing-buttons {
-			display: flex;
+			display: none;
 			justify-content: space-between;
 			font-weight: 400;
 			margin-top: 50px;
@@ -50,6 +52,25 @@
 
 			.button {
 				margin: 0 10px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: $tablet-breakpoint) {
+	#landing {
+		.landing-info {
+			.signature {
+				height: 250px;
+			}
+
+			.title {
+				font-size: 45px;
+				margin: 50px 5% 0 5%;
+			}
+
+			.landing-buttons {
+				display: flex;
 			}
 		}
 	}
