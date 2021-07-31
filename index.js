@@ -19,8 +19,8 @@ const giraffeModalInfo = {
   spin: "giraffe/giraffe-spin"
 }
 
-openModel(giraffeModalInfo);
-flipToFullSize();
+// openModel(giraffeModalInfo);
+// flipToFullSize();
 
 preloadImage(["img/lodge-compress.jpg"]);
 
