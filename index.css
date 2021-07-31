@@ -315,6 +315,8 @@ p {
         cursor: pointer;
         padding-left: 10%;
         margin-top: 10px; }
+      #sculpture-modal .modal-container .info #direction-buttons {
+        display: none; }
       #sculpture-modal .modal-container .info #enquire-button {
         font-family: "Montserrat", sans-serif;
         font-weight: 200;

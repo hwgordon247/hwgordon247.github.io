@@ -5,7 +5,8 @@ const tapirModalInfo = {
   dimensions: "23cm high x 42 x 20",
   date: "June 2020",
   price: "£5,000",
-  images: ["img/rhino-compress.jpg"]
+  images: ["img/rhino-compress.jpg"],
+  spin: "tapir/tapir-spin"
 }
 
 const giraffeModalInfo = {
@@ -14,13 +15,12 @@ const giraffeModalInfo = {
   dimensions: "78cm high x 35 x 35",
   date: "November 2019",
   price: "£9,500",
-  images: ["img/giraffe/giraffe-compress.jpg"]
+  images: ["img/giraffe/giraffe-compress.jpg"],
+  spin: "giraffe/giraffe-spin"
 }
 
-// populateModal(giraffeModalInfo);
-// threeSixty.init("tapir/tapir-spin");
-// openModel();
-// flipToFullSize();
+openModel(giraffeModalInfo);
+flipToFullSize();
 
 preloadImage(["img/lodge-compress.jpg"]);
 
@@ -89,6 +89,8 @@ function populateModal(modalInfo) {
   jQuery('#modal-date').text(modalInfo.date);
   jQuery('#modal-price').text(modalInfo.price);
   jQuery('#magnify-image').attr("src", modalInfo.images[0]);
+
+  threeSixty.init(modalInfo.spin);
 }
 
 jQuery('.home-button').on('click', function() {
@@ -145,7 +147,8 @@ jQuery('.contact-side-button').on('click', function() {
   closeSideBar();
 });
 
-function openModel() {
+function openModel(info) {
+  populateModal(info);
   jQuery('#sculpture-modal').addClass("show-modal");
 }
 
@@ -157,57 +160,46 @@ function closeModel() {
 }
 
 jQuery('#tapir-sculpture').on('click', function() {
-  populateModal(tapirModalInfo);
-  threeSixty.init("tapir/tapir-spin");
-  openModel();
+  openModel(tapirModalInfo);
 });
 
 jQuery('#giraffe-sculpture').on('click', function() {
-  populateModal(giraffeModalInfo);
-  threeSixty.init("giraffe/giraffe-spin");
-  openModel();
+  openModel(giraffeModalInfo);
 });
 
 jQuery('#barn-swallow-sculpture').on('click', function() {
-  populateModal(tapirModalInfo);
-  threeSixty.init("barn-swallow/barn-swallow-spin");
-  openModel();
+  // threeSixty.init("barn-swallow/barn-swallow-spin");
+  openModel(tapirModalInfo);
 });
 
 jQuery('#guinea-fowl-sculpture').on('click', function() {
-  populateModal(tapirModalInfo);
-  threeSixty.init("guinea-fowl/guinea-fowl-spin");
-  openModel();
+  // threeSixty.init("guinea-fowl/guinea-fowl-spin");
+  openModel(tapirModalInfo);
 });
 
 jQuery('#fox-pair-sculpture').on('click', function() {
-  populateModal(tapirModalInfo);
-  threeSixty.init("fox-pair/fox-pair-spin");
-  openModel();
+  // threeSixty.init("fox-pair/fox-pair-spin");
+  openModeltapirModalInfo
 });
 
 jQuery('#kudu-herd-sculpture').on('click', function() {
-  populateModal(tapirModalInfo);
-  threeSixty.init("kudu-herd/kudu-herd-spin");
-  openModel();
+  // threeSixty.init("kudu-herd/kudu-herd-spin");
+  openModel(tapirModalInfo);
 });
 
 jQuery('#sea-lion-sculpture').on('click', function() {
-  populateModal(tapirModalInfo);
-  threeSixty.init("sea-lion/sea-lion-spin");
-  openModel();
+  // threeSixty.init("sea-lion/sea-lion-spin");
+  openModel(tapirModalInfo);
 });
 
 jQuery('#toad-sculpture').on('click', function() {
-  populateModal(tapirModalInfo);
-  threeSixty.init("toad/toad-spin");
-  openModel();
+  // threeSixty.init("toad/toad-spin");
+  openModel(tapirModalInfo);
 });
 
 jQuery('#walking-horse-sculpture').on('click', function() {
-  populateModal(tapirModalInfo);
-  threeSixty.init("walking-horse/walking-horse-spin");
-  openModel();
+  // threeSixty.init("walking-horse/walking-horse-spin");
+  openModel(tapirModalInfo);
 });
 
 jQuery('#sculpture-modal').on('click', function(e) {
