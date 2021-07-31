@@ -1,3 +1,4 @@
+var currentInfo;
 
 const tapirModalInfo = {
   name: "Malayan Tapir",
@@ -15,7 +16,7 @@ const giraffeModalInfo = {
   dimensions: "78cm high x 35 x 35",
   date: "November 2019",
   price: "£9,500",
-  images: ["img/giraffe/giraffe-compress.jpg"],
+  images: ["img/giraffe/giraffe-compress.jpg", "img/rhino-compress.jpg"],
   spin: "giraffe/giraffe-spin"
 }
 
@@ -28,10 +29,69 @@ var toolbarOffset = 59;
 
 console.log('send it', jQuery(window).height());
 
-jQuery(document).ready(function(){
-  jQuery(this).scrollTop(0);
-  jQuery('#expander').toggle('collapsed');
-});
+function populateModal(modalInfo) {
+  jQuery('#modal-name').text(modalInfo.name);
+  jQuery('#modal-description').text(modalInfo.description);
+  jQuery('#modal-dimensions').text(modalInfo.dimensions);
+  jQuery('#modal-date').text(modalInfo.date);
+  jQuery('#modal-price').text(modalInfo.price);
+  jQuery('#magnify-image').attr("src", modalInfo.images[0]);
+
+  threeSixty.init(modalInfo.spin);
+}
+
+function openModel(info) {
+  currentInfo = info;
+  currentInfo.imageIndex = 0;
+
+  populateModal(info);
+
+  jQuery('#sculpture-modal').addClass("show-modal");
+}
+
+function imageLeft() {
+  if (currentInfo.imageIndex === 0) {
+    currentInfo.imageIndex = (currentInfo.images.length - 1);
+  } else {
+    currentInfo.imageIndex --;
+  }
+
+  jQuery('#magnify-image').attr("src", currentInfo.images[currentInfo.imageIndex]);
+}
+
+function imageRight() {
+  if (currentInfo.imageIndex === (currentInfo.images.length - 1)) {
+    currentInfo.imageIndex = 0;
+  } else {
+    currentInfo.imageIndex ++;
+  }
+
+  jQuery('#magnify-image').attr("src", currentInfo.images[currentInfo.imageIndex]);
+}
+
+function closeModel() {
+  jQuery('#sculpture-modal').removeClass("show-modal");
+  goToRotate();
+  threeSixty.clear();
+  jQuery("#viewer").empty();
+}
+
+function scrollToThing(thing) {
+  var scrollPosition = jQuery('#scroll-wrapper').scrollTop() + jQuery(thing).offset().top - toolbarOffset;
+
+  jQuery('#scroll-wrapper').animate({
+    scrollTop: scrollPosition
+  }, 500);
+
+
+  if (thing == '#landing') {
+    detachToolbar();
+  } else {
+    fixToolbar();
+  }
+
+  // jQuery(thing).get(0).scrollIntoView({ behavior: 'smooth' });
+}
 
 function isScrolledIntoView(elem) {
     var docViewTop = jQuery(window).scrollTop();
@@ -52,213 +112,28 @@ function detachToolbar() {
   jQuery('#about').removeClass("about-margin");
 }
 
-jQuery('#scroll-wrapper').on("mousewheel", function() {
-  var scrollPos = jQuery('#scroll-wrapper').scrollTop();
-  var vh = jQuery('#scroll-wrapper').height();
-
-  if (scrollPos > vh) {
-    fixToolbar();
-  }
-
-  if (scrollPos <= vh) {
-    detachToolbar();
-  }
-});
-
-function scrollToThing(thing) {
-  var scrollPosition = jQuery('#scroll-wrapper').scrollTop() + jQuery(thing).offset().top - toolbarOffset;
-
-  jQuery('#scroll-wrapper').animate({
-    scrollTop: scrollPosition
-  }, 500);
-
-
-  if (thing == '#landing') {
-    detachToolbar();
-  } else {
-    fixToolbar();
-  }
-
-  // jQuery(thing).get(0).scrollIntoView({ behavior: 'smooth' });
-}
-
-function populateModal(modalInfo) {
-  jQuery('#modal-name').text(modalInfo.name);
-  jQuery('#modal-description').text(modalInfo.description);
-  jQuery('#modal-dimensions').text(modalInfo.dimensions);
-  jQuery('#modal-date').text(modalInfo.date);
-  jQuery('#modal-price').text(modalInfo.price);
-  jQuery('#magnify-image').attr("src", modalInfo.images[0]);
-
-  threeSixty.init(modalInfo.spin);
-}
-
-jQuery('.home-button').on('click', function() {
-  scrollToThing('#landing');
-});
-
-jQuery('.about-button').on('click', function() {
-  scrollToThing('#about');
-});
-
-jQuery('.sculpture-button').on('click', function() {
-  scrollToThing('#sculpture');
-});
-
-jQuery('.commissions-button').on('click', function() {
-  scrollToThing('#commissions');
-});
-
-jQuery('.events-button').on('click', function() {
-  scrollToThing('#events');
-});
-
-jQuery('.contact-button').on('click', function() {
-  scrollToThing('#contact');
-});
-
-jQuery('.home-side-button').on('click', function() {
-  scrollToThing('#landing');
-  closeSideBar();
-});
-
-jQuery('.about-side-button').on('click', function() {
-  scrollToThing('#about');
-  closeSideBar();
-});
-
-jQuery('.sculpture-side-button').on('click', function() {
-  scrollToThing('#sculpture');
-  closeSideBar();
-});
-
-jQuery('.commissions-side-button').on('click', function() {
-  scrollToThing('#commissions');
-  closeSideBar();
-});
-
-jQuery('.events-side-button').on('click', function() {
-  scrollToThing('#events');
-  closeSideBar();
-});
-
-jQuery('.contact-side-button').on('click', function() {
-  scrollToThing('#contact');
-  closeSideBar();
-});
-
-function openModel(info) {
-  populateModal(info);
-  jQuery('#sculpture-modal').addClass("show-modal");
-}
-
-function closeModel() {
-  jQuery('#sculpture-modal').removeClass("show-modal");
-  goToRotate();
-  threeSixty.clear();
-  jQuery("#viewer").empty();
-}
-
-jQuery('#tapir-sculpture').on('click', function() {
-  openModel(tapirModalInfo);
-});
-
-jQuery('#giraffe-sculpture').on('click', function() {
-  openModel(giraffeModalInfo);
-});
-
-jQuery('#barn-swallow-sculpture').on('click', function() {
-  // threeSixty.init("barn-swallow/barn-swallow-spin");
-  openModel(tapirModalInfo);
-});
-
-jQuery('#guinea-fowl-sculpture').on('click', function() {
-  // threeSixty.init("guinea-fowl/guinea-fowl-spin");
-  openModel(tapirModalInfo);
-});
-
-jQuery('#fox-pair-sculpture').on('click', function() {
-  // threeSixty.init("fox-pair/fox-pair-spin");
-  openModeltapirModalInfo
-});
-
-jQuery('#kudu-herd-sculpture').on('click', function() {
-  // threeSixty.init("kudu-herd/kudu-herd-spin");
-  openModel(tapirModalInfo);
-});
-
-jQuery('#sea-lion-sculpture').on('click', function() {
-  // threeSixty.init("sea-lion/sea-lion-spin");
-  openModel(tapirModalInfo);
-});
-
-jQuery('#toad-sculpture').on('click', function() {
-  // threeSixty.init("toad/toad-spin");
-  openModel(tapirModalInfo);
-});
-
-jQuery('#walking-horse-sculpture').on('click', function() {
-  // threeSixty.init("walking-horse/walking-horse-spin");
-  openModel(tapirModalInfo);
-});
-
-jQuery('#sculpture-modal').on('click', function(e) {
-  if (e.target !== e.currentTarget) return;
-
-  closeModel();
-});
-
-jQuery('#modal-cross').on('click', function() {
-  closeModel();
-});
-
-jQuery('#sculpture-expand').on('click', function() {
-  jQuery('#expander').slideToggle(500);
-});
-
-jQuery('#hamburger').on('click', function() {
-  jQuery('#side-bar').animate({width: 'toggle'});
-});
-
-jQuery('#side-bar-close').on('click', function() {
-  closeSideBar();
-});
-
 function closeSideBar() {
   jQuery('#side-bar').animate({width: 'toggle'});
 }
-
-jQuery('#full-size-zoom').on('click', function() {
-  flipToFullSize();
-});
 
 function flipToFullSize() {
   jQuery("#wrapper").hide();
   jQuery("#full-size-zoom").hide();
   jQuery('#rotate-button').show();
   jQuery("#full-size-image").show();
-}
 
-jQuery('#rotate-button').on('click', function() {
-  goToRotate();
-});
+  if (currentInfo.images.length > 1) {
+    jQuery('#direction-buttons').show();
+  }
+}
 
 function goToRotate() {
   jQuery("#wrapper").show();
   jQuery("#full-size-zoom").show();
   jQuery('#rotate-button').hide();
   jQuery("#full-size-image").hide();
+  jQuery('#direction-buttons').hide();
 }
-
-jQuery('#full-size-image').mouseenter(function() {
-  console.log('leave');
-  magnify("magnify-image", 2);
-});
-
-jQuery('#full-size-image').mouseleave(function() {
-  console.log('leave');
-  jQuery(".img-magnifier-glass").remove();
-});
 
 function magnify(imgID, zoom) {
   var img, glass, w, h, bw, parent;
@@ -381,3 +256,164 @@ function preloadImage(arrayOfImages) {
     jQuery('<img />').attr('src',this).appendTo('body').hide();
   });
 }
+
+jQuery(document).ready(function(){
+  jQuery(this).scrollTop(0);
+  jQuery('#expander').toggle('collapsed');
+});
+
+jQuery('#scroll-wrapper').on("mousewheel", function() {
+  var scrollPos = jQuery('#scroll-wrapper').scrollTop();
+  var vh = jQuery('#scroll-wrapper').height();
+
+  if (scrollPos > vh) {
+    fixToolbar();
+  }
+
+  if (scrollPos <= vh) {
+    detachToolbar();
+  }
+});
+
+jQuery('.home-button').on('click', function() {
+  scrollToThing('#landing');
+});
+
+jQuery('.about-button').on('click', function() {
+  scrollToThing('#about');
+});
+
+jQuery('.sculpture-button').on('click', function() {
+  scrollToThing('#sculpture');
+});
+
+jQuery('.commissions-button').on('click', function() {
+  scrollToThing('#commissions');
+});
+
+jQuery('.events-button').on('click', function() {
+  scrollToThing('#events');
+});
+
+jQuery('.contact-button').on('click', function() {
+  scrollToThing('#contact');
+});
+
+jQuery('.home-side-button').on('click', function() {
+  scrollToThing('#landing');
+  closeSideBar();
+});
+
+jQuery('.about-side-button').on('click', function() {
+  scrollToThing('#about');
+  closeSideBar();
+});
+
+jQuery('.sculpture-side-button').on('click', function() {
+  scrollToThing('#sculpture');
+  closeSideBar();
+});
+
+jQuery('.commissions-side-button').on('click', function() {
+  scrollToThing('#commissions');
+  closeSideBar();
+});
+
+jQuery('.events-side-button').on('click', function() {
+  scrollToThing('#events');
+  closeSideBar();
+});
+
+jQuery('.contact-side-button').on('click', function() {
+  scrollToThing('#contact');
+  closeSideBar();
+});
+
+jQuery('#tapir-sculpture').on('click', function() {
+  openModel(tapirModalInfo);
+});
+
+jQuery('#giraffe-sculpture').on('click', function() {
+  openModel(giraffeModalInfo);
+});
+
+jQuery('#barn-swallow-sculpture').on('click', function() {
+  // threeSixty.init("barn-swallow/barn-swallow-spin");
+  openModel(tapirModalInfo);
+});
+
+jQuery('#guinea-fowl-sculpture').on('click', function() {
+  // threeSixty.init("guinea-fowl/guinea-fowl-spin");
+  openModel(tapirModalInfo);
+});
+
+jQuery('#fox-pair-sculpture').on('click', function() {
+  // threeSixty.init("fox-pair/fox-pair-spin");
+  openModeltapirModalInfo
+});
+
+jQuery('#kudu-herd-sculpture').on('click', function() {
+  // threeSixty.init("kudu-herd/kudu-herd-spin");
+  openModel(tapirModalInfo);
+});
+
+jQuery('#sea-lion-sculpture').on('click', function() {
+  // threeSixty.init("sea-lion/sea-lion-spin");
+  openModel(tapirModalInfo);
+});
+
+jQuery('#toad-sculpture').on('click', function() {
+  // threeSixty.init("toad/toad-spin");
+  openModel(tapirModalInfo);
+});
+
+jQuery('#walking-horse-sculpture').on('click', function() {
+  // threeSixty.init("walking-horse/walking-horse-spin");
+  openModel(tapirModalInfo);
+});
+
+jQuery('#sculpture-modal').on('click', function(e) {
+  if (e.target !== e.currentTarget) return;
+
+  closeModel();
+});
+
+jQuery('#modal-cross').on('click', function() {
+  closeModel();
+});
+
+jQuery('#sculpture-expand').on('click', function() {
+  jQuery('#expander').slideToggle(500);
+});
+
+jQuery('#hamburger').on('click', function() {
+  jQuery('#side-bar').animate({width: 'toggle'});
+});
+
+jQuery('#side-bar-close').on('click', function() {
+  closeSideBar();
+});
+
+jQuery('#full-size-zoom').on('click', function() {
+  flipToFullSize();
+});
+
+jQuery('#rotate-button').on('click', function() {
+  goToRotate();
+});
+
+jQuery('#full-size-image').mouseenter(function() {
+  magnify("magnify-image", 2);
+});
+
+jQuery('#full-size-image').mouseleave(function() {
+  jQuery(".img-magnifier-glass").remove();
+});
+
+jQuery('#image-left').on('click', function() {
+  imageLeft();
+});
+
+jQuery('#image-right').on('click', function() {
+  imageRight();
+});
