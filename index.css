@@ -264,9 +264,16 @@ p {
     color: black;
     display: flex;
     justify-content: flex-start;
-    margin: 5vh 3vw;
-    height: 90vh;
-    align-items: center; }
+    margin: 0;
+    height: 100vh;
+    align-items: center;
+    position: relative; }
+    #sculpture-modal .modal-container #modal-cross {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 10px 10px 0 0;
+      cursor: pointer; }
     #sculpture-modal .modal-container #wrapper {
       padding: 0;
       height: auto;
@@ -287,7 +294,9 @@ p {
         width: 100%;
         height: 100%; }
     #sculpture-modal .modal-container .info {
-      font-size: 18px; }
+      font-size: 18px;
+      display: flex;
+      flex-direction: column; }
       #sculpture-modal .modal-container .info .title {
         font-family: "Cormorant Garamond", serif;
         font-weight: 500;
@@ -300,6 +309,11 @@ p {
         margin: 0 10%;
         margin-bottom: 20px;
         font-size: 14px; }
+      #sculpture-modal .modal-container .info .icon {
+        width: 30px;
+        cursor: pointer;
+        padding-left: 10%;
+        margin-top: 10px; }
       #sculpture-modal .modal-container .info #enquire-button {
         font-family: "Montserrat", sans-serif;
         font-weight: 200;
@@ -307,7 +321,8 @@ p {
         border: 1px solid #404040;
         display: inline-block;
         padding: 10px 40px;
-        margin: 40px 10%; }
+        margin: 40px 10%;
+        align-self: baseline; }
   #sculpture-modal.show-modal {
     display: block; }
 
@@ -327,19 +342,34 @@ p {
       width: 34vw; }
     #sculpture-modal .modal-container #full-size-image {
       width: 60vw; } }
+@media only screen and (min-width: 600px) {
+  #sculpture-modal .modal-container {
+    margin: 5vh 3vw;
+    height: 90vh; } }
 @media (orientation: portrait) {
   #sculpture-modal .modal-container {
-    flex-direction: column; }
+    flex-direction: column;
+    justify-content: flex-end; }
     #sculpture-modal .modal-container #wrapper #viewer img {
-      width: 80vh; }
+      width: 60vh;
+      margin-bottom: 10vh; }
     #sculpture-modal .modal-container .info {
       margin-left: 0;
       display: flex;
-      justify-content: flex-end;
-      align-items: flex-end;
+      flex-direction: column;
+      align-items: flex-start;
       flex-wrap: wrap; }
+      #sculpture-modal .modal-container .info .modal-text {
+        margin-bottom: 5px; }
     #sculpture-modal .modal-container #full-size-image {
       width: auto; } }
+@media only screen and (orientation: portrait) and (min-width: 600px) {
+  #sculpture-modal .modal-container #wrapper #viewer img {
+    width: 60vh;
+    margin-bottom: 3vh; } }
+@media only screen and (orientation: portrait) and (min-width: 900px) {
+  #sculpture-modal .modal-container #wrapper #viewer img {
+    width: 80vh; } }
 #commissions {
   background-color: #3B454E;
   color: white;

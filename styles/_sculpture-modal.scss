@@ -13,9 +13,18 @@
 		color: black;
 		display: flex;
 		justify-content: flex-start;
-		margin: 5vh 3vw;
-		height: 90vh;
+		margin: 0;
+		height: 100vh;
 		align-items: center;
+		position: relative;
+
+		#modal-cross {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 10px 10px 0 0;
+			cursor: pointer;
+		}
 
 		#wrapper {
 			padding: 0;
@@ -48,6 +57,8 @@
 
 		.info {
 			font-size: 18px;
+			display: flex;
+			flex-direction: column;
 
 			.title {
 				font-family: $font-title;
@@ -65,6 +76,13 @@
 				font-size: 14px;
 			}
 
+			.icon {
+				width: 30px;
+				cursor: pointer;
+				padding-left: 10%;
+				margin-top: 10px;
+			}
+
 			#enquire-button {
 				font-family: $font-body;
 				font-weight: 200;
@@ -73,6 +91,7 @@
 				display: inline-block;
 				padding: 10px 40px;
 				margin: 40px 10%;
+				align-self: baseline;
 			}
 		}
 	}
@@ -114,15 +133,26 @@
 	}
 }
 
+@media only screen and (min-width: $mobile-breakpoint) {
+	#sculpture-modal {
+		.modal-container {
+			margin: 5vh 3vw;
+			height: 90vh;
+		}
+	}
+}
+
 @media (orientation: portrait) {
 	#sculpture-modal {
 		.modal-container {
 			flex-direction: column;
+			justify-content: flex-end;
 
 			#wrapper {
 				#viewer {
 					img {
-						width: 80vh;
+						width: 60vh;
+						margin-bottom: 10vh;
 					}
 				}
 			}
@@ -130,13 +160,46 @@
 			.info {
 				margin-left: 0;
 				display: flex;
-				justify-content: flex-end;
-				align-items: flex-end;
+				flex-direction: column;
+				align-items: flex-start;
 				flex-wrap: wrap;
+
+				.modal-text {
+					margin-bottom: 5px;
+				}
 			}
 
 			#full-size-image {
 				width: auto;
+			}
+		}
+	}
+
+	@media only screen and (min-width: $mobile-breakpoint) {
+		#sculpture-modal {
+			.modal-container {
+				#wrapper {
+					#viewer {
+						img {
+							width: 60vh;
+							margin-bottom: 3vh;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: $tablet-breakpoint) {
+		#sculpture-modal {
+			.modal-container {
+				#wrapper {
+					#viewer {
+						img {
+							width: 80vh;
+						}
+					}
+				}
 			}
 		}
 	}

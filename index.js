@@ -150,9 +150,10 @@ function openModel() {
 }
 
 function closeModel() {
-  console.log('close')
   jQuery('#sculpture-modal').removeClass("show-modal");
   goToRotate();
+  threeSixty.clear();
+  jQuery("#viewer").empty();
 }
 
 jQuery('#tapir-sculpture').on('click', function() {
@@ -213,8 +214,10 @@ jQuery('#sculpture-modal').on('click', function(e) {
   if (e.target !== e.currentTarget) return;
 
   closeModel();
-  threeSixty.clear();
-  jQuery("#viewer").empty();
+});
+
+jQuery('#modal-cross').on('click', function() {
+  closeModel();
 });
 
 jQuery('#sculpture-expand').on('click', function() {
