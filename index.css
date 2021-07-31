@@ -273,7 +273,8 @@ p {
       top: 0;
       right: 0;
       padding: 10px 10px 0 0;
-      cursor: pointer; }
+      cursor: pointer;
+      z-index: 10; }
     #sculpture-modal .modal-container #wrapper {
       padding: 0;
       height: auto;
