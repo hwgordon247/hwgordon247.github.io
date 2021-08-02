@@ -297,10 +297,25 @@ p {
         height: 100%; }
       #sculpture-modal .modal-container #full-size-image #leave-box {
         position: absolute;
-        top: 400px;
+        top: 80vh;
         left: 0;
         right: 0;
         bottom: 0; }
+    #sculpture-modal .modal-container #direction-buttons {
+      display: none; }
+      #sculpture-modal .modal-container #direction-buttons #image-left {
+        position: absolute;
+        left: 20px;
+        bottom: 20px;
+        width: 35px;
+        height: 35px;
+        transform: rotate(180deg); }
+      #sculpture-modal .modal-container #direction-buttons #image-right {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        width: 35px;
+        height: 35px; }
     #sculpture-modal .modal-container .info {
       font-size: 18px;
       display: flex;
@@ -322,8 +337,6 @@ p {
         cursor: pointer;
         padding-left: 10%;
         margin-top: 10px; }
-      #sculpture-modal .modal-container .info #direction-buttons {
-        display: none; }
       #sculpture-modal .modal-container .info #enquire-button {
         font-family: "Montserrat", sans-serif;
         font-weight: 200;

@@ -58,10 +58,33 @@
 
 			#leave-box {
 				position: absolute;
-				top: 400px;
+				top: 80vh;
 				left: 0;
 				right: 0;
 				bottom: 0;
+				// opacity: 10%;
+				// background-color: #000;
+			}
+		}
+
+		#direction-buttons {
+			display: none;
+
+			#image-left {
+				position: absolute;
+				left: 20px;
+				bottom: 20px;
+				width: 35px;
+				height: 35px;
+				transform: rotate(180deg);
+			}
+
+			#image-right {
+				position: absolute;
+				right: 20px;
+				bottom: 20px;
+				width: 35px;
+				height: 35px;
 			}
 		}
 
@@ -91,10 +114,6 @@
 				cursor: pointer;
 				padding-left: 10%;
 				margin-top: 10px;
-			}
-
-			#direction-buttons {
-				display: none;
 			}
 
 			#enquire-button {
