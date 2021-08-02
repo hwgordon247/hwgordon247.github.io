@@ -1,4 +1,5 @@
 var currentInfo;
+var magnifyVisible = false;
 
 const tapirModalInfo = {
   name: "Malayan Tapir",
@@ -20,8 +21,8 @@ const giraffeModalInfo = {
   spin: "giraffe/giraffe-spin"
 }
 
-// openModel(giraffeModalInfo);
-// flipToFullSize();
+openModel(giraffeModalInfo);
+flipToFullSize();
 
 preloadImage(["img/lodge-compress.jpg"]);
 
@@ -133,6 +134,12 @@ function goToRotate() {
   jQuery('#rotate-button').hide();
   jQuery("#full-size-image").hide();
   jQuery('#direction-buttons').hide();
+}
+
+function removeMagnify() {
+  console.log('leave')
+  magnifyVisible = false;
+  jQuery(".img-magnifier-glass").remove();
 }
 
 function magnify(imgID, zoom) {
@@ -402,12 +409,37 @@ jQuery('#rotate-button').on('click', function() {
   goToRotate();
 });
 
-jQuery('#full-size-image').mouseenter(function() {
+jQuery('#leave-box').mouseenter(function() {
+  removeMagnify();
+});
+
+jQuery('#leave-box').mouseleave(function(e) {
   magnify("magnify-image", 2);
 });
 
 jQuery('#full-size-image').mouseleave(function() {
-  jQuery(".img-magnifier-glass").remove();
+  removeMagnify();
+});
+
+// this works ... sort of
+// jQuery('#full-size-image').mousemove(function(e) {
+//   console.log('enter')
+//
+//   if ("magnify-image" !== jQuery(e.target).attr('id')) return;
+//
+//   if (magnifyVisible === true) return;
+//
+//   magnifyVisible = true;
+//   magnify("magnify-image", 2);
+//
+//   e.stopPropagation();
+// });
+
+jQuery('#full-size-image').mouseenter(function(e) {
+
+  if ("magnify-image" !== jQuery(e.target).attr('id')) return;
+
+  magnify("magnify-image", 2);
 });
 
 jQuery('#image-left').on('click', function() {
