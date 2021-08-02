@@ -62,27 +62,48 @@
 				left: 0;
 				right: 0;
 				bottom: 0;
-				// opacity: 10%;
-				// background-color: #000;
+				flex-direction: column;
+				justify-content: space-around;
+				align-items: stretch;
+
+				#blob-container {
+					display: flex;
+					width: 100%;
+					justify-content: center;
+
+					#image-blobs {
+						width: 5px;
+						height: 5px;
+						margin: 0 10px;
+						background-color: white;
+						border-radius: 50%;
+						align-self: center;
+						opacity: 50%;
+
+						&.highlight {
+							opacity: 100%;
+						}
+					}
+				}
 			}
 		}
 
 		#direction-buttons {
-			display: none;
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+			height: 100%;
+			width: 100%;
 
 			#image-left {
-				position: absolute;
-				left: 20px;
-				bottom: 20px;
+				cursor: pointer;
 				width: 35px;
 				height: 35px;
 				transform: rotate(180deg);
 			}
 
 			#image-right {
-				position: absolute;
-				right: 20px;
-				bottom: 20px;
+				cursor: pointer;
 				width: 35px;
 				height: 35px;
 			}

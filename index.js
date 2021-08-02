@@ -21,8 +21,8 @@ const giraffeModalInfo = {
   spin: "giraffe/giraffe-spin"
 }
 
-openModel(giraffeModalInfo);
-flipToFullSize();
+// openModel(giraffeModalInfo);
+// flipToFullSize();
 
 preloadImage(["img/lodge-compress.jpg"]);
 
@@ -57,6 +57,8 @@ function imageLeft() {
     currentInfo.imageIndex --;
   }
 
+  moveBlob(currentInfo.imageIndex);
+
   jQuery('#magnify-image').attr("src", currentInfo.images[currentInfo.imageIndex]);
 }
 
@@ -66,6 +68,8 @@ function imageRight() {
   } else {
     currentInfo.imageIndex ++;
   }
+
+  moveBlob(currentInfo.imageIndex);
 
   jQuery('#magnify-image').attr("src", currentInfo.images[currentInfo.imageIndex]);
 }
@@ -124,8 +128,22 @@ function flipToFullSize() {
   jQuery("#full-size-image").show();
 
   if (currentInfo.images.length > 1) {
-    jQuery('#direction-buttons').show();
+    jQuery('#leave-box').css('display', 'flex');
+
+    for (i = 0; i < currentInfo.images.length; i ++) {
+      jQuery('#blob-container').prepend('<div id="image-blobs"></div>');
+    }
+
+    moveBlob(currentInfo.imageIndex)
   }
+}
+
+function moveBlob(index) {
+  for (i = 0; i < currentInfo.images.length; i ++) {
+    jQuery(jQuery('#blob-container').children()[i]).removeClass('highlight');
+  }
+
+  jQuery(jQuery('#blob-container').children()[index]).addClass('highlight');
 }
 
 function goToRotate() {
@@ -133,7 +151,15 @@ function goToRotate() {
   jQuery("#full-size-zoom").show();
   jQuery('#rotate-button').hide();
   jQuery("#full-size-image").hide();
-  jQuery('#direction-buttons').hide();
+  jQuery('#leave-box').hide();
+
+  clearBlobs();
+}
+
+function clearBlobs() {
+  for (i = 0; i <= jQuery('#blob-container').children().length; i ++) {
+    jQuery(jQuery('#blob-container').children().first()).remove();
+  }
 }
 
 function removeMagnify() {
