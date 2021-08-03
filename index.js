@@ -37,8 +37,17 @@ function populateModal(modalInfo) {
   jQuery('#modal-date').text(modalInfo.date);
   jQuery('#modal-price').text(modalInfo.price);
   jQuery('#magnify-image').attr("src", modalInfo.images[0]);
+  jQuery('#enquire-button').attr("href", constructEmailLink(modalInfo.name));
 
   threeSixty.init(modalInfo.spin);
+}
+
+function constructEmailLink(sculptureName) {
+  return "mailto:fcgordon93@gmail.com?subject=" +
+      sculptureName +
+      "&body=Hey, I am interested in the " +
+      sculptureName +
+      "..."
 }
 
 function openModel(info) {

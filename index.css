@@ -125,7 +125,6 @@ p {
     font-family: "Cormorant Garamond", serif;
     font-weight: 500;
     font-size: 35px;
-    margin-top: 50px;
     margin: 100px 5% 0 5%;
     text-align: center; }
   #landing .landing-info .landing-buttons {
@@ -370,7 +369,9 @@ p {
         display: inline-block;
         padding: 10px 40px;
         margin: 40px 10%;
-        align-self: baseline; }
+        align-self: baseline;
+        cursor: pointer;
+        color: black; }
   #sculpture-modal.show-modal {
     display: block; }
 
