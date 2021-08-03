@@ -24,6 +24,8 @@ const giraffeModalInfo = {
 // openModel(giraffeModalInfo);
 // flipToFullSize();
 
+// openSideBar();
+
 preloadImage(["img/lodge-compress.jpg"]);
 
 var toolbarOffset = 59;
@@ -168,6 +170,10 @@ function moveToolBarHighlight() {
 }
 
 function closeSideBar() {
+  jQuery('#side-bar').animate({width: 'toggle'});
+}
+
+function openSideBar() {
   jQuery('#side-bar').animate({width: 'toggle'});
 }
 
@@ -472,7 +478,7 @@ jQuery('#sculpture-expand').on('click', function() {
 });
 
 jQuery('#hamburger').on('click', function() {
-  jQuery('#side-bar').animate({width: 'toggle'});
+  openSideBar();
 });
 
 jQuery('#side-bar-close').on('click', function() {
