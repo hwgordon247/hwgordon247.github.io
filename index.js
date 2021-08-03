@@ -84,9 +84,17 @@ function closeModel() {
 function scrollToThing(thing) {
   var scrollPosition = jQuery('#scroll-wrapper').scrollTop() + jQuery(thing).offset().top - toolbarOffset;
 
-  jQuery('#scroll-wrapper').animate({
-    scrollTop: scrollPosition
-  }, 500);
+  jQuery('#scroll-wrapper').animate(
+      {
+        scrollTop: scrollPosition
+      },
+      {
+        duration: 500,
+        complete: function () {
+          moveToolBarHighlight();
+        }
+      }
+  );
 
 
   if (thing === '#landing') {
