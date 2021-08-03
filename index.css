@@ -158,7 +158,8 @@ p {
   justify-content: space-between;
   align-items: center; }
   .tool-bar .logo {
-    width: 20%; }
+    height: 55px;
+    cursor: pointer; }
   .tool-bar .buttons {
     display: none;
     width: 60%;
@@ -167,7 +168,9 @@ p {
     font-weight: 300;
     font-size: 16px; }
   .tool-bar #hamburger {
-    display: flex; }
+    height: 24px;
+    width: 24px;
+    cursor: pointer; }
   .tool-bar .highlight {
     border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
   .tool-bar .button {

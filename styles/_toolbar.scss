@@ -1,17 +1,18 @@
 .tool-bar {
-  color: white;
-  position: relative;
-  background-color: #3B454E;
-  height: 20px;
-  display: flex;
-  padding: 20px 5%;
-  z-index: 2;
+	color: white;
+	position: relative;
+	background-color: #3B454E;
+	height: 20px;
+	display: flex;
+	padding: 20px 5%;
+	z-index: 2;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 
 	.logo {
-		width: 20%;
+		height: 55px;
+		cursor: pointer;
 	}
 
 	.buttons {
@@ -24,7 +25,9 @@
 	}
 
 	#hamburger {
-		display: flex;
+		height: 24px;
+		width: 24px;
+		cursor: pointer;
 	}
 
 	.highlight {

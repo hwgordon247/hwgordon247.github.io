@@ -351,7 +351,7 @@ jQuery('#scroll-wrapper').on("mousewheel", function() {
   moveToolBarHighlight();
 });
 
-jQuery('.home-button').on('click', function() {
+jQuery('#logo-button').on('click', function() {
   scrollToThing('#landing');
 });
 
