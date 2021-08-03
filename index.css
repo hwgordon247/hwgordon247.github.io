@@ -168,6 +168,11 @@ p {
     font-size: 16px; }
   .tool-bar #hamburger {
     display: flex; }
+  .tool-bar .highlight {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
+  .tool-bar .button {
+    margin-bottom: 1px;
+    padding-bottom: 2px; }
 
 @media only screen and (min-width: 900px) {
   .tool-bar .buttons {

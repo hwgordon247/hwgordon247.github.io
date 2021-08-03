@@ -94,22 +94,18 @@ function scrollToThing(thing) {
   } else {
     fixToolbar();
   }
-
-  // jQuery(thing).get(0).scrollIntoView({ behavior: 'smooth' });
 }
 
 function isScrolledIntoView(elem) {
-    const docViewTop = jQuery("#scroll-wrapper").scrollTop();
+  var top_of_element = jQuery(elem).offset().top;
+  var bottom_of_element = jQuery(elem).offset().top + jQuery(elem).outerHeight();
+  var bottom_of_screen = jQuery(window).scrollTop() + jQuery(window).innerHeight();
+  var top_of_screen = jQuery(window).scrollTop();
 
-    // bottom sc
-    const docViewBottom = docViewTop + jQuery("#scroll-wrapper").height();
+  var scrollGap = 50;
 
-    // this should be fixed
-    const elemTop = jQuery(elem).offset().top;
-
-    console.log(docViewTop, docViewBottom, elemTop, elemTop - jQuery(elem).height());
-
-    return (elemTop - jQuery(elem).height() <= docViewTop);
+  return (bottom_of_screen > top_of_element + scrollGap) &&
+      (top_of_screen < bottom_of_element - scrollGap);
 }
 
 function fixToolbar() {
@@ -123,7 +119,35 @@ function detachToolbar() {
 }
 
 function moveToolBarHighlight() {
-  // console.log(isScrolledIntoView('#about'));
+  if (isScrolledIntoView('#about')) {
+    jQuery('#about-button-tool').addClass('highlight');
+  } else {
+    jQuery('#about-button-tool').removeClass('highlight');
+  }
+
+  if (isScrolledIntoView('#sculpture')) {
+    jQuery('#sculpture-button-tool').addClass('highlight');
+  } else {
+    jQuery('#sculpture-button-tool').removeClass('highlight');
+  }
+
+  if (isScrolledIntoView('#commissions')) {
+    jQuery('#commissions-button-tool').addClass('highlight');
+  } else {
+    jQuery('#commissions-button-tool').removeClass('highlight');
+  }
+
+  if (isScrolledIntoView('#events')) {
+    jQuery('#events-button-tool').addClass('highlight');
+  } else {
+    jQuery('#events-button-tool').removeClass('highlight');
+  }
+
+  if (isScrolledIntoView('#contact')) {
+    jQuery('#contact-button-tool').addClass('highlight');
+  } else {
+    jQuery('#contact-button-tool').removeClass('highlight');
+  }
 }
 
 function closeSideBar() {

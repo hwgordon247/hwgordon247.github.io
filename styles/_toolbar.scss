@@ -15,7 +15,7 @@
 	}
 
 	.buttons {
-    display: none;
+    	display: none;
 		width: 60%;
 		justify-content: space-between;
 		font-family: $font-body;
@@ -25,6 +25,15 @@
 
 	#hamburger {
 		display: flex;
+	}
+
+	.highlight {
+		border-bottom: 1px solid rgba(255,255,255, 0.4);
+	}
+
+	.button {
+		margin-bottom: 1px;
+		padding-bottom: 2px;
 	}
 }
 

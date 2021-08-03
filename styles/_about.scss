@@ -1,8 +1,8 @@
 #about {
   background-color: #3B454E;
-	color: $font-color;
-	position: relative;
-	z-index: 1;
+  color: $font-color;
+  position: relative;
+  z-index: 1;
 
   .flex-container {
     display: flex;
@@ -12,19 +12,19 @@
   }
 
 	.left {
-		width: 100%;
+      width: 100%;
 
-    .fred {
-      max-height: 500px;
-      object-fit: cover;
-    }
+      .fred {
+        max-height: 500px;
+        object-fit: cover;
+      }
 	}
 
 	.right {
-		width: 100%;
-		text-align: justify;
-    text-justify: inter-word;
-    margin-top: $small-distance;
+      width: 100%;
+      text-align: justify;
+      text-justify: inter-word;
+      margin-top: $small-distance;
 	}
 
 	.fred {
