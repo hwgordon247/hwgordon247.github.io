@@ -1,5 +1,5 @@
-var currentInfo;
-var magnifyVisible = false;
+let currentInfo;
+let magnifyVisible = false;
 
 const tapirModalInfo = {
   name: "Malayan Tapir",
@@ -89,7 +89,7 @@ function scrollToThing(thing) {
   }, 500);
 
 
-  if (thing == '#landing') {
+  if (thing === '#landing') {
     detachToolbar();
   } else {
     fixToolbar();
@@ -99,12 +99,17 @@ function scrollToThing(thing) {
 }
 
 function isScrolledIntoView(elem) {
-    var docViewTop = jQuery(window).scrollTop();
-    var docViewBottom = docViewTop + jQuery(window).height();
+    const docViewTop = jQuery("#scroll-wrapper").scrollTop();
 
-    var elemTop = jQuery(elem).offset().top;
+    // bottom sc
+    const docViewBottom = docViewTop + jQuery("#scroll-wrapper").height();
 
-    return (elemTop - jQuery(elem).height() <= docViewBottom);
+    // this should be fixed
+    const elemTop = jQuery(elem).offset().top;
+
+    console.log(docViewTop, docViewBottom, elemTop, elemTop - jQuery(elem).height());
+
+    return (elemTop - jQuery(elem).height() <= docViewTop);
 }
 
 function fixToolbar() {
@@ -115,6 +120,10 @@ function fixToolbar() {
 function detachToolbar() {
   jQuery('#tool-bar').removeClass("fixed");
   jQuery('#about').removeClass("about-margin");
+}
+
+function moveToolBarHighlight() {
+  // console.log(isScrolledIntoView('#about'));
 }
 
 function closeSideBar() {
@@ -306,6 +315,8 @@ jQuery('#scroll-wrapper').on("mousewheel", function() {
   if (scrollPos <= vh) {
     detachToolbar();
   }
+
+  moveToolBarHighlight();
 });
 
 jQuery('.home-button').on('click', function() {
