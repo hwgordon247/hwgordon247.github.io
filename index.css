@@ -174,7 +174,7 @@ p {
     border-bottom: 1px solid rgba(255, 255, 255, 0.4); }
   .tool-bar .button {
     margin-bottom: 1px;
-    padding-bottom: 2px; }
+    padding: 5px 0; }
 
 @media only screen and (min-width: 900px) {
   .tool-bar .buttons {
@@ -274,6 +274,9 @@ p {
     #sculpture .arrow img {
       cursor: pointer; }
 
+@media only screen and (min-width: 600px) {
+  #sculpture .image-container .thumbnail {
+    width: 47%; } }
 @media only screen and (min-width: 900px) {
   #sculpture .image-container .thumbnail {
     width: 30%; } }
@@ -325,6 +328,7 @@ p {
       #sculpture-modal .modal-container #full-size-image #leave-box {
         position: absolute;
         height: 60px;
+        padding-bottom: 10px;
         left: 0;
         right: 0;
         bottom: 0;
@@ -361,25 +365,23 @@ p {
         width: 35px;
         height: 35px; }
     #sculpture-modal .modal-container .info {
-      font-size: 18px;
-      display: flex;
-      flex-direction: column; }
+      font-size: 18px; }
+      #sculpture-modal .modal-container .info .padding-box {
+        display: flex;
+        flex-direction: column;
+        height: 100%; }
       #sculpture-modal .modal-container .info .title {
         font-family: "Cormorant Garamond", serif;
         font-weight: 500;
-        font-size: 32px;
-        margin: 0 10%;
-        margin-bottom: 50px; }
+        font-size: 32px; }
       #sculpture-modal .modal-container .info .modal-text {
         font-family: "Montserrat", sans-serif;
         font-weight: 200;
-        margin: 0 10%;
         margin-bottom: 20px;
         font-size: 14px; }
       #sculpture-modal .modal-container .info .icon {
         width: 30px;
         cursor: pointer;
-        padding-left: 10%;
         margin-top: 10px; }
       #sculpture-modal .modal-container .info #enquire-button {
         font-family: "Montserrat", sans-serif;
@@ -388,7 +390,7 @@ p {
         border: 1px solid #404040;
         display: inline-block;
         padding: 10px 40px;
-        margin: 40px 10%;
+        margin: 40px 0;
         align-self: baseline;
         cursor: pointer;
         color: black; }
@@ -401,6 +403,10 @@ p {
   width: 400px;
   height: 300px; }
 
+@media only screen and (min-width: 600px) {
+  #sculpture-modal .modal-container {
+    margin: 5vh 3vw;
+    height: 90vh; } }
 @media (orientation: landscape) {
   #sculpture-modal .modal-container {
     flex-direction: row; }
@@ -409,12 +415,12 @@ p {
     #sculpture-modal .modal-container .info {
       margin-left: auto;
       width: 34vw; }
+      #sculpture-modal .modal-container .info .padding-box {
+        padding: 0 10%; }
+      #sculpture-modal .modal-container .info .title {
+        margin-bottom: 50px; }
     #sculpture-modal .modal-container #full-size-image {
       width: 60vw; } }
-@media only screen and (min-width: 600px) {
-  #sculpture-modal .modal-container {
-    margin: 5vh 3vw;
-    height: 90vh; } }
 @media (orientation: portrait) {
   #sculpture-modal .modal-container {
     flex-direction: column;
@@ -438,7 +444,9 @@ p {
     margin-bottom: 3vh; } }
 @media only screen and (orientation: portrait) and (min-width: 900px) {
   #sculpture-modal .modal-container #wrapper #viewer img {
-    width: 80vh; } }
+    width: 80vh; }
+  #sculpture-modal .modal-container .info .title {
+    margin-bottom: 50px; } }
 #commissions {
   background-color: #3B454E;
   color: white;

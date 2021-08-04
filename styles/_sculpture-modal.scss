@@ -59,6 +59,7 @@
 			#leave-box {
 				position: absolute;
 				height: 60px;
+				padding-bottom: 10px;
 				left: 0;
 				right: 0;
 				bottom: 0;
@@ -111,21 +112,22 @@
 
 		.info {
 			font-size: 18px;
-			display: flex;
-			flex-direction: column;
+
+			.padding-box {
+				display: flex;
+				flex-direction: column;
+				height: 100%;
+			}
 
 			.title {
 				font-family: $font-title;
 				font-weight: 500;
 				font-size: 32px;
-				margin: 0 10%;
-				margin-bottom: 50px;
 			}
 
 			.modal-text {
 				font-family: $font-body;
 				font-weight: 200;
-				margin: 0 10%;
 				margin-bottom: 20px;
 				font-size: 14px;
 			}
@@ -133,7 +135,6 @@
 			.icon {
 				width: 30px;
 				cursor: pointer;
-				padding-left: 10%;
 				margin-top: 10px;
 			}
 
@@ -144,7 +145,7 @@
 				border: 1px solid $border-color;
 				display: inline-block;
 				padding: 10px 40px;
-				margin: 40px 10%;
+				margin: 40px 0;
 				align-self: baseline;
 				cursor: pointer;
 				color: black;
@@ -164,6 +165,15 @@
   height: 300px;
 }
 
+@media only screen and (min-width: $mobile-breakpoint) {
+	#sculpture-modal {
+		.modal-container {
+			margin: 5vh 3vw;
+			height: 90vh;
+		}
+	}
+}
+
 @media (orientation: landscape) {
 	#sculpture-modal {
 		.modal-container {
@@ -180,6 +190,14 @@
 			.info {
 				margin-left: auto;
 				width: 34vw;
+
+				.padding-box {
+					padding: 0 10%;
+				}
+
+				.title {
+					margin-bottom: 50px;
+				}
 			}
 
 			#full-size-image {
@@ -187,13 +205,14 @@
 			}
 		}
 	}
-}
 
-@media only screen and (min-width: $mobile-breakpoint) {
-	#sculpture-modal {
-		.modal-container {
-			margin: 5vh 3vw;
-			height: 90vh;
+	@media only screen and (min-width: $tablet-breakpoint) {
+		#sculpture-modal {
+			.modal-container {
+				.info {
+
+				}
+			}
 		}
 	}
 }
@@ -254,6 +273,12 @@
 						img {
 							width: 80vh;
 						}
+					}
+				}
+
+				.info {
+					.title {
+						margin-bottom: 50px;
 					}
 				}
 			}
