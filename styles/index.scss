@@ -10,6 +10,7 @@ $mobile-breakpoint: 600px;
 $tablet-breakpoint: 900px;
 $desktop-breakpoint: 1000px;
 
+$xsmall-distance: 20px;
 $small-distance: 40px;
 $medium-distance: 80px;
 
@@ -64,8 +65,21 @@ body {
 	margin-top: $small-distance;
 }
 
+.mbs {
+	margin-bottom: $small-distance;
+}
+
+.mvs {
+	margin-top: $small-distance;
+	margin-bottom: $small-distance;
+}
+
+.mtxs {
+	margin-top: $xsmall-distance;
+}
+
 .mbxs {
-	margin-bottom: 20px;
+	margin-bottom: $xsmall-distance;
 }
 
 .pm {
