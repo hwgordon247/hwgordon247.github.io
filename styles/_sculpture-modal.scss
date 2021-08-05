@@ -63,13 +63,12 @@
 				left: 0;
 				right: 0;
 				bottom: 0;
-				flex-direction: column;
-				justify-content: space-around;
-				align-items: stretch;
+				//flex-direction: column;
+				//justify-content: space-around;
+				//align-items: stretch;
 
 				#blob-container {
 					display: flex;
-					width: 100%;
 					justify-content: center;
 
 					#image-blobs {

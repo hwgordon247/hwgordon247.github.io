@@ -356,13 +356,9 @@ p {
         padding-bottom: 10px;
         left: 0;
         right: 0;
-        bottom: 0;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: stretch; }
+        bottom: 0; }
         #sculpture-modal .modal-container #full-size-image #leave-box #blob-container {
           display: flex;
-          width: 100%;
           justify-content: center; }
           #sculpture-modal .modal-container #full-size-image #leave-box #blob-container #image-blobs {
             width: 5px;
