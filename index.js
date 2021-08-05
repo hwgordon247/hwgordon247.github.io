@@ -21,6 +21,16 @@ const giraffeModalInfo = {
   spin: "giraffe/giraffe-spin"
 }
 
+const runningHareModalInfo = {
+  name: "Running Hare",
+  description: "Bronze, signed and numbered limited edition of 12",
+  dimensions: "78cm high x 35 x 35",
+  date: "November 2019",
+  price: "£9,500",
+  images: ["img/running-hare/running-hare-1.jpg", "img/running-hare/running-hare-2.jpg", "img/running-hare/running-hare-3.jpg"],
+  spin: "running-hare/running-hare-spin"
+}
+
 // openModel(giraffeModalInfo);
 // flipToFullSize();
 
@@ -426,6 +436,10 @@ jQuery('#tapir-sculpture').on('click', function() {
 
 jQuery('#giraffe-sculpture').on('click', function() {
   openModel(giraffeModalInfo);
+});
+
+jQuery('#running-hare-sculpture').on('click', function() {
+  openModel(runningHareModalInfo);
 });
 
 jQuery('#barn-swallow-sculpture').on('click', function() {
