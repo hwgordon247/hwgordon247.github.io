@@ -2,7 +2,7 @@
 threeSixty={
 	init:function(filePath) {
 		console.log('loading ' + filePath);
-		this._vr = new AC.VR("viewer","img/" + filePath + "/image_##.jpg",36,{invert:true})
+		this._vr = new AC.VR("viewer","img/sculptures/" + filePath + "/image_##.jpg",36,{invert:true})
 	},
 	clear:function() {
 		this._vr.recycle();
