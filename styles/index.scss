@@ -43,11 +43,11 @@ body {
 }
 
 .ptm {
-	padding-top: 80px;
+	padding-top: 20px;
 }
 
 .pvm {
-	padding: 80px 0;
+	padding: 20px 0;
 }
 
 .mts {
@@ -59,12 +59,34 @@ body {
 }
 
 .pm {
-	padding: 80px 5%;
+	padding: 20px 5%;
+}
+
+@media only screen and (min-width: $mobile-breakpoint) {
+	.pm {
+		padding: 40px 10%;
+	}
+
+	.pvm {
+		padding: 40px 0;
+	}
+
+	.ptm {
+		padding-top: 40px;
+	}
 }
 
 @media only screen and (min-width: $tablet-breakpoint) {
 	.pm {
 		padding: 80px 10%;
+	}
+
+	.pvm {
+		padding: 80px 0;
+	}
+
+	.ptm {
+		padding-top: 80px;
 	}
 }
 

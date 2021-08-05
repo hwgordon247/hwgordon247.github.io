@@ -1,5 +1,5 @@
 #sculpture {
-	background-color: $theme-color;
+	background-color: white;
 	position: relative;
 	z-index: 1;
 	color: $font-color;
@@ -34,10 +34,6 @@
 
 	.fixed-block {
 
-	}
-
-	#sculpture-expand {
-		padding-top: 40px;
 	}
 
 	.arrow {
