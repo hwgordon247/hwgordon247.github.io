@@ -5,8 +5,41 @@ const barnSwallowSculptureInfo = {
     dimensions: "78cm high x 35 x 35",
     date: "November 2019",
     price: "£9,500",
-    images: ["img/barn-swallow/barn-swallow-1.jpg"],
+    images: ["img/sculptures/barn-swallow/barn-swallow-1.jpg"],
     spin: "barn-swallow/barn-swallow-spin"
+}
+
+const blackbirdSculptureInfo = {
+    id: '#blackbird-sculpture',
+    name: "Running Hare",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "78cm high x 35 x 35",
+    date: "November 2019",
+    price: "£9,500",
+    images: ["img/sculptures/blackbird/blackbird-1.jpg"],
+    spin: "blackbird/blackbird-spin"
+}
+
+const chickenSculptureInfo = {
+    id: '#chicken-sculpture',
+    name: "Running Hare",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "78cm high x 35 x 35",
+    date: "November 2019",
+    price: "£9,500",
+    images: ["img/sculptures/chicken/chicken-1.jpg"],
+    spin: "chicken/chicken-spin"
+}
+
+const divingOttersSculptureInfo = {
+    id: '#diving-otters-sculpture',
+    name: "Running Hare",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "78cm high x 35 x 35",
+    date: "November 2019",
+    price: "£9,500",
+    images: ["img/sculptures/diving-otters/diving-otters-1.jpg", "img/sculptures/diving-otters/diving-otters-2.jpg", "img/sculptures/diving-otters/diving-otters-3.jpg", "img/sculptures/diving-otters/diving-otters-4.jpg", "img/sculptures/diving-otters/diving-otters-5.jpg"],
+    spin: "diving-otters/diving-otters-spin"
 }
 
 const malayanTapirSculptureInfo = {
@@ -44,6 +77,9 @@ const runningHareSculptureInfo = {
 
 const allSculptures = [
     barnSwallowSculptureInfo,
+    blackbirdSculptureInfo,
+    chickenSculptureInfo,
+    divingOttersSculptureInfo,
     malayanTapirSculptureInfo,
     giraffeBustSculptureInfo,
     runningHareSculptureInfo
