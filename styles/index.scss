@@ -1,5 +1,6 @@
 $font-color: white;
 $border-color: #404040;
+$theme-color: #3B454E;
 
 $font-title: 'Cormorant Garamond', serif;
 $font-body: 'Montserrat', sans-serif;
@@ -16,7 +17,7 @@ body {
 	-webkit-font-smoothing: antialiased;
 
   margin: 0;
-	background-color: #3B454E;
+	background-color: $theme-color;
 	font-family: $font-body;
 	font-weight: 200;
 	color: $font-color;

@@ -1,9 +1,8 @@
 .tool-bar {
 	color: white;
 	position: relative;
-	background-color: #3B454E;
+	background-color: $theme-color;
 	height: 20px;
-	display: flex;
 	padding: 20px 5%;
 	z-index: 2;
 	display: flex;
@@ -11,17 +10,17 @@
 	align-items: center;
 
 	.logo {
-		height: 55px;
+		height: 45px;
 		cursor: pointer;
 	}
 
 	.buttons {
     	display: none;
-		width: 60%;
+		width: 50%;
 		justify-content: space-between;
 		font-family: $font-body;
 		font-weight: 300;
-		font-size: 16px;
+		font-size: 14px;
 	}
 
 	#hamburger {
@@ -48,6 +47,14 @@
 
 		#hamburger {
 			display: none;
+		}
+	}
+}
+
+@media only screen and (min-width: 1100px) {
+	.tool-bar {
+		.buttons {
+			width: 40%;
 		}
 	}
 }

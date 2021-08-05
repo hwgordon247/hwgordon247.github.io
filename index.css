@@ -150,22 +150,21 @@ p {
   position: relative;
   background-color: #3B454E;
   height: 20px;
-  display: flex;
   padding: 20px 5%;
   z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center; }
   .tool-bar .logo {
-    height: 55px;
+    height: 45px;
     cursor: pointer; }
   .tool-bar .buttons {
     display: none;
-    width: 60%;
+    width: 50%;
     justify-content: space-between;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
-    font-size: 16px; }
+    font-size: 14px; }
   .tool-bar #hamburger {
     height: 24px;
     width: 24px;
@@ -181,6 +180,9 @@ p {
     display: flex; }
   .tool-bar #hamburger {
     display: none; } }
+@media only screen and (min-width: 1100px) {
+  .tool-bar .buttons {
+    width: 40%; } }
 #side-bar {
   display: none;
   position: fixed;
