@@ -8,6 +8,14 @@ body {
   color: white;
   font-size: 16px; }
 
+.body-text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 23px; }
+
 .button {
   cursor: pointer; }
 
@@ -247,8 +255,7 @@ p {
   #about .right {
     width: 100%;
     text-align: justify;
-    text-justify: inter-word;
-    margin-top: 40px; }
+    text-justify: inter-word; }
   #about .fred {
     width: 100%; }
 
