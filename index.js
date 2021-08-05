@@ -1,7 +1,7 @@
 let currentInfo;
 let magnifyVisible = false;
 
-// openModel(giraffeModalInfo);
+// openModel(blackbirdSculptureInfo);
 // flipToFullSize();
 
 // openSideBar();
@@ -165,6 +165,7 @@ function flipToFullSize() {
 
   if (currentInfo.images.length > 1) {
     jQuery('#leave-box').css('display', 'flex');
+    jQuery('#direction-buttons').css('display', 'flex');
 
     for (i = 0; i < currentInfo.images.length; i ++) {
       jQuery('#blob-container').prepend('<div id="image-blobs"></div>');
@@ -188,18 +189,18 @@ function goToRotate() {
   jQuery('#rotate-button').hide();
   jQuery("#full-size-image").hide();
   jQuery('#leave-box').hide();
+  jQuery('#direction-buttons').hide();
 
   clearBlobs();
 }
 
 function clearBlobs() {
-  for (i = 0; i <= jQuery('#blob-container').children().length; i ++) {
+  for (i = 0; i <= jQuery('#blob-container').children().length + 2; i ++) {
     jQuery(jQuery('#blob-container').children().first()).remove();
   }
 }
 
 function removeMagnify() {
-  console.log('leave')
   magnifyVisible = false;
   jQuery(".img-magnifier-glass").remove();
 }

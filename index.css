@@ -368,7 +368,7 @@ p {
             #sculpture-modal .modal-container #full-size-image #leave-box #blob-container #image-blobs.highlight {
               opacity: 100%; }
     #sculpture-modal .modal-container #direction-buttons {
-      display: flex;
+      display: none;
       justify-content: space-around;
       align-items: center;
       height: 100%;
