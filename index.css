@@ -440,14 +440,33 @@ p {
     height: 90vh; } }
 @media (orientation: landscape) {
   #sculpture-modal .modal-container {
-    flex-direction: row; }
+    flex-direction: column;
+    justify-content: space-around; }
     #sculpture-modal .modal-container #wrapper #viewer img {
       width: 60vw; }
+    #sculpture-modal .modal-container .info {
+      width: 100%; }
+      #sculpture-modal .modal-container .info .padding-box {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center; }
+    #sculpture-modal .modal-container #full-size-image {
+      width: 100%;
+      height: 100%; } }
+@media only screen and (orientation: landscape) and (min-width: 1200px) {
+  #sculpture-modal .modal-container {
+    flex-direction: row; }
     #sculpture-modal .modal-container .info {
       margin-left: auto;
       width: 34vw; }
       #sculpture-modal .modal-container .info .padding-box {
-        padding: 0 10%; }
+        padding: 0 10%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start; }
       #sculpture-modal .modal-container .info .title {
         margin-bottom: 50px; }
     #sculpture-modal .modal-container #full-size-image {

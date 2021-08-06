@@ -178,7 +178,8 @@
 @media (orientation: landscape) {
 	#sculpture-modal {
 		.modal-container {
-			flex-direction: row;
+			flex-direction: column;
+			justify-content: space-around;
 
 			#wrapper {
 				#viewer {
@@ -189,20 +190,20 @@
 			}
 
 			.info {
-				margin-left: auto;
-				width: 34vw;
+				width: 100%;
 
 				.padding-box {
-					padding: 0 10%;
-				}
-
-				.title {
-					margin-bottom: 50px;
+					width: 100%;
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					align-items: center;
+					justify-content: center;
 				}
 			}
 
 			#full-size-image {
-				width: 60vw;
+				width: 100%;
 				height: 100%;
 			}
 		}
@@ -210,18 +211,30 @@
 
 	@media only screen and (min-width: 1200px) {
 		#sculpture-modal {
-			//.modal-container {
-			//	flex-direction: column;
-			//	justify-content: space-around;
-			//
-			//	.info {
-			//
-			//	}
-			//
-			//	#full-size-image {
-			//		width: 100%;
-			//	}
-			//}
+			.modal-container {
+				flex-direction: row;
+
+				.info {
+					margin-left: auto;
+					width: 34vw;
+
+					.padding-box {
+						padding: 0 10%;
+						flex-direction: column;
+						justify-content: flex-start;
+						align-items: flex-start;
+					}
+
+					.title {
+						margin-bottom: 50px;
+					}
+				}
+
+				#full-size-image {
+					width: 60vw;
+					height: 100%;
+				}
+			}
 		}
 	}
 }
