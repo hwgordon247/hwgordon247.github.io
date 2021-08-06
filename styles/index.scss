@@ -31,7 +31,7 @@ body {
 	font-weight: 200;
 	color: $font-color;
 	font-size: 16px;
-	letter-spacing: 1px;
+	//letter-spacing: 1px;
 	line-height: 23px;
 }
 
@@ -188,6 +188,10 @@ p {
 	display: flex;
 	justify-content: space-between;
 	font-size: 12px;
+
+	.terms-link {
+		cursor: pointer;
+	}
 }
 
 @import 'landing';

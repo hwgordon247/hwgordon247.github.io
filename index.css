@@ -13,7 +13,6 @@ body {
   font-weight: 200;
   color: white;
   font-size: 16px;
-  letter-spacing: 1px;
   line-height: 23px; }
 
 .button {
@@ -128,6 +127,8 @@ p {
   display: flex;
   justify-content: space-between;
   font-size: 12px; }
+  .footer .terms-link {
+    cursor: pointer; }
 
 #landing .landing-parallax {
   height: 100vh;
