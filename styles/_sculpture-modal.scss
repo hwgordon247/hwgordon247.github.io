@@ -49,7 +49,7 @@
 			position: relative;
 
 			// change this for full screen
-			height: 100%;
+			//height: 100%;
 			overflow: hidden;
 
 			img {
@@ -203,17 +203,25 @@
 
 			#full-size-image {
 				width: 60vw;
+				height: 100%;
 			}
 		}
 	}
 
-	@media only screen and (min-width: $tablet-breakpoint) {
+	@media only screen and (min-width: 1200px) {
 		#sculpture-modal {
-			.modal-container {
-				.info {
-
-				}
-			}
+			//.modal-container {
+			//	flex-direction: column;
+			//	justify-content: space-around;
+			//
+			//	.info {
+			//
+			//	}
+			//
+			//	#full-size-image {
+			//		width: 100%;
+			//	}
+			//}
 		}
 	}
 }
@@ -222,7 +230,7 @@
 	#sculpture-modal {
 		.modal-container {
 			flex-direction: column;
-			justify-content: flex-end;
+			justify-content: space-around;
 
 			#wrapper {
 				#viewer {
@@ -261,6 +269,10 @@
 							margin-bottom: 3vh;
 						}
 					}
+				}
+
+				#full-size-image {
+					height: 100%;
 				}
 			}
 		}

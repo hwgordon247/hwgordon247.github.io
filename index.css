@@ -355,7 +355,6 @@ p {
     #sculpture-modal .modal-container #full-size-image {
       display: none;
       position: relative;
-      height: 100%;
       overflow: hidden; }
       #sculpture-modal .modal-container #full-size-image img {
         object-fit: cover;
@@ -452,11 +451,12 @@ p {
       #sculpture-modal .modal-container .info .title {
         margin-bottom: 50px; }
     #sculpture-modal .modal-container #full-size-image {
-      width: 60vw; } }
+      width: 60vw;
+      height: 100%; } }
 @media (orientation: portrait) {
   #sculpture-modal .modal-container {
     flex-direction: column;
-    justify-content: flex-end; }
+    justify-content: space-around; }
     #sculpture-modal .modal-container #wrapper #viewer img {
       width: 60vh;
       margin-bottom: 10vh; }
@@ -473,7 +473,9 @@ p {
 @media only screen and (orientation: portrait) and (min-width: 600px) {
   #sculpture-modal .modal-container #wrapper #viewer img {
     width: 60vh;
-    margin-bottom: 3vh; } }
+    margin-bottom: 3vh; }
+  #sculpture-modal .modal-container #full-size-image {
+    height: 100%; } }
 @media only screen and (orientation: portrait) and (min-width: 900px) {
   #sculpture-modal .modal-container #wrapper #viewer img {
     width: 80vh; }
@@ -543,5 +545,14 @@ p {
     text-align: center; }
     #contact .contact-info div {
       margin-top: 150px; }
+
+#terms {
+  background-color: #8F8E8D;
+  color: white;
+  position: relative;
+  z-index: 1;
+  display: flex; }
+  #terms .signature {
+    height: 250px; }
 
 /*# sourceMappingURL=index.css.map */

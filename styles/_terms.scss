@@ -3,4 +3,9 @@
   color: $font-color;
   position: relative;
   z-index: 1;
+  display: flex;
+
+  .signature {
+    height: 250px;
+  }
 }

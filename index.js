@@ -1,8 +1,8 @@
 let currentInfo;
 let magnifyVisible = false;
 
-// openModel(malayanTapirSculptureInfo);
-// flipToFullSize();
+openModel(malayanTapirSculptureInfo);
+flipToFullSize();
 
 // openSideBar();
 
