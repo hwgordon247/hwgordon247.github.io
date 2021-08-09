@@ -413,6 +413,8 @@ p {
       #sculpture-modal .modal-container .info .icon {
         width: 30px;
         cursor: pointer; }
+      #sculpture-modal .modal-container .info .camera {
+        width: 25px; }
       #sculpture-modal .modal-container .info #enquire-button {
         font-family: "Montserrat", sans-serif;
         font-weight: 200;
