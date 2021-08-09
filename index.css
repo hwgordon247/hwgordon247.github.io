@@ -412,19 +412,40 @@ p {
         font-size: 14px; }
       #sculpture-modal .modal-container .info .icon {
         width: 30px;
-        cursor: pointer;
-        margin-top: 10px; }
+        cursor: pointer; }
       #sculpture-modal .modal-container .info #enquire-button {
         font-family: "Montserrat", sans-serif;
         font-weight: 200;
         font-size: 14px;
         border: 1px solid #404040;
         display: inline-block;
-        padding: 10px 40px;
         margin: 40px 0;
         align-self: baseline;
         cursor: pointer;
-        color: black; }
+        color: black;
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%; }
+      #sculpture-modal .modal-container .info .image-button {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        font-size: 14px;
+        border: 1px solid #404040;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        width: 100%;
+        cursor: pointer;
+        margin-top: 40px; }
+        #sculpture-modal .modal-container .info .image-button div {
+          margin-left: 10px; }
+        #sculpture-modal .modal-container .info .image-button img {
+          margin-right: 10px; }
   #sculpture-modal.show-modal {
     display: block; }
 
@@ -447,7 +468,6 @@ p {
     #sculpture-modal .modal-container .info {
       width: 100%; }
       #sculpture-modal .modal-container .info .padding-box {
-        width: 100%;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
