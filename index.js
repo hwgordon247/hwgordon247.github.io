@@ -160,7 +160,7 @@ function openSideBar() {
 function flipToFullSize() {
   jQuery("#wrapper").hide();
   jQuery("#full-size-zoom").hide();
-  jQuery('#rotate-button').show();
+  jQuery('#rotate-button').css('display', 'flex');
   jQuery("#full-size-image").show();
 
   if (currentInfo.images.length > 1) {
@@ -185,7 +185,7 @@ function moveBlob(index) {
 
 function goToRotate() {
   jQuery("#wrapper").show();
-  jQuery("#full-size-zoom").show();
+  jQuery("#full-size-zoom").css('display', 'flex');
   jQuery('#rotate-button').hide();
   jQuery("#full-size-image").hide();
   jQuery('#leave-box').hide();

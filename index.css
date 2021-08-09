@@ -380,6 +380,8 @@ p {
             opacity: 50%; }
             #sculpture-modal .modal-container #full-size-image #leave-box #blob-container #image-blobs.highlight {
               opacity: 100%; }
+    #sculpture-modal .modal-container #full-size-zoom {
+      display: flex; }
     #sculpture-modal .modal-container #direction-buttons {
       display: none;
       justify-content: space-around;
@@ -432,11 +434,11 @@ p {
         justify-content: center;
         width: 100%; }
       #sculpture-modal .modal-container .info .image-button {
+        display: none;
         font-family: "Montserrat", sans-serif;
         font-weight: 200;
         font-size: 14px;
         border: 1px solid #404040;
-        display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: center;
@@ -497,8 +499,12 @@ p {
         align-items: flex-start; }
       #sculpture-modal .modal-container .info .title {
         margin-bottom: 50px; }
+      #sculpture-modal .modal-container .info .left {
+        width: 100%;
+        margin: 0; }
       #sculpture-modal .modal-container .info .right {
-        width: 100%; }
+        width: 100%;
+        margin: 0; }
     #sculpture-modal .modal-container #full-size-image {
       width: 60vw;
       height: 100%; } }

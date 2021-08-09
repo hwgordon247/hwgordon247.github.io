@@ -90,6 +90,10 @@
 			}
 		}
 
+		#full-size-zoom {
+			display: flex;
+		}
+
 		#direction-buttons {
 			display: none;
 			justify-content: space-around;
@@ -161,11 +165,11 @@
 			}
 
 			.image-button {
+				display: none;
 				font-family: $font-body;
 				font-weight: 200;
 				font-size: 14px;
 				border: 1px solid $border-color;
-				display: flex;
 				flex-direction: row;
 				align-items: center;
 				justify-content: center;
@@ -270,8 +274,14 @@
 						margin-bottom: 50px;
 					}
 
+					.left {
+						width: 100%;
+						margin: 0;
+					}
+
 					.right {
 						width: 100%;
+						margin: 0;
 					}
 				}
 
