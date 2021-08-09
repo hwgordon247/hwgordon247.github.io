@@ -474,7 +474,13 @@ p {
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
-        justify-content: center; }
+        justify-content: space-around; }
+      #sculpture-modal .modal-container .info .left {
+        width: 35%;
+        margin-left: 10%; }
+      #sculpture-modal .modal-container .info .right {
+        width: 35%;
+        margin-right: 10%; }
     #sculpture-modal .modal-container #full-size-image {
       width: 100%;
       height: 100%; } }
@@ -491,6 +497,8 @@ p {
         align-items: flex-start; }
       #sculpture-modal .modal-container .info .title {
         margin-bottom: 50px; }
+      #sculpture-modal .modal-container .info .right {
+        width: 100%; }
     #sculpture-modal .modal-container #full-size-image {
       width: 60vw;
       height: 100%; } }
