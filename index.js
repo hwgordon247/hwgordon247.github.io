@@ -22,10 +22,12 @@ function populateModal(modalInfo) {
   jQuery('#magnify-image').attr("src", modalInfo.images[0]);
   jQuery('#enquire-button').attr("href", constructEmailLink(modalInfo.name));
 
-  threeSixty.init(modalInfo.spin, function () {
-    console.log('bongo')
-    // jQuery('#spin-me').css('display', 'flex');
-  });
+  threeSixty.init(modalInfo.spin);
+
+  setTimeout(function() {
+    jQuery('#spin-me').css('visibility', 'visible');
+    jQuery('#spin-me').css('opacity', '1');
+  }, 500);
 }
 
 function constructEmailLink(sculptureName) {
@@ -74,6 +76,8 @@ function closeModel() {
   goToRotate();
   threeSixty.clear();
   jQuery("#viewer").empty();
+  jQuery('#spin-me').css('visibility', 'hidden');
+  jQuery('#spin-me').css('opacity', '0');
 }
 
 function scrollToThing(thing) {

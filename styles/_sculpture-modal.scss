@@ -45,15 +45,17 @@
 			}
 
 			#spin-me {
-				display: none;
-				margin-top: -60px;
-				margin-right: 60px;
+				margin-top: -33px;
+				margin-right: 50px;
 				font-size: 14px;
 				font-weight: 200;
-				display: none;
+				display: flex;
 				flex-direction: row;
 				justify-content: flex-end;
 				align-items: center;
+				visibility: hidden;
+				opacity: 0;
+				transition: visibility 0s, opacity 1s linear;
 
 				img {
 					//margin-right: 80px;
