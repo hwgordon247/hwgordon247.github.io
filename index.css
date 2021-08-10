@@ -352,16 +352,17 @@ p {
       #sculpture-modal .modal-container #wrapper #viewer {
         height: auto;
         width: auto; }
-      #sculpture-modal .modal-container #wrapper .spin-me {
+      #sculpture-modal .modal-container #wrapper #spin-me {
+        display: none;
         margin-top: -60px;
         margin-right: 60px;
         font-size: 14px;
         font-weight: 200;
-        display: flex;
+        display: none;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center; }
-        #sculpture-modal .modal-container #wrapper .spin-me img {
+        #sculpture-modal .modal-container #wrapper #spin-me img {
           margin-top: 3px;
           margin-right: 15px;
           width: 30px; }

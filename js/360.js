@@ -1,8 +1,9 @@
 // JavaScript Document
 threeSixty={
-	init:function(filePath) {
+	init:function(filePath, callback) {
 		console.log('loading ' + filePath);
 		this._vr = new AC.VR("viewer","img/sculptures/" + filePath + "/image_##.jpg",36,{invert:true})
+		callback();
 	},
 	clear:function() {
 		this._vr.recycle();

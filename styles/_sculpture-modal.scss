@@ -44,12 +44,13 @@
 				}
 			}
 
-			.spin-me {
+			#spin-me {
+				display: none;
 				margin-top: -60px;
 				margin-right: 60px;
 				font-size: 14px;
 				font-weight: 200;
-				display: flex;
+				display: none;
 				flex-direction: row;
 				justify-content: flex-end;
 				align-items: center;

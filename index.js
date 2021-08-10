@@ -22,7 +22,10 @@ function populateModal(modalInfo) {
   jQuery('#magnify-image').attr("src", modalInfo.images[0]);
   jQuery('#enquire-button').attr("href", constructEmailLink(modalInfo.name));
 
-  threeSixty.init(modalInfo.spin);
+  threeSixty.init(modalInfo.spin, function () {
+    console.log('bongo')
+    // jQuery('#spin-me').css('display', 'flex');
+  });
 }
 
 function constructEmailLink(sculptureName) {
