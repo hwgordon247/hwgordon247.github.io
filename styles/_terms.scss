@@ -1,11 +1,15 @@
 #terms {
   background-color: $theme-color;
   color: $font-color;
-  position: relative;
-  z-index: 1;
-  display: flex;
+  //position: relative;
+  //z-index: 1;
+  //display: flex;
 
   .signature {
-    height: 250px;
+    height: 100px;
+  }
+
+  .footer {
+    justify-content: center;
   }
 }

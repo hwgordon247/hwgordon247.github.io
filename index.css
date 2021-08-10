@@ -628,11 +628,10 @@ p {
 
 #terms {
   background-color: #8F8E8D;
-  color: white;
-  position: relative;
-  z-index: 1;
-  display: flex; }
+  color: white; }
   #terms .signature {
-    height: 250px; }
+    height: 100px; }
+  #terms .footer {
+    justify-content: center; }
 
 /*# sourceMappingURL=index.css.map */
