@@ -303,6 +303,7 @@ p {
       transform: scale(1.05);
       filter: brightness(100%); }
   #sculpture .arrow {
+    margin-top: 20px;
     text-align: center;
     opacity: 60%; }
     #sculpture .arrow img {

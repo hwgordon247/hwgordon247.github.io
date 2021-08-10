@@ -21,7 +21,7 @@
 				height: 100%;
 				object-fit: cover;
 				transition: transform 0.2s, filter 0.15s ease-in-out;
-  			transform-origin: center center;
+  				transform-origin: center center;
 				filter: brightness(90%);
 				// backface-visibility: hidden;
 			}
@@ -38,6 +38,7 @@
 	}
 
 	.arrow {
+		margin-top: 20px;
 		text-align: center;
 		opacity: 60%;
 
@@ -45,6 +46,8 @@
 			cursor: pointer;
 		}
 	}
+
+
 }
 
 @media only screen and (min-width: $mobile-breakpoint) {

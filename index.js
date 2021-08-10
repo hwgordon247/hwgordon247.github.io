@@ -1,5 +1,6 @@
 let currentInfo;
 let magnifyVisible = false;
+let isSculptureExpanded = true;
 
 // openModel(malayanTapirSculptureInfo);
 // flipToFullSize();
@@ -155,6 +156,19 @@ function closeSideBar() {
 
 function openSideBar() {
   jQuery('#side-bar').animate({width: 'toggle'});
+}
+
+function toggleSculptures() {
+  jQuery('#expander').slideToggle(500, function() {
+
+    if (isSculptureExpanded) {
+      jQuery('#expander-arrow').attr("src", "img/icon/arrow-down.png");
+      isSculptureExpanded = false;
+    } else {
+      jQuery('#expander-arrow').attr("src", "img/icon/arrow-up.png");
+      isSculptureExpanded = true;
+    }
+  });
 }
 
 function flipToFullSize() {
@@ -329,7 +343,7 @@ function preloadImage(arrayOfImages) {
 
 jQuery(document).ready(function(){
   jQuery(this).scrollTop(0);
-  jQuery('#expander').toggle('collapsed');
+  toggleSculptures();
 });
 
 jQuery('#scroll-wrapper').on("mousewheel", function() {
@@ -419,7 +433,7 @@ jQuery('#modal-cross').on('click', function() {
 });
 
 jQuery('#sculpture-expand').on('click', function() {
-  jQuery('#expander').slideToggle(500);
+  toggleSculptures();
 });
 
 jQuery('#hamburger').on('click', function() {
