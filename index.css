@@ -405,11 +405,12 @@ p {
       #sculpture-modal .modal-container .info .title {
         font-family: "Cormorant Garamond", serif;
         font-weight: 500;
-        font-size: 32px; }
+        font-size: 32px;
+        margin-bottom: 20px;
+        margin-top: 20px; }
       #sculpture-modal .modal-container .info .modal-text {
         font-family: "Montserrat", sans-serif;
         font-weight: 200;
-        margin-bottom: 20px;
         font-size: 14px; }
       #sculpture-modal .modal-container .info .icon {
         width: 30px;
@@ -422,7 +423,8 @@ p {
         font-size: 14px;
         border: 1px solid #404040;
         display: inline-block;
-        margin: 40px 0;
+        margin-top: 20px;
+        margin-bottom: 40px;
         align-self: baseline;
         cursor: pointer;
         color: black;
@@ -444,7 +446,7 @@ p {
         height: 40px;
         width: 100%;
         cursor: pointer;
-        margin-top: 40px; }
+        margin-top: 20px; }
         #sculpture-modal .modal-container .info .image-button div {
           margin-left: 10px; }
         #sculpture-modal .modal-container .info .image-button img {
@@ -482,6 +484,12 @@ p {
       #sculpture-modal .modal-container .info .right {
         width: 35%;
         margin-right: 10%; }
+      #sculpture-modal .modal-container .info .title {
+        margin-top: 0px; }
+      #sculpture-modal .modal-container .info .modal-text {
+        margin-top: 0px; }
+      #sculpture-modal .modal-container .info .image-button {
+        margin-top: 40px; }
     #sculpture-modal .modal-container #full-size-image {
       width: 100%;
       height: 100%; } }
@@ -504,6 +512,10 @@ p {
       #sculpture-modal .modal-container .info .right {
         width: 100%;
         margin: 0; }
+      #sculpture-modal .modal-container .info .modal-text {
+        margin-bottom: 20px; }
+      #sculpture-modal .modal-container .info #enquire-button {
+        margin-top: 40px; }
     #sculpture-modal .modal-container #full-size-image {
       width: 60vw;
       height: 100%; } }

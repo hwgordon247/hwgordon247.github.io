@@ -128,12 +128,13 @@
 				font-family: $font-title;
 				font-weight: 500;
 				font-size: 32px;
+				margin-bottom: 20px;
+				margin-top: 20px;
 			}
 
 			.modal-text {
 				font-family: $font-body;
 				font-weight: 200;
-				margin-bottom: 20px;
 				font-size: 14px;
 			}
 
@@ -152,7 +153,8 @@
 				font-size: 14px;
 				border: 1px solid $border-color;
 				display: inline-block;
-				margin: 40px 0;
+				margin-top: 20px;
+				margin-bottom: 40px;
 				align-self: baseline;
 				cursor: pointer;
 				color: black;
@@ -176,7 +178,7 @@
 				height: 40px;
 				width: 100%;
 				cursor: pointer;
-				margin-top: 40px;
+				margin-top: 20px;
 
 				div {
 					margin-left: 10px;
@@ -245,6 +247,18 @@
 					width: 35%;
 					margin-right: 10%;
 				}
+
+				.title {
+					margin-top: 0px;
+				}
+
+				.modal-text {
+					margin-top: 0px;
+				}
+
+				.image-button {
+					margin-top: 40px;
+				}
 			}
 
 			#full-size-image {
@@ -282,6 +296,14 @@
 					.right {
 						width: 100%;
 						margin: 0;
+					}
+
+					.modal-text {
+						margin-bottom: 20px;
+					}
+
+					#enquire-button {
+						margin-top: 40px;
 					}
 				}
 
