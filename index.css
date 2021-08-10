@@ -351,8 +351,6 @@ p {
       #sculpture-modal .modal-container #wrapper #viewer {
         height: auto;
         width: auto; }
-        #sculpture-modal .modal-container #wrapper #viewer img {
-          max-width: 800px; }
     #sculpture-modal .modal-container #full-size-image {
       display: none;
       position: relative;
