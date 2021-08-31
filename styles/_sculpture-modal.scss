@@ -51,7 +51,7 @@
 				font-weight: 200;
 				display: flex;
 				flex-direction: row;
-				justify-content: flex-end;
+				justify-content: center;
 				align-items: center;
 				visibility: hidden;
 				opacity: 0;
@@ -238,14 +238,18 @@
 	#sculpture-modal {
 		.modal-container {
 			flex-direction: column;
-			justify-content: space-around;
+			justify-content: space-evenly;
 
 			#wrapper {
 				#viewer {
 					img {
-						width: 60vw;
+						width: 80vw;
 					}
 				}
+			}
+
+			.height-thing {
+				height: 70vh !important;
 			}
 
 			.info {
@@ -290,10 +294,60 @@
 		}
 	}
 
+	@media only screen and (min-width: $tablet-breakpoint) {
+		#sculpture-modal {
+			.modal-container {
+
+				#wrapper {
+					#viewer {
+						img {
+							width: 70vw;
+						}
+					}
+				}
+
+				.height-thing {
+					height: 70vh !important;
+				}
+			}
+		}
+	}
+
+	@media only screen and (min-width: $desktop-breakpoint) {
+		#sculpture-modal {
+			.modal-container {
+
+				#wrapper {
+					#viewer {
+						img {
+							width: 70vw;
+						}
+					}
+				}
+
+				.height-thing {
+					height: 67vh !important;
+				}
+			}
+		}
+	}
+
 	@media only screen and (min-width: 1200px) {
 		#sculpture-modal {
 			.modal-container {
 				flex-direction: row;
+
+				#wrapper {
+					#viewer {
+						img {
+							width: 60vw;
+						}
+					}
+				}
+
+				.height-thing {
+					height: 100% !important;
+				}
 
 				.info {
 					margin-left: auto;
@@ -342,15 +396,23 @@
 	#sculpture-modal {
 		.modal-container {
 			flex-direction: column;
-			justify-content: space-around;
+			justify-content: space-evenly;
+
+			.height-thing {
+				height: 45vh !important;
+			}
 
 			#wrapper {
 				#viewer {
 					img {
 						width: 60vh;
-						margin-bottom: 10vh;
+						//margin-bottom: 10vh;
 					}
 				}
+			}
+
+			#spin-me {
+				margin-bottom: 10vh;
 			}
 
 			.info {
@@ -377,10 +439,14 @@
 				#wrapper {
 					#viewer {
 						img {
-							width: 60vh;
-							margin-bottom: 3vh;
+							width: 70vh;
+							//margin-bottom: 3vh;
 						}
 					}
+				}
+
+				.height-thing {
+					height: 49vh !important;
 				}
 
 				#full-size-image {
