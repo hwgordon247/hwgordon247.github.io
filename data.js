@@ -284,6 +284,50 @@ const whiteRhinoStudySculptureInfo = {
     spin: "white-rhino-study/white-rhino-study-spin"
 }
 
+const ducklingSculptureInfo = {
+    id: '#duckling-sculpture',
+    name: "Running Hare",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "78cm high x 35 x 35",
+    date: "November 2019",
+    price: "£9,500",
+    images: ["img/sculptures/duckling/duckling-1.jpg", "img/sculptures/duckling/duckling-2.jpg", "img/sculptures/duckling/duckling-3.jpg"],
+    spin: "duckling/duckling-spin"
+}
+
+const foxPairInfo = {
+    id: '#fox-pair-sculpture',
+    name: "Running Hare",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "78cm high x 35 x 35",
+    date: "November 2019",
+    price: "£9,500",
+    images: ["img/sculptures/fox-pair/fox-pair-1.jpg", "img/sculptures/fox-pair/fox-pair-2.jpg", "img/sculptures/fox-pair/fox-pair-3.jpg"],
+    spin: "fox-pair/fox-pair-spin"
+}
+
+const fightOrFlightInfo = {
+    id: '#fight-or-flight-sculpture',
+    name: "Running Hare",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "78cm high x 35 x 35",
+    date: "November 2019",
+    price: "£9,500",
+    images: ["img/sculptures/fight-or-flight/fight-or-flight-1.jpg"],
+    spin: "fight-or-flight/fight-or-flight-spin"
+}
+
+const gallopingHorseInfo = {
+    id: '#galloping-horse-sculpture',
+    name: "Running Hare",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "78cm high x 35 x 35",
+    date: "November 2019",
+    price: "£9,500",
+    images: ["img/sculptures/galloping-horse/galloping-horse-1.jpg"],
+    spin: "galloping-horse/galloping-horse-spin"
+}
+
 const allSculptures = [
     barnSwallowSculptureInfo,
     blackbirdSculptureInfo,
@@ -310,5 +354,9 @@ const allSculptures = [
     walkingHorseSculptureInfo,
     warthogStudySculptureInfo,
     whiteRhinoStudySculptureInfo,
-    runningHareSculptureInfo
+    runningHareSculptureInfo,
+    ducklingSculptureInfo,
+    foxPairInfo,
+    fightOrFlightInfo,
+    gallopingHorseInfo
 ];
