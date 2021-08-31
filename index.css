@@ -343,6 +343,8 @@ p {
       cursor: pointer;
       z-index: 10;
       width: 20px; }
+    #sculpture-modal .modal-container #modal-price {
+      font-weight: 400; }
     #sculpture-modal .modal-container #wrapper {
       padding: 0;
       height: auto;

@@ -49,7 +49,7 @@ const giraffeBustSculptureInfo = {
     dimensions: "78cm high x 35 x 35",
     date: "November 2019",
     price: "£9,900 inc. VAT",
-    images: ["img/sculptures/giraffe-bust/giraffe-bust-1.jpg", "img/sculptures/giraffe-bust/giraffe-bust-2.jpg", "img/sculptures/giraffe-bust/giraffe-bust-3.jpg", "img/old/giraffe/giraffe-compress.jpg"],
+    images: ["img/sculptures/giraffe-bust/giraffe-bust-1.jpg", "img/sculptures/giraffe-bust/giraffe-bust-2.jpg", "img/sculptures/giraffe-bust/giraffe-bust-3.jpg"],
     spin: "giraffe-bust/giraffe-bust-spin"
 }
 
