@@ -2,7 +2,7 @@ let currentInfo;
 let magnifyVisible = false;
 let isSculptureExpanded = true;
 
-// openModel(malayanTapirSculptureInfo);
+openModel(malayanTapirSculptureInfo);
 // flipToFullSize();
 
 // openSideBar();
@@ -24,10 +24,13 @@ function populateModal(modalInfo) {
 
   threeSixty.init(modalInfo.spin);
 
-  setTimeout(function() {
-    jQuery('#spin-me').css('visibility', 'visible');
-    jQuery('#spin-me').css('opacity', '1');
-  }, 500);
+  jQuery('#spin-me').css('visibility', 'visible');
+  jQuery('#spin-me').css('opacity', '1');
+
+  // setTimeout(function() {
+  //   jQuery('#spin-me').css('visibility', 'visible');
+  //   jQuery('#spin-me').css('opacity', '1');
+  // }, 500);
 }
 
 function constructEmailLink(sculptureName) {
@@ -171,6 +174,7 @@ function toggleSculptures() {
     if (isSculptureExpanded) {
       jQuery('#expander-arrow').attr("src", "img/icon/arrow-down.png");
       isSculptureExpanded = false;
+      // scrollToThing('#sculpture');
     } else {
       jQuery('#expander-arrow').attr("src", "img/icon/arrow-up.png");
       isSculptureExpanded = true;
