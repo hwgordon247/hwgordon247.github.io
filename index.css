@@ -348,7 +348,7 @@ p {
     display: flex;
     justify-content: flex-start;
     margin: 0;
-    height: 100vh;
+    height: 100%;
     align-items: center;
     position: relative; }
     #sculpture-modal .modal-container #modal-cross {
