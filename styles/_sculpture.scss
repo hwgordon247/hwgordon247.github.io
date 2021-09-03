@@ -9,10 +9,20 @@
 		justify-content: space-between;
 		flex-wrap: wrap;
 
+		.thumbnail-container {
+			margin: 20px 0 10px 0;
+			width: 100%;
+
+			.thumb-text {
+				padding-top: 20px;
+				text-align: center;
+				font-weight: 200;
+				font-size: 16px;
+			}
+		}
+
 		.thumbnail {
 			cursor: pointer;
-			margin: 20px 0;
-			width: 100%;
 			overflow: hidden;
 
 			img {
@@ -52,7 +62,7 @@
 @media only screen and (min-width: $mobile-breakpoint) {
 	#sculpture {
 		.image-container {
-			.thumbnail {
+			.thumbnail-container {
 				width: 47%;
 			}
 		}
@@ -62,7 +72,7 @@
 @media only screen and (min-width: $tablet-breakpoint) {
 	#sculpture {
 		.image-container {
-			.thumbnail {
+			.thumbnail-container {
 				width: 30%;
 			}
 		}
