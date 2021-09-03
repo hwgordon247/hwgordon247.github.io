@@ -11,11 +11,11 @@ const barnSwallowSculptureInfo = {
 
 const blackbirdSculptureInfo = {
     id: '#blackbird-sculpture',
-    name: "Running Hare",
+    name: "Blackbird",
     description: "Bronze, signed and numbered limited edition of 12",
-    dimensions: "78cm high x 35 x 35",
-    date: "November 2019",
-    price: "£9,500",
+    dimensions: "37cm high x 53 x 20",
+    date: "October 2020",
+    price: "£4,200",
     images: ["img/sculptures/blackbird/blackbird-1.jpg"],
     spin: "blackbird/blackbird-spin"
 }
