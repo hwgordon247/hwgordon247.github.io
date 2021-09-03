@@ -24,6 +24,7 @@
 		.thumbnail {
 			cursor: pointer;
 			overflow: hidden;
+			height: 65vw;
 
 			img {
 				width: 100%;
@@ -65,6 +66,10 @@
 			.thumbnail-container {
 				width: 47%;
 			}
+
+			.thumbnail {
+				height: 30vw;
+			}
 		}
 	}
 }
@@ -74,6 +79,10 @@
 		.image-container {
 			.thumbnail-container {
 				width: 30%;
+			}
+
+			.thumbnail {
+				height: 20vw;
 			}
 		}
 
