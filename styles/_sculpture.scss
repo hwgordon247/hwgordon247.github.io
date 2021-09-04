@@ -41,6 +41,11 @@
 			transform: scale(1.05);
 			filter: brightness(100%);
 		}
+
+		.thumbnail:hover + .thumb-text {
+			text-decoration: underline;
+			font-weight: 400;
+		}
 	}
 
 	.fixed-block {
