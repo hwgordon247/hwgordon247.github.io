@@ -15,7 +15,7 @@ const blackbirdSculptureInfo = {
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "37cm high x 53 x 20",
     date: "October 2020",
-    price: "£4,200",
+    price: "£4,200 inc. VAT",
     images: ["img/sculptures/blackbird/blackbird-1.jpg"],
     spin: "blackbird/blackbird-spin"
 }
