@@ -208,6 +208,22 @@ p {
 	}
 }
 
+.insta-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+
+	.instagram {
+		width: 25px;
+		margin-right: 5px;
+	}
+
+	div {
+		margin-left: 5px;
+	}
+}
+
 @import 'landing';
 @import 'toolbar';
 @import 'sidebar';

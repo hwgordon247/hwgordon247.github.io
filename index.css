@@ -142,6 +142,17 @@ p {
   .footer .terms-link {
     cursor: pointer; }
 
+.insta-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer; }
+  .insta-container .instagram {
+    width: 25px;
+    margin-right: 5px; }
+  .insta-container div {
+    margin-left: 5px; }
+
 #landing .landing-parallax {
   height: 100vh;
   width: 100vw;
@@ -182,6 +193,8 @@ p {
     font-size: 20px; }
     #landing .landing-info .landing-buttons .button {
       margin: 0 10px; }
+  #landing .landing-info .insta-container {
+    padding-top: 10px; }
 
 @media only screen and (min-width: 900px) {
   #landing .landing-info .signature {
