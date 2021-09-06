@@ -1,16 +1,32 @@
 #contact {
-	background-color: $theme-color;
-	position: relative;
-	z-index: 1;
-	color: $font-color;
-	padding: 50px 10%;
+  background-color: $theme-color;
+  position: relative;
+  z-index: 1;
+  color: $font-color;
+  padding: 50px 10%;
   min-height: calc(100vh - 300px);
 
   .contact-info {
     text-align: center;
 
-    div {
+    .contact-line {
       margin-top: 150px;
+    }
+  }
+
+  .insta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    .instagram {
+      width: 25px;
+      margin-right: 10px;
+    }
+
+    div {
+      margin-left: 10px;
     }
   }
 }

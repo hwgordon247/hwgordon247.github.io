@@ -201,6 +201,7 @@ p {
 	display: flex;
 	justify-content: space-between;
 	font-size: 12px;
+	background-color: $theme-color;
 
 	.terms-link {
 		cursor: pointer;

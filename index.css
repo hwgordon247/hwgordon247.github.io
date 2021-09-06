@@ -137,7 +137,8 @@ p {
 .footer {
   display: flex;
   justify-content: space-between;
-  font-size: 12px; }
+  font-size: 12px;
+  background-color: #8F8E8D; }
   .footer .terms-link {
     cursor: pointer; }
 
@@ -675,8 +676,18 @@ p {
   min-height: calc(100vh - 300px); }
   #contact .contact-info {
     text-align: center; }
-    #contact .contact-info div {
+    #contact .contact-info .contact-line {
       margin-top: 150px; }
+  #contact .insta-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+    #contact .insta-container .instagram {
+      width: 25px;
+      margin-right: 10px; }
+    #contact .insta-container div {
+      margin-left: 10px; }
 
 #terms {
   background-color: #8F8E8D;
