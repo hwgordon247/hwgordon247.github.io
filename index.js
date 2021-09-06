@@ -22,6 +22,14 @@ function populateModal(modalInfo) {
   jQuery('#magnify-image').attr("src", modalInfo.images[0]);
   jQuery('#enquire-button').attr("href", constructEmailLink(modalInfo.name));
 
+  if (modalInfo.paddingTop != null) {
+    jQuery('#viewer').css("padding-top", modalInfo.paddingBottom);
+  }
+
+  if (modalInfo.paddingBottom != null) {
+    jQuery('#spin-me').css("padding-top", modalInfo.paddingBottom);
+  }
+
   threeSixty.init(modalInfo.spin);
 
   setTimeout(function() {
@@ -39,6 +47,7 @@ function constructEmailLink(sculptureName) {
 }
 
 function openModel(info) {
+  currentInfo = null;
   currentInfo = info;
   currentInfo.imageIndex = 0;
 
@@ -78,6 +87,8 @@ function closeModel() {
   jQuery("#viewer").empty();
   jQuery('#spin-me').css('visibility', 'hidden');
   jQuery('#spin-me').css('opacity', '0');
+  jQuery('#spin-me').css("padding-top", '0');
+  jQuery('#viewer').css("padding-top", '0');
 }
 
 function scrollToThing(thing) {

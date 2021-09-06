@@ -149,7 +149,9 @@ const redSquirrelsSculptureInfo = {
     date: "May 2020",
     price: "£3,800 each inc. VAT, £7,600 pair inc. VAT",
     images: ["img/sculptures/red-squirrels/red-squirrels-1.jpg"],
-    spin: "red-squirrels/red-squirrels-spin"
+    spin: "red-squirrels/red-squirrels-spin",
+    paddingTop: "20px",
+    paddingBottom: "30px"
 }
 
 const runningHareSculptureInfo = {
