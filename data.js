@@ -20,7 +20,7 @@ const blackbirdSculptureInfo = {
     price: "£4,200 inc. VAT",
     images: ["img/sculptures/blackbird/blackbird-1.jpg"],
     spin: "blackbird/blackbird-spin",
-    paddingBottom: "10px"
+    paddingBottom: "30px"
 }
 
 const chickenSculptureInfo = {
@@ -33,7 +33,7 @@ const chickenSculptureInfo = {
     images: ["img/sculptures/chicken/chicken-1.jpg"],
     spin: "chicken/chicken-spin",
     paddingTop: "20px",
-    paddingBottom: "10px"
+    paddingBottom: "20px"
 }
 
 const divingOttersSculptureInfo = {
@@ -150,7 +150,7 @@ const prancingRoeDeerSculptureInfo = {
     price: "£19,200 inc. VAT",
     images: ["img/sculptures/prancing-roe-deer/prancing-roe-deer-1.jpg"],
     spin: "prancing-roe-deer/prancing-roe-deer-spin",
-    paddingBottom: "10px"
+    paddingBottom: "20px"
 }
 
 const redSquirrelsSculptureInfo = {
@@ -175,7 +175,7 @@ const runningHareSculptureInfo = {
     price: "£6,900 inc. VAT",
     images: ["img/sculptures/running-hare/running-hare-1.jpg", "img/sculptures/running-hare/running-hare-2.jpg", "img/sculptures/running-hare/running-hare-3.jpg"],
     spin: "running-hare/running-hare-spin",
-    paddingBottom: "10px"
+    paddingBottom: "20px"
 }
 
 const sableAntelopeStudySculptureInfo = {
@@ -187,7 +187,7 @@ const sableAntelopeStudySculptureInfo = {
     price: "£4,200 inc. VAT",
     images: ["img/sculptures/sable-antelope-study/sable-antelope-study-1.jpg"],
     spin: "sable-antelope-study/sable-antelope-study-spin",
-    paddingBottom: "10px"
+    paddingBottom: "20px"
 }
 
 const seaLionSculptureInfo = {
@@ -233,7 +233,7 @@ const swimmingOttersSculptureInfo = {
     images: ["img/sculptures/swimming-otters/swimming-otters-1.jpg"],
     spin: "swimming-otters/swimming-otters-spin",
     paddingTop: "10px",
-    paddingBottom: "20px"
+    paddingBottom: "30px"
 }
 
 const thoroughbredLifeStudySculptureInfo = {
@@ -245,7 +245,7 @@ const thoroughbredLifeStudySculptureInfo = {
     price: "£3,600 inc. VAT",
     images: ["img/sculptures/thoroughbred-life-study/thoroughbred-life-study-1.jpg"],
     spin: "thoroughbred-life-study/thoroughbred-life-study-spin",
-    paddingBottom: "10px"
+    paddingBottom: "30px"
 }
 
 const toadSculptureInfo = {
@@ -326,7 +326,7 @@ const foxPairInfo = {
     images: ["img/sculptures/fox-pair/fox-pair-1.jpg", "img/sculptures/fox-pair/fox-pair-2.jpg", "img/sculptures/fox-pair/fox-pair-3.jpg"],
     spin: "fox-pair/fox-pair-spin",
     paddingTop: "20px",
-    paddingBottom: "10px"
+    paddingBottom: "30px"
 }
 
 const fightOrFlightInfo = {
@@ -339,7 +339,7 @@ const fightOrFlightInfo = {
     images: ["img/sculptures/fight-or-flight/fight-or-flight-1.jpg"],
     spin: "fight-or-flight/fight-or-flight-spin",
     paddingTop: "20px",
-    paddingBottom: "10px"
+    paddingBottom: "20px"
 }
 
 const gallopingHorseInfo = {
