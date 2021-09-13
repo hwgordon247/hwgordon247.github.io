@@ -7,7 +7,7 @@ let isSculptureExpanded = true;
 
 // openSideBar();
 
-preloadImage(["img/parallax/lodge-compress.jpg"]);
+preloadInit();
 
 var toolbarOffset = 59;
 
@@ -351,6 +351,29 @@ function getImgSizeInfo(img) {
     img.naturalHeight,
     parseInt(pos[0])
   );
+}
+
+function preloadInit() {
+  allSculptures.forEach(sculpture => {
+    // console.log('preloading: ', sculpture.name);
+    preloadImage(sculpture.images);
+    preloadSpin(sculpture);
+  })
+}
+
+function preloadSpin(sculpture) {
+  for (let i = 1; i <= 36; i++) {
+    let file = "img/sculptures/" + sculpture.spin + "/image_"
+
+    if (i < 10) {
+      file = file + "0";
+    }
+
+    file = file + i + ".jpg";
+
+    // console.log('preloading spin: ', file);
+    preloadImage([file])
+  }
 }
 
 function preloadImage(arrayOfImages) {
