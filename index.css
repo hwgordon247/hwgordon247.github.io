@@ -375,7 +375,8 @@ p {
     margin: 0;
     height: 100%;
     align-items: center;
-    position: relative; }
+    position: relative;
+    overflow: hidden; }
     #sculpture-modal .modal-container #modal-cross {
       position: absolute;
       top: 0;
@@ -569,8 +570,13 @@ p {
 @media only screen and (orientation: landscape) and (min-width: 1200px) {
   #sculpture-modal .modal-container {
     flex-direction: row; }
-    #sculpture-modal .modal-container #wrapper #viewer img {
-      width: 60vw; }
+    #sculpture-modal .modal-container #wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center; }
+      #sculpture-modal .modal-container #wrapper #viewer img {
+        width: 60vw; }
     #sculpture-modal .modal-container .height-thing {
       height: 100% !important; }
     #sculpture-modal .modal-container .info {
