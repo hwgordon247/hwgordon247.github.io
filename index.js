@@ -22,9 +22,9 @@ function populateModal(modalInfo) {
   jQuery('#magnify-image').attr("src", modalInfo.images[0]);
   jQuery('#enquire-button').attr("href", constructEmailLink(modalInfo.name));
 
-  if (modalInfo.paddingTop != null) {
-    jQuery('#viewer').css("padding-top", modalInfo.paddingBottom);
-  }
+  // if (modalInfo.paddingTop != null) {
+  //   jQuery('#viewer').css("padding-top", modalInfo.paddingBottom);
+  // }
 
   if (modalInfo.paddingBottom != null) {
     jQuery('#spin-me').css("padding-top", modalInfo.paddingBottom);

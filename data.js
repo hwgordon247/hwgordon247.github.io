@@ -8,7 +8,7 @@ const barnSwallowSculptureInfo = {
     images: ["img/sculptures/barn-swallow/barn-swallow-1.jpg"],
     spin: "barn-swallow/barn-swallow-spin",
     paddingTop: "20px",
-    paddingBottom: "10px"
+    paddingBottom: "20px"
 }
 
 const blackbirdSculptureInfo = {
@@ -46,7 +46,7 @@ const divingOttersSculptureInfo = {
     images: ["img/sculptures/diving-otters/diving-otters-1.jpg", "img/sculptures/diving-otters/diving-otters-2.jpg", "img/sculptures/diving-otters/diving-otters-3.jpg", "img/sculptures/diving-otters/diving-otters-4.jpg", "img/sculptures/diving-otters/diving-otters-5.jpg"],
     spin: "diving-otters/diving-otters-spin",
     paddingTop: "30px",
-    paddingBottom: "20px"
+    paddingBottom: "30px"
 }
 
 const giraffeBustSculptureInfo = {
@@ -59,7 +59,7 @@ const giraffeBustSculptureInfo = {
     images: ["img/sculptures/giraffe-bust/giraffe-bust-1.jpg", "img/sculptures/giraffe-bust/giraffe-bust-2.jpg", "img/sculptures/giraffe-bust/giraffe-bust-3.jpg"],
     spin: "giraffe-bust/giraffe-bust-spin",
     paddingTop: "10px",
-    paddingBottom: "20px"
+    paddingBottom: "30px"
 }
 
 const giraffeStudySculptureInfo = {
@@ -138,7 +138,7 @@ const peregrineFalconSculptureInfo = {
     images: ["img/sculptures/peregrine-falcon/peregrine-falcon-1.jpg", "img/sculptures/peregrine-falcon/peregrine-falcon-2.jpg"],
     spin: "peregrine-falcon/peregrine-falcon-spin",
     paddingTop: "20px",
-    paddingBottom: "10px"
+    paddingBottom: "30px"
 }
 
 const prancingRoeDeerSculptureInfo = {
@@ -163,7 +163,7 @@ const redSquirrelsSculptureInfo = {
     images: ["img/sculptures/red-squirrels/red-squirrels-1.jpg"],
     spin: "red-squirrels/red-squirrels-spin",
     paddingTop: "20px",
-    paddingBottom: "10px"
+    paddingBottom: "30px"
 }
 
 const runningHareSculptureInfo = {
@@ -269,7 +269,7 @@ const treeFrogSculptureInfo = {
     images: ["img/sculptures/tree-frog/tree-frog-1.jpg", "img/sculptures/tree-frog/tree-frog-2.jpg"],
     spin: "tree-frog/tree-frog-spin",
     paddingTop: "20px",
-    paddingBottom: "10px"
+    paddingBottom: "30px"
 }
 
 const walkingHorseSculptureInfo = {

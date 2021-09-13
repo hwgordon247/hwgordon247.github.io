@@ -41,12 +41,19 @@
 			cursor: pointer;
 
 			#viewer {
-				height: auto;
+				//height: auto;
+				height: inherit;
 				width: auto;
 
-				img {
-					//max-width: 1000px;
+				.vr {
+					height: inherit;
+					img {
+						height: inherit;
+						object-fit: cover;
+						//max-width: 1000px;
+					}
 				}
+
 			}
 
 			#spin-me {
@@ -332,7 +339,7 @@
 				}
 
 				.height-thing {
-					height: 67vh !important;
+					height: 65vh !important;
 				}
 			}
 		}
@@ -349,13 +356,16 @@
 					justify-content: space-evenly;
 					align-items: center;
 					#viewer {
-						img {
-							width: 60vw;
+						.vr {
+							//height: 40vh;
+							img {
+								width: 60vw;
+							}
 						}
 					}
 				}
 
-				.height-thing {
+				.height-thing-full {
 					height: 100% !important;
 				}
 

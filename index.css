@@ -394,8 +394,13 @@ p {
       margin: 0;
       cursor: pointer; }
       #sculpture-modal .modal-container #wrapper #viewer {
-        height: auto;
+        height: inherit;
         width: auto; }
+        #sculpture-modal .modal-container #wrapper #viewer .vr {
+          height: inherit; }
+          #sculpture-modal .modal-container #wrapper #viewer .vr img {
+            height: inherit;
+            object-fit: cover; }
       #sculpture-modal .modal-container #wrapper #spin-me {
         margin-top: -33px;
         margin-right: 50px;
@@ -566,7 +571,7 @@ p {
   #sculpture-modal .modal-container #wrapper #viewer img {
     width: 70vw; }
   #sculpture-modal .modal-container .height-thing {
-    height: 67vh !important; } }
+    height: 65vh !important; } }
 @media only screen and (orientation: landscape) and (min-width: 1200px) {
   #sculpture-modal .modal-container {
     flex-direction: row; }
@@ -575,9 +580,9 @@ p {
       flex-direction: column;
       justify-content: space-evenly;
       align-items: center; }
-      #sculpture-modal .modal-container #wrapper #viewer img {
+      #sculpture-modal .modal-container #wrapper #viewer .vr img {
         width: 60vw; }
-    #sculpture-modal .modal-container .height-thing {
+    #sculpture-modal .modal-container .height-thing-full {
       height: 100% !important; }
     #sculpture-modal .modal-container .info {
       margin-left: auto;
