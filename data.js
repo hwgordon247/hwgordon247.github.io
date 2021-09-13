@@ -8,7 +8,7 @@ const barnSwallowSculptureInfo = {
     images: ["img/sculptures/barn-swallow/barn-swallow-1.jpg"],
     spin: "barn-swallow/barn-swallow-spin",
     paddingTop: "20px",
-    paddingBottom: "20px"
+    paddingBottom: "10px"
 }
 
 const blackbirdSculptureInfo = {
@@ -20,7 +20,7 @@ const blackbirdSculptureInfo = {
     price: "£4,200 inc. VAT",
     images: ["img/sculptures/blackbird/blackbird-1.jpg"],
     spin: "blackbird/blackbird-spin",
-    paddingBottom: "20px"
+    paddingBottom: "10px"
 }
 
 const chickenSculptureInfo = {
@@ -33,7 +33,7 @@ const chickenSculptureInfo = {
     images: ["img/sculptures/chicken/chicken-1.jpg"],
     spin: "chicken/chicken-spin",
     paddingTop: "20px",
-    paddingBottom: "20px"
+    paddingBottom: "10px"
 }
 
 const divingOttersSculptureInfo = {
@@ -46,7 +46,7 @@ const divingOttersSculptureInfo = {
     images: ["img/sculptures/diving-otters/diving-otters-1.jpg", "img/sculptures/diving-otters/diving-otters-2.jpg", "img/sculptures/diving-otters/diving-otters-3.jpg", "img/sculptures/diving-otters/diving-otters-4.jpg", "img/sculptures/diving-otters/diving-otters-5.jpg"],
     spin: "diving-otters/diving-otters-spin",
     paddingTop: "30px",
-    paddingBottom: "30px"
+    paddingBottom: "20px"
 }
 
 const giraffeBustSculptureInfo = {
@@ -59,7 +59,7 @@ const giraffeBustSculptureInfo = {
     images: ["img/sculptures/giraffe-bust/giraffe-bust-1.jpg", "img/sculptures/giraffe-bust/giraffe-bust-2.jpg", "img/sculptures/giraffe-bust/giraffe-bust-3.jpg"],
     spin: "giraffe-bust/giraffe-bust-spin",
     paddingTop: "10px",
-    paddingBottom: "30px"
+    paddingBottom: "20px"
 }
 
 const giraffeStudySculptureInfo = {
@@ -138,7 +138,7 @@ const peregrineFalconSculptureInfo = {
     images: ["img/sculptures/peregrine-falcon/peregrine-falcon-1.jpg", "img/sculptures/peregrine-falcon/peregrine-falcon-2.jpg"],
     spin: "peregrine-falcon/peregrine-falcon-spin",
     paddingTop: "20px",
-    paddingBottom: "30px"
+    paddingBottom: "10px"
 }
 
 const prancingRoeDeerSculptureInfo = {
@@ -150,7 +150,7 @@ const prancingRoeDeerSculptureInfo = {
     price: "£19,200 inc. VAT",
     images: ["img/sculptures/prancing-roe-deer/prancing-roe-deer-1.jpg"],
     spin: "prancing-roe-deer/prancing-roe-deer-spin",
-    paddingBottom: "20px"
+    paddingBottom: "10px"
 }
 
 const redSquirrelsSculptureInfo = {
@@ -163,7 +163,7 @@ const redSquirrelsSculptureInfo = {
     images: ["img/sculptures/red-squirrels/red-squirrels-1.jpg"],
     spin: "red-squirrels/red-squirrels-spin",
     paddingTop: "20px",
-    paddingBottom: "30px"
+    paddingBottom: "10px"
 }
 
 const runningHareSculptureInfo = {
@@ -175,7 +175,7 @@ const runningHareSculptureInfo = {
     price: "£6,900 inc. VAT",
     images: ["img/sculptures/running-hare/running-hare-1.jpg", "img/sculptures/running-hare/running-hare-2.jpg", "img/sculptures/running-hare/running-hare-3.jpg"],
     spin: "running-hare/running-hare-spin",
-    paddingBottom: "20px"
+    paddingBottom: "10px"
 }
 
 const sableAntelopeStudySculptureInfo = {
@@ -245,7 +245,7 @@ const thoroughbredLifeStudySculptureInfo = {
     price: "£3,600 inc. VAT",
     images: ["img/sculptures/thoroughbred-life-study/thoroughbred-life-study-1.jpg"],
     spin: "thoroughbred-life-study/thoroughbred-life-study-spin",
-    paddingBottom: "20px"
+    paddingBottom: "10px"
 }
 
 const toadSculptureInfo = {
@@ -269,7 +269,7 @@ const treeFrogSculptureInfo = {
     images: ["img/sculptures/tree-frog/tree-frog-1.jpg", "img/sculptures/tree-frog/tree-frog-2.jpg"],
     spin: "tree-frog/tree-frog-spin",
     paddingTop: "20px",
-    paddingBottom: "20px"
+    paddingBottom: "10px"
 }
 
 const walkingHorseSculptureInfo = {
@@ -326,7 +326,7 @@ const foxPairInfo = {
     images: ["img/sculptures/fox-pair/fox-pair-1.jpg", "img/sculptures/fox-pair/fox-pair-2.jpg", "img/sculptures/fox-pair/fox-pair-3.jpg"],
     spin: "fox-pair/fox-pair-spin",
     paddingTop: "20px",
-    paddingBottom: "30px"
+    paddingBottom: "10px"
 }
 
 const fightOrFlightInfo = {
@@ -339,7 +339,7 @@ const fightOrFlightInfo = {
     images: ["img/sculptures/fight-or-flight/fight-or-flight-1.jpg"],
     spin: "fight-or-flight/fight-or-flight-spin",
     paddingTop: "20px",
-    paddingBottom: "20px"
+    paddingBottom: "10px"
 }
 
 const gallopingHorseInfo = {
