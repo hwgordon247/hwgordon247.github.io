@@ -575,18 +575,19 @@ p {
     height: 65vh !important; } }
 @media only screen and (orientation: landscape) and (min-width: 1200px) {
   #sculpture-modal .modal-container {
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: flex-end; }
     #sculpture-modal .modal-container #wrapper {
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
-      align-items: center; }
+      align-items: center;
+      margin: 0 auto; }
       #sculpture-modal .modal-container #wrapper #viewer .vr img {
         width: 45vw; }
     #sculpture-modal .modal-container .height-thing-full {
       height: 100% !important; }
     #sculpture-modal .modal-container .info {
-      margin-left: auto;
       width: 34vw; }
       #sculpture-modal .modal-container .info .padding-box {
         padding: 0 10%;

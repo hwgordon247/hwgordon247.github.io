@@ -349,12 +349,15 @@
 		#sculpture-modal {
 			.modal-container {
 				flex-direction: row;
+				justify-content: flex-end;
 
 				#wrapper {
 					display: flex;
 					flex-direction: column;
 					justify-content: space-evenly;
 					align-items: center;
+					margin: 0 auto;
+
 					#viewer {
 						.vr {
 							//height: 40vh;
@@ -370,7 +373,7 @@
 				}
 
 				.info {
-					margin-left: auto;
+					// margin-left: auto;
 					width: 34vw;
 
 					.padding-box {
