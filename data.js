@@ -353,6 +353,32 @@ const gallopingHorseInfo = {
     spin: "galloping-horse/galloping-horse-spin"
 }
 
+const elephantInfo = {
+    id: '#elephant-sculpture',
+    name: "Elephant",
+    description: "Bronze signed and numbered limited edition of 12",
+    dimensions: "35cm high x 51 x 27",
+    date: "May 2021",
+    price: "£7,200 inc. VAT",
+    images: ["img/sculptures/elephant/elephant-1.jpg", "img/sculptures/elephant/elephant-2.jpg", "img/sculptures/elephant/elephant-3.jpg"],
+    spin: "elephant/elephant-spin",
+    paddingTop: "40px",
+    paddingBottom: "30px"
+}
+
+const borneanOrangutanInfo = {
+    id: '#bornean-orangutan-sculpture',
+    name: "Bornean Orangutan",
+    description: "Bronze unique edition",
+    dimensions: "220cm tall x 80 x 60",
+    date: "April 2021",
+    price: "£45,000 inc. VAT",
+    images: ["img/sculptures/bornean-orangutan/bornean-orangutan-1.jpg", "img/sculptures/bornean-orangutan/bornean-orangutan-2.jpg", "img/sculptures/bornean-orangutan/bornean-orangutan-3.jpg", "img/sculptures/bornean-orangutan/bornean-orangutan-4.jpg", "img/sculptures/bornean-orangutan/bornean-orangutan-5.jpg"],
+    spin: "bornean-orangutan/bornean-orangutan-spin",
+    paddingTop: "20px",
+    paddingBottom: "20px"
+}
+
 const allSculptures = [
     divingOttersSculptureInfo,
     runningHareSculptureInfo,
@@ -383,6 +409,7 @@ const allSculptures = [
     stalkingLeopardSculptureInfo,
     swimmingOttersSculptureInfo,
     gallopingHorseInfo,
-    barnSwallowSculptureInfo
+    barnSwallowSculptureInfo,
+    elephantInfo,
+    borneanOrangutanInfo
 ];
-
