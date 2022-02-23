@@ -312,7 +312,7 @@ const ducklingSculptureInfo = {
     dimensions: "18cm high x 16 x 10",
     date: "July 2020",
     price: "£2,200 inc. VAT",
-    images: ["img/sculptures/duckling/duckling-1.jpg", "img/sculptures/duckling/duckling-2.jpg", "img/sculptures/duckling/duckling-3.jpg"],
+    images: ["img/sculptures/duckling/duckling-1.jpg", "img/sculptures/duckling/duckling-2.jpg", "img/sculptures/duckling/duckling-3.jpg", "img/sculptures/duckling/duckling-group.jpg"],
     spin: "duckling/duckling-spin"
 }
 
@@ -369,12 +369,51 @@ const elephantInfo = {
 const borneanOrangutanInfo = {
     id: '#bornean-orangutan-sculpture',
     name: "Bornean Orangutan",
-    description: "Bronze unique edition",
+    description: "Bronze signed and numbered limited edition of 6",
     dimensions: "220cm tall x 80 x 60",
     date: "April 2021",
-    price: "£45,000 inc. VAT",
+    price: "£36,000 inc. VAT",
     images: ["img/sculptures/bornean-orangutan/bornean-orangutan-1.jpg", "img/sculptures/bornean-orangutan/bornean-orangutan-2.jpg", "img/sculptures/bornean-orangutan/bornean-orangutan-3.jpg", "img/sculptures/bornean-orangutan/bornean-orangutan-4.jpg", "img/sculptures/bornean-orangutan/bornean-orangutan-5.jpg"],
     spin: "bornean-orangutan/bornean-orangutan-spin",
+    paddingTop: "20px",
+    paddingBottom: "20px"
+}
+
+const boxingHaresInfo = {
+    id: '#boxing-hares-sculpture',
+    name: "Boxing Hares",
+    description: "Bronze signed and numbered limited edition of 12",
+    dimensions: "110cm high x 62 x 61",
+    date: "November 2021",
+    price: "£21,800 inc. VAT",
+    images: ["img/sculptures/boxing-hares/boxing-hares-1.jpg", "img/sculptures/boxing-hares/boxing-hares-2.jpg", "img/sculptures/boxing-hares/boxing-hares-3.jpg"],
+    spin: "boxing-hares/boxing-hares-spin",
+    paddingTop: "20px",
+    paddingBottom: "20px"
+}
+
+const quackingDucklingInfo = {
+    id: '#quacking-duckling-sculpture',
+    name: "Quacking Duckling",
+    description: "Bronze signed and numbered limited edition of 25",
+    dimensions: "17cm high x 10 x 16",
+    date: "August 2021",
+    price: "£2,200 inc. VAT",
+    images: ["img/sculptures/quacking-duckling/quacking-duckling-1.jpg", "img/sculptures/quacking-duckling/quacking-duckling-2.jpg", "img/sculptures/quacking-duckling/quacking-duckling-3.jpg", "img/sculptures/quacking-duckling/duckling-group.jpg"],
+    spin: "quacking-duckling/quacking-duckling-spin",
+    paddingTop: "20px",
+    paddingBottom: "20px"
+}
+
+const seatedDucklingInfo = {
+    id: '#seated-duckling-sculpture',
+    name: "Seated Duckling",
+    description: "Bronze signed and numbered limited edition of 25",
+    dimensions: "15cm high x 11 x 14",
+    date: "August 2021",
+    price: "£2,200 inc. VAT",
+    images: ["img/sculptures/seated-duckling/seated-duckling-1.jpg", "img/sculptures/seated-duckling/seated-duckling-2.jpg", "img/sculptures/seated-duckling/seated-duckling-3.jpg", "img/sculptures/seated-duckling/duckling-group.jpg"],
+    spin: "seated-duckling/seated-duckling-spin",
     paddingTop: "20px",
     paddingBottom: "20px"
 }
@@ -411,5 +450,8 @@ const allSculptures = [
     gallopingHorseInfo,
     barnSwallowSculptureInfo,
     elephantInfo,
-    borneanOrangutanInfo
+    borneanOrangutanInfo,
+    boxingHaresInfo,
+    quackingDucklingInfo,
+    seatedDucklingInfo
 ];
