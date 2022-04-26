@@ -15,8 +15,8 @@
 	}
 
 	.buttons {
-    	display: none;
-		width: 50%;
+    display: none;
+		width: 53%;
 		justify-content: space-between;
 		font-family: $font-body;
 		font-weight: 300;
@@ -54,7 +54,7 @@
 @media only screen and (min-width: 1100px) {
 	.tool-bar {
 		.buttons {
-			width: 40%;
+			width: 45%;
 		}
 	}
 }

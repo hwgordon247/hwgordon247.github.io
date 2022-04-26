@@ -149,6 +149,12 @@ function moveToolBarHighlight() {
     jQuery('#sculpture-button-tool').removeClass('highlight');
   }
 
+  if (isScrolledIntoView('#film')) {
+    jQuery('#film-button-tool').addClass('highlight');
+  } else {
+    jQuery('#film-button-tool').removeClass('highlight');
+  }
+
   if (isScrolledIntoView('#commissions')) {
     jQuery('#commissions-button-tool').addClass('highlight');
   } else {
@@ -414,6 +420,10 @@ jQuery('.sculpture-button').on('click', function() {
   scrollToThing('#sculpture');
 });
 
+jQuery('.film-button').on('click', function() {
+  scrollToThing('#film');
+});
+
 jQuery('.commissions-button').on('click', function() {
   scrollToThing('#commissions');
 });
@@ -438,6 +448,11 @@ jQuery('.about-side-button').on('click', function() {
 
 jQuery('.sculpture-side-button').on('click', function() {
   scrollToThing('#sculpture');
+  closeSideBar();
+});
+
+jQuery('.film-side-button').on('click', function() {
+  scrollToThing('#film');
   closeSideBar();
 });
 
