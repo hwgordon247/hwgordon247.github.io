@@ -7,7 +7,7 @@ let isSculptureExpanded = true;
 
 // openSideBar();
 
-preloadInit();
+// preloadInit();
 
 var toolbarOffset = 59;
 
