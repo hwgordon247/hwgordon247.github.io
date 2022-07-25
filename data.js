@@ -418,6 +418,28 @@ const seatedDucklingInfo = {
     paddingBottom: "20px"
 }
 
+const whiteParkBullInfo = {
+    id: '#white-park-bull-sculpture',
+    name: "White Park Bull",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "30cm tall x 32 x 32",
+    date: "January 2022",
+    price: "£6,000 inc. VAT",
+    images: ["img/sculptures/bulls-head/bulls-head-1.jpg", "img/sculptures/bulls-head/bulls-head-2.jpg", "img/sculptures/bulls-head/bulls-head-3.jpg"],
+    spin: "bulls-head/bulls-head-spin"
+}
+
+const leopardInfo = {
+    id: '#leopard-sculpture',
+    name: "Leopard",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "35cm tall x 56 x 55",
+    date: "March 2022",
+    price: "£12,000 inc. VAT",
+    images: ["img/sculptures/leopard/leopard-1.jpg", "img/sculptures/leopard/leopard-2.jpg", "img/sculptures/leopard/leopard-3.jpg", "img/sculptures/leopard/leopard-4.jpg"],
+    spin: "leopard/leopard-spin"
+}
+
 const allSculptures = [
     divingOttersSculptureInfo,
     runningHareSculptureInfo,
@@ -453,5 +475,7 @@ const allSculptures = [
     borneanOrangutanInfo,
     boxingHaresInfo,
     quackingDucklingInfo,
-    seatedDucklingInfo
+    seatedDucklingInfo,
+    whiteParkBullInfo,
+    leopardInfo
 ];
