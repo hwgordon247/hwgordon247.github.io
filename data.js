@@ -440,6 +440,50 @@ const leopardInfo = {
     spin: "leopard/leopard-spin"
 }
 
+const sandyPekinBantamInfo = {
+    id: '#sandy-pekin-bantam-sculpture',
+    name: "Sandy Pekin Bantam",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "24cm tall x 24 x 17",
+    date: "June 2022",
+    price: "£4,200 inc. VAT",
+    images: ["img/sculptures/sandy-pekin-bantam/sandy-pekin-bantam-1.jpg", "img/sculptures/sandy-pekin-bantam/sandy-pekin-bantam-2.jpg", "img/sculptures/sandy-pekin-bantam/bantam-flock-1.jpg", "img/sculptures/sandy-pekin-bantam/bantam-flock-2.jpg"],
+    spin: "sandy-pekin-bantam/sandy-pekin-bantam-spin"
+}
+
+const blackPekinBantamInfo = {
+    id: '#black-pekin-bantam-sculpture',
+    name: "Black Pekin Bantam",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "25cm tall x 28 x 16",
+    date: "June 2022",
+    price: "£4,200 inc. VAT",
+    images: ["img/sculptures/black-pekin-bantam/black-pekin-bantam-1.jpg", "img/sculptures/black-pekin-bantam/black-pekin-bantam-2.jpg", "img/sculptures/black-pekin-bantam/bantam-flock-1.jpg", "img/sculptures/black-pekin-bantam/bantam-flock-2.jpg"],
+    spin: "black-pekin-bantam/black-pekin-bantam-spin"
+}
+
+const lavenderPekinBantamInfo = {
+    id: '#lavender-pekin-bantam-sculpture',
+    name: "Lavender Pekin Bantam",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "26cm tall x 23 x 15",
+    date: "June 2022",
+    price: "£4,200 inc. VAT",
+    images: ["img/sculptures/lavender-pekin-bantam/lavender-pekin-bantam-1.jpg", "img/sculptures/lavender-pekin-bantam/lavender-pekin-bantam-2.jpg", "img/sculptures/lavender-pekin-bantam/bantam-flock-1.jpg", "img/sculptures/lavender-pekin-bantam/bantam-flock-2.jpg"],
+    spin: "lavender-pekin-bantam/lavender-pekin-bantam-spin"
+}
+
+const wingedDucklingInfo = {
+    id: '#winged-duckling-sculpture',
+    name: "Winged Duckling",
+    description: "Bronze, signed and numbered limited edition of 25",
+    dimensions: "17cm tall x 16 x 10",
+    date: "April 2022",
+    price: "£2,200 inc. VAT",
+    images: ["img/sculptures/winged-duckling/winged-duckling-1.jpg", "img/sculptures/winged-duckling/winged-duckling-2.jpg", "img/sculptures/winged-duckling/winged-duckling-3.jpg"],
+    spin: "winged-duckling/winged-duckling-spin"
+}
+
 const allSculptures = [
     divingOttersSculptureInfo,
     runningHareSculptureInfo,
@@ -477,5 +521,9 @@ const allSculptures = [
     quackingDucklingInfo,
     seatedDucklingInfo,
     whiteParkBullInfo,
-    leopardInfo
+    leopardInfo,
+    sandyPekinBantamInfo,
+    blackPekinBantamInfo,
+    lavenderPekinBantamInfo,
+    wingedDucklingInfo
 ];
