@@ -484,6 +484,72 @@ const wingedDucklingInfo = {
     spin: "winged-duckling/winged-duckling-spin"
 }
 
+const silverbackGorillaInfo = {
+    id: '#silverback-gorilla-sculpture',
+    name: "Silverback Gorilla",
+    description: "Bronze, signed and numbered limited edition of 9",
+    dimensions: "110cm tall x 90cm x 60cm",
+    date: "May 2023",
+    price: "£45,000 inc VAT",
+    images: ["img/sculptures/silverback-gorilla/silverback-gorilla-1.jpg", "img/sculptures/silverback-gorilla/silverback-gorilla-2.jpg"],
+    spin: "silverback-gorilla/silverback-gorilla-spin"
+}
+
+const greaterOneHornedRhinoInfo = {
+    id: '#greater-one-horned-rhino-sculpture',
+    name: "Greater One Horned Rhino",
+    description: "Bonze, signed and numbered limited edition of 12",
+    dimensions: "33cm tall x 60cm x 25cm",
+    date: "June 2023",
+    price: "£7,200 inc VAT",
+    images: ["img/sculptures/greater-one-horned-rhino/greater-one-horned-rhino-1.jpg", "img/sculptures/greater-one-horned-rhino/greater-one-horned-rhino-2.jpg", "img/sculptures/greater-one-horned-rhino/greater-one-horned-rhino-3.jpg", "img/sculptures/greater-one-horned-rhino/greater-one-horned-rhino-4.jpg"],
+    spin: "greater-one-horned-rhino/greater-one-horned-rhino-spin"
+}
+
+const cockerelInfo = {
+    id: '#cockerel-sculpture',
+    name: "Cockerel",
+    description: "Bonze, signed and numbered limited edition of 12",
+    dimensions: "60cm tall x 20cm x 30cm",
+    date: "February 2023",
+    price: "£7,200 inc VAT",
+    images: ["img/sculptures/cockerel/cockerel-1.jpg", "img/sculptures/cockerel/cockerel-2.jpg", "img/sculptures/cockerel/cockerel-3.jpg"],
+    spin: "cockerel/cockerel-spin"
+}
+
+const littleOwlInfo = {
+    id: '#little-owl-sculpture',
+    name: "Little Owl",
+    description: "Bonze, signed and numbered limited edition of 25",
+    dimensions: "25cm tall x 20cm x 20cm",
+    date: "May 2023",
+    price: "£3,600 inc VAT",
+    images: ["img/sculptures/little-owl/little-owl-1.jpg", "img/sculptures/little-owl/little-owl-2.jpg"],
+    spin: "little-owl/little-owl-spin"
+}
+
+const redSquirrelInfo = {
+    id: '#red-squirrel-sculpture',
+    name: "Red Squirrel",
+    description: "Bonze, signed and numbered limited edition of 25",
+    dimensions: "25cm tall x 20cm x 10cm",
+    date: "May 2023",
+    price: "£3,600 inc VAT",
+    images: ["img/sculptures/red-squirrel/red-squirrel-1.jpg", "img/sculptures/red-squirrel/red-squirrel-2.jpg", "img/sculptures/red-squirrel/red-squirrel-3.jpg"],
+    spin: "red-squirrel/red-squirrel-spin"
+}
+
+const dormouseInfo = {
+    id: '#dormouse-sculpture',
+    name: "Dormouse",
+    description: "Bonze, signed and numbered limited edition of 25",
+    dimensions: "8cm tall x 17cm x 9cm",
+    date: "May 2023",
+    price: "£2,000 inc VAT",
+    images: ["img/sculptures/dormouse/dormouse-1.jpg", "img/sculptures/dormouse/dormouse-2.jpg", "img/sculptures/dormouse/dormouse-3.jpg"],
+    spin: "dormouse/dormouse-spin"
+}
+
 const allSculptures = [
     divingOttersSculptureInfo,
     runningHareSculptureInfo,
@@ -525,5 +591,11 @@ const allSculptures = [
     sandyPekinBantamInfo,
     blackPekinBantamInfo,
     lavenderPekinBantamInfo,
-    wingedDucklingInfo
+    wingedDucklingInfo,
+    silverbackGorillaInfo,
+    greaterOneHornedRhinoInfo,
+    cockerelInfo,
+    littleOwlInfo,
+    redSquirrelInfo,
+    dormouseInfo
 ];
