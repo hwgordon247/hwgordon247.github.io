@@ -498,7 +498,7 @@ const silverbackGorillaInfo = {
 const greaterOneHornedRhinoInfo = {
     id: '#greater-one-horned-rhino-sculpture',
     name: "Greater One Horned Rhino",
-    description: "Bonze, signed and numbered limited edition of 12",
+    description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "33cm tall x 60cm x 25cm",
     date: "June 2023",
     price: "£7,200 inc VAT",
@@ -509,7 +509,7 @@ const greaterOneHornedRhinoInfo = {
 const cockerelInfo = {
     id: '#cockerel-sculpture',
     name: "Cockerel",
-    description: "Bonze, signed and numbered limited edition of 12",
+    description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "60cm tall x 20cm x 30cm",
     date: "February 2023",
     price: "£7,200 inc VAT",
@@ -520,7 +520,7 @@ const cockerelInfo = {
 const littleOwlInfo = {
     id: '#little-owl-sculpture',
     name: "Little Owl",
-    description: "Bonze, signed and numbered limited edition of 25",
+    description: "Bronze, signed and numbered limited edition of 25",
     dimensions: "25cm tall x 20cm x 20cm",
     date: "May 2023",
     price: "£3,600 inc VAT",
@@ -531,7 +531,7 @@ const littleOwlInfo = {
 const redSquirrelInfo = {
     id: '#red-squirrel-sculpture',
     name: "Red Squirrel",
-    description: "Bonze, signed and numbered limited edition of 25",
+    description: "Bronze, signed and numbered limited edition of 25",
     dimensions: "25cm tall x 20cm x 10cm",
     date: "May 2023",
     price: "£3,600 inc VAT",
@@ -542,7 +542,7 @@ const redSquirrelInfo = {
 const dormouseInfo = {
     id: '#dormouse-sculpture',
     name: "Dormouse",
-    description: "Bonze, signed and numbered limited edition of 25",
+    description: "Bronze, signed and numbered limited edition of 25",
     dimensions: "8cm tall x 17cm x 9cm",
     date: "May 2023",
     price: "£2,000 inc VAT",
