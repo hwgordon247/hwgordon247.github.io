@@ -9,6 +9,9 @@ let isSculptureExpanded = true;
 
 // preloadInit();
 
+var url = jQuery(location).attr('href');
+console.log(url);
+
 var toolbarOffset = 59;
 
 console.log('send it', jQuery(window).height());
