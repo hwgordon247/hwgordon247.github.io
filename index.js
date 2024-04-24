@@ -9,8 +9,23 @@ let isSculptureExpanded = true;
 
 // preloadInit();
 
-var url = jQuery(location).attr('href');
-console.log(url);
+// var url = jQuery(location).attr('href');
+// console.log(url);
+
+function removeHash () {
+  history.pushState("", document.title, window.location.pathname + window.location.search);
+}
+
+
+if (window.location.hash) {
+  var sculptureInfo = urlSculpturesMap.get(window.location.hash);
+
+  if (sculptureInfo == null) {
+    removeHash();
+  } else {
+    openModel(sculptureInfo);
+  }
+}
 
 var toolbarOffset = 59;
 
@@ -54,6 +69,8 @@ function openModel(info) {
   currentInfo = info;
   currentInfo.imageIndex = 0;
 
+  window.location.hash = info.url;
+
   populateModal(info);
 
   jQuery('#sculpture-modal').addClass("show-modal");
@@ -84,6 +101,7 @@ function imageRight() {
 }
 
 function closeModel() {
+  removeHash();
   jQuery('#sculpture-modal').removeClass("show-modal");
   goToRotate();
   threeSixty.clear();

@@ -1,5 +1,6 @@
 const barnSwallowSculptureInfo = {
-    id: '#barn-swallow-sculpture',
+    id: '#id-barn-swallow-sculpture',
+    url: '#barn-swallow',
     name: "Barn Swallow",
     description: "Bronze, Limited Edition of 12",
     dimensions: "30cm high x 34 x 14",
@@ -12,7 +13,8 @@ const barnSwallowSculptureInfo = {
 }
 
 const blackbirdSculptureInfo = {
-    id: '#blackbird-sculpture',
+    id: '#id-blackbird-sculpture',
+    url: '#blackbird',
     name: "Blackbird",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "37cm high x 53 x 20",
@@ -24,7 +26,8 @@ const blackbirdSculptureInfo = {
 }
 
 const chickenSculptureInfo = {
-    id: '#chicken-sculpture',
+    id: '#id-chicken-sculpture',
+    url: '#chicken',
     name: "Chicken II",
     description: "Bronze, limited edition of 12",
     dimensions: "45cm high x 30 x 20",
@@ -37,7 +40,8 @@ const chickenSculptureInfo = {
 }
 
 const divingOttersSculptureInfo = {
-    id: '#diving-otters-sculpture',
+    id: '#id-diving-otters-sculpture',
+    url: '#diving-otters',
     name: "Diving Otters",
     description: "Bronze, signed and numbered limited edition of 9",
     dimensions: "160cm high x 100 x 90",
@@ -50,7 +54,8 @@ const divingOttersSculptureInfo = {
 }
 
 const giraffeBustSculptureInfo = {
-    id: '#giraffe-bust-sculpture',
+    id: '#id-giraffe-bust-sculpture',
+    url: '#giraffe-bust',
     name: "Giraffe Bust",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "78cm high x 35 x 35",
@@ -63,7 +68,8 @@ const giraffeBustSculptureInfo = {
 }
 
 const giraffeStudySculptureInfo = {
-    id: '#giraffe-study-sculpture',
+    id: '#id-giraffe-study-sculpture',
+    url: '#giraffe-study',
     name: "Giraffe Study",
     description: "Bronze, limited edition of 12",
     dimensions: "25cm high x 20 x 10",
@@ -74,7 +80,8 @@ const giraffeStudySculptureInfo = {
 }
 
 const guineaFowlSculptureInfo = {
-    id: '#guinea-fowl-sculpture',
+    id: '#id-guinea-fowl-sculpture',
+    url: '#guinea-fowl',
     name: "Guinea Fowl",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "46cm high x 30 x 18",
@@ -85,7 +92,8 @@ const guineaFowlSculptureInfo = {
 }
 
 const kuduHerdSculptureInfo = {
-    id: '#kudu-herd-sculpture',
+    id: '#id-kudu-herd-sculpture',
+    url: '#kudu-herd',
     name: "Kudu Herd",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "50cm high x 80 x 40",
@@ -96,7 +104,8 @@ const kuduHerdSculptureInfo = {
 }
 
 const langurMonkeySculptureInfo = {
-    id: '#langur-monkey-sculpture',
+    id: '#id-langur-monkey-sculpture',
+    url: '#langur-monkey',
     name: "Langur Monkey",
     description: "Bronze, Limited Edition of 12",
     dimensions: "23cm high x 28 x 15",
@@ -107,7 +116,8 @@ const langurMonkeySculptureInfo = {
 }
 
 const malayanTapirSculptureInfo = {
-    id: '#malayan-tapir-sculpture',
+    id: '#id-malayan-tapir-sculpture',
+    url: '#malayan-tapir',
     name: "Malayan Tapir",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "23cm high x 42 x 20",
@@ -118,7 +128,8 @@ const malayanTapirSculptureInfo = {
 }
 
 const ostrichStudySculptureInfo = {
-    id: '#ostrich-study-sculpture',
+    id: '#id-ostrich-study-sculpture',
+    url: '#ostrich-study',
     name: "Ostrich Study",
     description: "Bronze, limited edition of 12",
     dimensions: "12cm high x 8 x 10 ",
@@ -129,7 +140,8 @@ const ostrichStudySculptureInfo = {
 }
 
 const peregrineFalconSculptureInfo = {
-    id: '#peregrine-falcon-sculpture',
+    id: '#id-peregrine-falcon-sculpture',
+    url: '#peregrine-falcon',
     name: "Peregrine Falcon",
     description: "Bronze, Limited Edition of 12",
     dimensions: "Life size - 130cm high x 45 x 45",
@@ -142,7 +154,8 @@ const peregrineFalconSculptureInfo = {
 }
 
 const prancingRoeDeerSculptureInfo = {
-    id: '#prancing-roe-deer-sculpture',
+    id: '#id-prancing-roe-deer-sculpture',
+    url: '#prancing-roe-deer',
     name: "Prancing Roe Deer",
     description: "Bronze, Limited Edition of 12",
     dimensions: "84cm high x 94 x 25",
@@ -154,7 +167,8 @@ const prancingRoeDeerSculptureInfo = {
 }
 
 const redSquirrelsSculptureInfo = {
-    id: '#red-squirrels-sculpture',
+    id: '#id-red-squirrels-sculpture',
+    url: '#red-squirrels',
     name: "Red Squirrel Pair",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "16cm high x 28 x 20 each",
@@ -167,7 +181,8 @@ const redSquirrelsSculptureInfo = {
 }
 
 const runningHareSculptureInfo = {
-    id: '#running-hare-sculpture',
+    id: '#id-running-hare-sculpture',
+    url: '#running-hare',
     name: "Running Hare",
     description: "Bronze signed and numbered limited edition of 12",
     dimensions: "30cm high x 55 x 18",
@@ -179,7 +194,8 @@ const runningHareSculptureInfo = {
 }
 
 const sableAntelopeStudySculptureInfo = {
-    id: '#sable-antelope-study-sculpture',
+    id: '#id-sable-antelope-study-sculpture',
+    url: '#sable-antelope-study',
     name: "Sable Antelope Study",
     description: "Bronze, limited edition of 12",
     dimensions: "28cm high x 23 x 12",
@@ -191,7 +207,8 @@ const sableAntelopeStudySculptureInfo = {
 }
 
 const seaLionSculptureInfo = {
-    id: '#sea-lion-sculpture',
+    id: '#id-sea-lion-sculpture',
+    url: '#sea-lion',
     name: "Sea Lion",
     description: "Bronze, signed and numbered limited edition of 25",
     dimensions: "17cm high x 22 x 23",
@@ -202,7 +219,8 @@ const seaLionSculptureInfo = {
 }
 
 const southernWhiteRhinoSculptureInfo = {
-    id: '#southern-white-rhino-sculpture',
+    id: '#id-southern-white-rhino-sculpture',
+    url: '#southern-white-rhino',
     name: "Southern White Rhino",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "30cm high x 64 x 25",
@@ -213,7 +231,8 @@ const southernWhiteRhinoSculptureInfo = {
 }
 
 const stalkingLeopardSculptureInfo = {
-    id: '#stalking-leopard-sculpture',
+    id: '#id-stalking-leopard-sculpture',
+    url: '#stalking-leopard',
     name: "Leopard Stalking",
     description: "Bronze, Limited Edition of 12",
     dimensions: "30cm high x 60 x 15",
@@ -224,7 +243,8 @@ const stalkingLeopardSculptureInfo = {
 }
 
 const swimmingOttersSculptureInfo = {
-    id: '#swimming-otters-sculpture',
+    id: '#id-swimming-otters-sculpture',
+    url: '#swimming-otters',
     name: "Swimming Otters",
     description: "Bronze, Limited Edition of 25",
     dimensions: "65cm high x 20 x 20",
@@ -237,7 +257,8 @@ const swimmingOttersSculptureInfo = {
 }
 
 const thoroughbredLifeStudySculptureInfo = {
-    id: '#thoroughbred-life-study-sculpture',
+    id: '#id-thoroughbred-life-study-sculpture',
+    url: '#thoroughbred-life-study',
     name: "Thoroughbred Life Study",
     description: "Bronze, Limited Edition of 12",
     dimensions: "20cm high x 25 x 10",
@@ -249,7 +270,8 @@ const thoroughbredLifeStudySculptureInfo = {
 }
 
 const toadSculptureInfo = {
-    id: '#toad-sculpture',
+    id: '#id-toad-sculpture',
+    url: '#toad',
     name: "Toad",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "10cm high x 18 x 8",
@@ -260,7 +282,8 @@ const toadSculptureInfo = {
 }
 
 const treeFrogSculptureInfo = {
-    id: '#tree-frog-sculpture',
+    id: '#id-tree-frog-sculpture',
+    url: '#tree-frog',
     name: "Tree frog",
     description: "Bronze, Limited Edition of 12",
     dimensions: "55cm high x 15 x 12",
@@ -273,7 +296,8 @@ const treeFrogSculptureInfo = {
 }
 
 const walkingHorseSculptureInfo = {
-    id: '#walking-horse-sculpture',
+    id: '#id-walking-horse-sculpture',
+    url: '#walking-horse',
     name: "Walking Horse",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "34cm high x 60 x 22",
@@ -284,7 +308,8 @@ const walkingHorseSculptureInfo = {
 }
 
 const warthogStudySculptureInfo = {
-    id: '#warthog-study-sculpture',
+    id: '#id-warthog-study-sculpture',
+    url: '#warthog-study',
     name: "Warthog Study",
     description: "Bronze, limited edition of 12",
     dimensions: "15cm high x 25 x 8",
@@ -295,7 +320,8 @@ const warthogStudySculptureInfo = {
 }
 
 const whiteRhinoStudySculptureInfo = {
-    id: '#white-rhino-study-sculpture',
+    id: '#id-white-rhino-study-sculpture',
+    url: '#white-rhino-study',
     name: "White Rhino Study",
     description: "Bronze, limited edition of 12",
     dimensions: "18cm high x 25 x 12",
@@ -306,7 +332,8 @@ const whiteRhinoStudySculptureInfo = {
 }
 
 const ducklingSculptureInfo = {
-    id: '#duckling-sculpture',
+    id: '#id-duckling-sculpture',
+    url: '#duckling',
     name: "Duckling",
     description: "Bronze, signed and numbered limited edition of 25",
     dimensions: "18cm high x 16 x 10",
@@ -317,7 +344,8 @@ const ducklingSculptureInfo = {
 }
 
 const foxPairInfo = {
-    id: '#fox-pair-sculpture',
+    id: '#id-fox-pair-sculpture',
+    url: '#fox-pair',
     name: "Fox Pair",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "40cm high x 50 x 30 each",
@@ -330,7 +358,8 @@ const foxPairInfo = {
 }
 
 const fightOrFlightInfo = {
-    id: '#fight-or-flight-sculpture',
+    id: '#id-fight-or-flight-sculpture',
+    url: '#fight-or-flight',
     name: "Fight or flight",
     description: "Bronze, Limited Edition of 12",
     dimensions: "54cm high x 28 x 18",
@@ -343,7 +372,8 @@ const fightOrFlightInfo = {
 }
 
 const gallopingHorseInfo = {
-    id: '#galloping-horse-sculpture',
+    id: '#id-galloping-horse-sculpture',
+    url: '#galloping-horse',
     name: "Galloping Horse",
     description: "Bronze, Limited Edition of 12",
     dimensions: "42cm high x 48 x 14",
@@ -354,7 +384,8 @@ const gallopingHorseInfo = {
 }
 
 const elephantInfo = {
-    id: '#elephant-sculpture',
+    id: '#id-elephant-sculpture',
+    url: '#elephant',
     name: "Elephant",
     description: "Bronze signed and numbered limited edition of 12",
     dimensions: "35cm high x 51 x 27",
@@ -367,7 +398,8 @@ const elephantInfo = {
 }
 
 const borneanOrangutanInfo = {
-    id: '#bornean-orangutan-sculpture',
+    id: '#id-bornean-orangutan-sculpture',
+    url: '#bornean-orangutan',
     name: "Bornean Orangutan",
     description: "Bronze signed and numbered limited edition of 6",
     dimensions: "220cm tall x 80 x 60",
@@ -380,7 +412,8 @@ const borneanOrangutanInfo = {
 }
 
 const boxingHaresInfo = {
-    id: '#boxing-hares-sculpture',
+    id: '#id-boxing-hares-sculpture',
+    url: '#boxing-hares',
     name: "Boxing Hares",
     description: "Bronze signed and numbered limited edition of 12",
     dimensions: "110cm high x 62 x 61",
@@ -393,7 +426,8 @@ const boxingHaresInfo = {
 }
 
 const quackingDucklingInfo = {
-    id: '#quacking-duckling-sculpture',
+    id: '#id-quacking-duckling-sculpture',
+    url: '#quacking-duckling',
     name: "Quacking Duckling",
     description: "Bronze signed and numbered limited edition of 25",
     dimensions: "17cm high x 10 x 16",
@@ -406,7 +440,8 @@ const quackingDucklingInfo = {
 }
 
 const seatedDucklingInfo = {
-    id: '#seated-duckling-sculpture',
+    id: '#id-seated-duckling-sculpture',
+    url: '#seated-duckling',
     name: "Seated Duckling",
     description: "Bronze signed and numbered limited edition of 25",
     dimensions: "15cm high x 11 x 14",
@@ -419,7 +454,8 @@ const seatedDucklingInfo = {
 }
 
 const whiteParkBullInfo = {
-    id: '#white-park-bull-sculpture',
+    id: '#id-white-park-bull-sculpture',
+    url: '#white-park-bull',
     name: "White Park Bull",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "30cm tall x 32 x 32",
@@ -430,7 +466,8 @@ const whiteParkBullInfo = {
 }
 
 const leopardInfo = {
-    id: '#leopard-sculpture',
+    id: '#id-leopard-sculpture',
+    url: '#leopard',
     name: "Leopard",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "35cm tall x 56 x 55",
@@ -441,7 +478,8 @@ const leopardInfo = {
 }
 
 const sandyPekinBantamInfo = {
-    id: '#sandy-pekin-bantam-sculpture',
+    id: '#id-sandy-pekin-bantam-sculpture',
+    url: '#sandy-pekin-bantam',
     name: "Sandy Pekin Bantam",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "24cm tall x 24 x 17",
@@ -452,7 +490,8 @@ const sandyPekinBantamInfo = {
 }
 
 const blackPekinBantamInfo = {
-    id: '#black-pekin-bantam-sculpture',
+    id: '#id-black-pekin-bantam-sculpture',
+    url: '#black-pekin-bantam',
     name: "Black Pekin Bantam",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "25cm tall x 28 x 16",
@@ -463,7 +502,8 @@ const blackPekinBantamInfo = {
 }
 
 const lavenderPekinBantamInfo = {
-    id: '#lavender-pekin-bantam-sculpture',
+    id: '#id-lavender-pekin-bantam-sculpture',
+    url: '#lavender-pekin-bantam',
     name: "Lavender Pekin Bantam",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "26cm tall x 23 x 15",
@@ -474,7 +514,8 @@ const lavenderPekinBantamInfo = {
 }
 
 const wingedDucklingInfo = {
-    id: '#winged-duckling-sculpture',
+    id: '#id-winged-duckling-sculpture',
+    url: '#winged-duckling',
     name: "Winged Duckling",
     description: "Bronze, signed and numbered limited edition of 25",
     dimensions: "17cm tall x 16 x 10",
@@ -485,7 +526,8 @@ const wingedDucklingInfo = {
 }
 
 const silverbackGorillaInfo = {
-    id: '#silverback-gorilla-sculpture',
+    id: '#id-silverback-gorilla-sculpture',
+    url: '#silverback-gorilla',
     name: "Silverback Gorilla",
     description: "Bronze, signed and numbered limited edition of 9",
     dimensions: "110cm tall x 90cm x 60cm",
@@ -496,7 +538,8 @@ const silverbackGorillaInfo = {
 }
 
 const greaterOneHornedRhinoInfo = {
-    id: '#greater-one-horned-rhino-sculpture',
+    id: '#id-greater-one-horned-rhino-sculpture',
+    url: '#greater-one-horned-rhino',
     name: "Greater One Horned Rhino",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "33cm tall x 60cm x 25cm",
@@ -507,7 +550,8 @@ const greaterOneHornedRhinoInfo = {
 }
 
 const cockerelInfo = {
-    id: '#cockerel-sculpture',
+    id: '#id-cockerel-sculpture',
+    url: '#cockerel',
     name: "Cockerel",
     description: "Bronze, signed and numbered limited edition of 12",
     dimensions: "60cm tall x 20cm x 30cm",
@@ -518,7 +562,8 @@ const cockerelInfo = {
 }
 
 const littleOwlInfo = {
-    id: '#little-owl-sculpture',
+    id: '#id-little-owl-sculpture',
+    url: '#little-owl',
     name: "Little Owl",
     description: "Bronze, signed and numbered limited edition of 25",
     dimensions: "25cm tall x 20cm x 20cm",
@@ -529,7 +574,8 @@ const littleOwlInfo = {
 }
 
 const redSquirrelInfo = {
-    id: '#red-squirrel-sculpture',
+    id: '#id-red-squirrel-sculpture',
+    url: '#red-squirrel',
     name: "Red Squirrel",
     description: "Bronze, signed and numbered limited edition of 25",
     dimensions: "25cm tall x 20cm x 10cm",
@@ -540,7 +586,8 @@ const redSquirrelInfo = {
 }
 
 const dormouseInfo = {
-    id: '#dormouse-sculpture',
+    id: '#id-dormouse-sculpture',
+    url: '#dormouse',
     name: "Dormouse",
     description: "Bronze, signed and numbered limited edition of 25",
     dimensions: "8cm tall x 17cm x 9cm",
@@ -599,3 +646,9 @@ const allSculptures = [
     redSquirrelInfo,
     dormouseInfo
 ];
+
+const urlSculpturesMap = new Map();
+
+allSculptures.forEach(s => {
+  urlSculpturesMap.set(s.url, s);
+})
