@@ -597,6 +597,18 @@ const dormouseInfo = {
     spin: "dormouse/dormouse-spin"
 }
 
+const walkingTigerInfo = {
+    id: '#id-walking-tiger-sculpture',
+    url: '#walking-tiger',
+    name: "Walking Tiger",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "38cm tall x 73cm x 15cm",
+    date: "May 2024",
+    price: "£13,000 inc VAT",
+    images: ["img/sculptures/walking-tiger/walking-tiger-1.jpg", "img/sculptures/walking-tiger/walking-tiger-2.jpg", "img/sculptures/walking-tiger/walking-tiger-3.jpg", "img/sculptures/walking-tiger/walking-tiger-4.jpg"],
+    spin: "walking-tiger/walking-tiger-spin"
+}
+
 const allSculptures = [
     divingOttersSculptureInfo,
     runningHareSculptureInfo,
@@ -644,7 +656,8 @@ const allSculptures = [
     cockerelInfo,
     littleOwlInfo,
     redSquirrelInfo,
-    dormouseInfo
+    dormouseInfo,
+    walkingTigerInfo
 ];
 
 const urlSculpturesMap = new Map();
