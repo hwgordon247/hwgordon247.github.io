@@ -609,6 +609,78 @@ const walkingTigerInfo = {
     spin: "walking-tiger/walking-tiger-spin"
 }
 
+const lionInfo = {
+    id: '#id-lion-sculpture',
+    url: '#lion',
+    name: "Lion",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "21cm tall x 19cm x 12cm",
+    date: "July 2024",
+    price: "£3,900 inc VAT",
+    images: ["img/sculptures/lion/lion-1.jpg", "img/sculptures/lion/lion-2.jpg", "img/sculptures/lion/lion-3.jpg"],
+    spin: "lion/lion-spin"
+}
+
+const sittingMacaqueInfo = {
+    id: '#id-sitting-macaque-sculpture',
+    url: '#sitting-macaque',
+    name: "Sitting Macaque",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "19cm tall x 29cm x 15cm",
+    date: "August 2024",
+    price: "£3,900 inc VAT",
+    images: ["img/sculptures/sitting-macaque/sitting-macaque-1.jpg", "img/sculptures/sitting-macaque/sitting-macaque-2.jpg", "img/sculptures/sitting-macaque/sitting-macaque-3.jpg"],
+    spin: "sitting-macaque/sitting-macaque-spin"
+}
+
+const runningMacaqueInfo = {
+    id: '#id-running-macaque-sculpture',
+    url: '#running-macaque',
+    name: "Running Macaque",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "32cm tall x 30cm x 30cm",
+    date: "August 2024",
+    price: "£3,900 inc VAT",
+    images: ["img/sculptures/running-macaque/running-macaque-1.jpg", "img/sculptures/running-macaque/running-macaque-2.jpg", "img/sculptures/running-macaque/running-macaque-3.jpg"],
+    spin: "running-macaque/running-macaque-spin"
+}
+
+const cowInfo = {
+    id: '#id-cow-sculpture',
+    url: '#cow',
+    name: "Cow",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "21cm tall x 19cm x 12cm",
+    date: "July 2024",
+    price: "£3,900 inc VAT",
+    images: ["img/sculptures/cow/cow-1.jpg", "img/sculptures/cow/cow-2.jpg", "img/sculptures/cow/cow-3.jpg"],
+    spin: "cow/cow-spin"
+}
+
+const heronInfo = {
+    id: '#id-heron-sculpture',
+    url: '#heron',
+    name: "Heron",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "29cm tall x 10cm x 13cm",
+    date: "August 2024",
+    price: "£3,900 inc VAT",
+    images: ["img/sculptures/heron/heron-1.jpg", "img/sculptures/heron/heron-2.jpg", "img/sculptures/heron/heron-3.jpg"],
+    spin: "heron/heron-spin"
+}
+
+const restingTigerInfo = {
+    id: '#id-resting-tiger-sculpture',
+    url: '#resting-tiger',
+    name: "Resting Tiger",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "30cm tall x 70cm x 25cm",
+    date: "May 2024",
+    price: "£13,000 inc VAT",
+    images: ["img/sculptures/resting-tiger/resting-tiger-1.jpg", "img/sculptures/resting-tiger/resting-tiger-2.jpg", "img/sculptures/resting-tiger/resting-tiger-3.jpg", "img/sculptures/resting-tiger/resting-tiger-4.jpg"],
+    spin: "resting-tiger/resting-tiger-spin"
+}
+
 const allSculptures = [
     divingOttersSculptureInfo,
     runningHareSculptureInfo,
@@ -657,7 +729,13 @@ const allSculptures = [
     littleOwlInfo,
     redSquirrelInfo,
     dormouseInfo,
-    walkingTigerInfo
+    walkingTigerInfo,
+    lionInfo,
+    sittingMacaqueInfo,
+    runningMacaqueInfo,
+    cowInfo,
+    heronInfo,
+    restingTigerInfo
 ];
 
 const urlSculpturesMap = new Map();
