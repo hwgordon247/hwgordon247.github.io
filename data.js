@@ -681,6 +681,30 @@ const restingTigerInfo = {
     spin: "resting-tiger/resting-tiger-spin"
 }
 
+const roeDoeInfo = {
+    id: '#id-roe-doe-sculpture',
+    url: '#roe-doe',
+    name: "Roe Doe",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "85cm tall x 110cm x 30cm",
+    date: "April 2025",
+    price: "£24,000 inc VAT",
+    images: ["img/sculptures/roe-doe/roe-doe-1.jpg", "img/sculptures/roe-doe/roe-doe-2.jpg"],
+    spin: "roe-doe/roe-doe-spin"
+}
+
+const roeBuckInfo = {
+    id: '#id-roe-buck-sculpture',
+    url: '#roe-buck',
+    name: "Roe Buck",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "106cm tall x 80cm x 40cm",
+    date: "April 2025",
+    price: "£24,000 inc VAT",
+    images: ["img/sculptures/roe-buck/roe-buck-1.jpg", "img/sculptures/roe-buck/roe-buck-2.jpg", "img/sculptures/roe-buck/roe-buck-3.jpg"],
+    spin: "roe-buck/roe-buck-spin"
+}
+
 const allSculptures = [
     divingOttersSculptureInfo,
     runningHareSculptureInfo,
@@ -735,7 +759,9 @@ const allSculptures = [
     runningMacaqueInfo,
     cowInfo,
     heronInfo,
-    restingTigerInfo
+    restingTigerInfo,
+    roeDoeInfo,
+    roeBuckInfo
 ];
 
 const urlSculpturesMap = new Map();
