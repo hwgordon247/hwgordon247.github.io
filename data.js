@@ -705,6 +705,54 @@ const roeBuckInfo = {
     spin: "roe-buck/roe-buck-spin"
 }
 
+const cheetahInfo = {
+    id: '#id-cheetah-sculpture',
+    url: '#cheetah',
+    name: "Cheetah",
+    description: "Bronze, signed and numbered edition of 12",
+    dimensions: "Life Size - 208cm long x 68cm wide x 104cm tall",
+    date: "January 2025",
+    price: "£48,000 inc VAT",
+    images: ["img/sculptures/cheetah/cheetah-1.jpg", "img/sculptures/cheetah/cheetah-2.jpg"],
+    spin: "cheetah/cheetah-spin"
+}
+
+const dromedaryCamelInfo = {
+    id: '#id-dromedary-camel-sculpture',
+    url: '#dromedary-camel',
+    name: "Dromedary Camel",
+    description: "Bronze, signed and numbered edition of 12",
+    dimensions: "70cm high x 83cm wide x 30cm deep",
+    date: "May 2025",
+    price: "£17,500 inc VAT",
+    images: ["img/sculptures/dromedary-camel/dromedary-camel-1.jpg", "img/sculptures/dromedary-camel/dromedary-camel-2.jpg", "img/sculptures/dromedary-camel/dromedary-camel-3.jpg"],
+    spin: "dromedary-camel/dromedary-camel-spin"
+}
+
+const elephantCalfInfo = {
+    id: '#id-elephant-calf-sculpture',
+    url: '#elephant-calf',
+    name: "Elephant Calf",
+    description: "Bronze, signed and numbered edition of 12",
+    dimensions: "32cm tall x 32cm x 34cm",
+    date: "August 2025",
+    price: "£7,200 inc VAT",
+    images: ["img/sculptures/elephant-calf/elephant-calf-1.jpg", "img/sculptures/elephant-calf/elephant-calf-2.jpg", "img/sculptures/elephant-calf/elephant-calf-3.jpg"],
+    spin: "elephant-calf/elephant-calf-spin"
+}
+
+const whiteRhinoInfo = {
+    id: '#id-white-rhino-sculpture',
+    url: '#white-rhino',
+    name: "White Rhino II",
+    description: "Bronze, signed and numbered edition of 12",
+    dimensions: "30cm tall x 62cm",
+    date: "September 2025",
+    price: "£9,600 inc VAT",
+    images: ["img/sculptures/white-rhino/white-rhino-1.jpg", "img/sculptures/white-rhino/white-rhino-2.jpg", "img/sculptures/white-rhino/white-rhino-3.jpg"],
+    spin: "white-rhino/white-rhino-spin"
+}
+
 const allSculptures = [
     divingOttersSculptureInfo,
     runningHareSculptureInfo,
@@ -761,7 +809,11 @@ const allSculptures = [
     heronInfo,
     restingTigerInfo,
     roeDoeInfo,
-    roeBuckInfo
+    roeBuckInfo,
+    cheetahInfo,
+    dromedaryCamelInfo,
+    elephantCalfInfo,
+    whiteRhinoInfo
 ];
 
 const urlSculpturesMap = new Map();
