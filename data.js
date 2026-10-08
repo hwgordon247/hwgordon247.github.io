@@ -753,7 +753,85 @@ const whiteRhinoInfo = {
     spin: "white-rhino/white-rhino-spin"
 }
 
+const hippoAndOxpeckersInfo = {
+    id: '#id-hippo-and-oxpeckers-sculpture',
+    url: '#hippo-and-oxpeckers',
+    name: "Hippo and Oxpeckers",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "33cm tall x 58cm x 30cm",
+    date: "June 2026",
+    price: "£13,500 inc VAT",
+    images: ["img/sculptures/hippo-and-oxpeckers/hippo-and-oxpeckers-1.jpg", "img/sculptures/hippo-and-oxpeckers/hippo-and-oxpeckers-2.jpg", "img/sculptures/hippo-and-oxpeckers/hippo-and-oxpeckers-3.jpg"],
+    spin: "hippo-and-oxpeckers/hippo-and-oxpeckers-spin"
+}
+
+const blackRhinoMotherAndCalfInfo = {
+    id: '#id-black-rhino-mother-and-calf-sculpture',
+    url: '#black-rhino-mother-and-calf',
+    name: "Black Rhino Mother and Calf",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "23cm tall x 46cm x 30cm",
+    date: "May 2026",
+    price: "£9,900 inc VAT",
+    images: ["img/sculptures/black-rhino-mother-and-calf/black-rhino-mother-and-calf-1.jpg", "img/sculptures/black-rhino-mother-and-calf/black-rhino-mother-and-calf-2.jpg", "img/sculptures/black-rhino-mother-and-calf/black-rhino-mother-and-calf-3.jpg"],
+    spin: "black-rhino-mother-and-calf/black-rhino-mother-and-calf-spin"
+}
+
+const walkingLionInfo = {
+    id: '#id-walking-lion-sculpture',
+    url: '#walking-lion',
+    name: "Walking Lion",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "27cm tall x 57cm x 15cm",
+    date: "March 2026",
+    price: "£9,900 inc VAT",
+    images: ["img/sculptures/walking-lion/walking-lion-1.jpg", "img/sculptures/walking-lion/walking-lion-2.jpg", "img/sculptures/walking-lion/walking-lion-3.jpg"],
+    spin: "walking-lion/walking-lion-spin"
+}
+
+const maleBaboonInfo = {
+    id: '#id-male-baboon-sculpture',
+    url: '#male-baboon',
+    name: "Male Baboon",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "Life Size - 72cm tall x 70cm x 30cm",
+    date: "December 2025",
+    price: "£24,000 inc VAT",
+    images: ["img/sculptures/male-baboon/male-baboon-1.jpg", "img/sculptures/male-baboon/male-baboon-2.jpg", "img/sculptures/male-baboon/male-baboon-3.jpg", "img/sculptures/male-baboon/baboon-troop.jpg"],
+    spin: "male-baboon/male-baboon-spin"
+}
+
+const motherAndBabyBaboonInfo = {
+    id: '#id-mother-and-baby-baboon-sculpture',
+    url: '#mother-and-baby-baboon',
+    name: "Mother and Baby Baboon",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "Life Size - 60cm tall x 60cm x 25",
+    date: "December 2025",
+    price: "£20,000 inc VAT",
+    images: ["img/sculptures/mother-and-baby-baboon/mother-and-baby-baboon-1.jpg", "img/sculptures/mother-and-baby-baboon/mother-and-baby-baboon-2.jpg", "img/sculptures/mother-and-baby-baboon/baboon-troop.jpg"],
+    spin: "mother-and-baby-baboon/mother-and-baby-baboon-spin"
+}
+
+const adolescentBaboonInfo = {
+    id: '#id-adolescent-baboon-sculpture',
+    url: '#adolescent-baboon',
+    name: "Adolescent Baboon",
+    description: "Bronze, signed and numbered limited edition of 12",
+    dimensions: "Life Size - 55cm tall x 60cm x 20cm",
+    date: "December 2025",
+    price: "£18,000 inc VAT",
+    images: ["img/sculptures/adolescent-baboon/adolescent-baboon-1.jpg", "img/sculptures/adolescent-baboon/adolescent-baboon-2.jpg", "img/sculptures/adolescent-baboon/baboon-troop.jpg"],
+    spin: "adolescent-baboon/adolescent-baboon-spin"
+}
+
 const allSculptures = [
+    hippoAndOxpeckersInfo,
+    blackRhinoMotherAndCalfInfo,
+    walkingLionInfo,
+    maleBaboonInfo,
+    motherAndBabyBaboonInfo,
+    adolescentBaboonInfo,
     divingOttersSculptureInfo,
     runningHareSculptureInfo,
     malayanTapirSculptureInfo,
